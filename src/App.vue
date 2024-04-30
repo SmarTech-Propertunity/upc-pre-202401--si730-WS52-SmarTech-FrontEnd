@@ -1,7 +1,7 @@
 <script setup>
-import Login from "@/public/login.component.vue";
-import RecoveryPassword from "@/public/recovery-password.component.vue";
-import Register from "@/public/register.component.vue";
+import Login from "@/core/domain/components/user-management/main-login.component.vue";
+import RecoveryPassword from "@/core/domain/components/user-management/recovery-password.component.vue";
+import Register from "@/core/domain/components/user-management/register-user.component.vue";
 </script>
 
 <template>
