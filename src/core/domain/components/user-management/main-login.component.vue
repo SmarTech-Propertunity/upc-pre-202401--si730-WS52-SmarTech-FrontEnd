@@ -6,7 +6,7 @@
   <body>
   <div class="container">
     <h1>Bienvenidos a Propertunity</h1>
-    <img src="https://www.condominiosverdes.com.br/wp-content/uploads/2017/10/condominio-sustentavel-dicas.jpg" >
+    <img src="https://www.condominiosverdes.com.br/wp-content/uploads/2017/10/condominio-sustentavel-dicas.jpg" alt="Edificios de fondo">
   </div>
 
   <div class="input-container">
@@ -27,8 +27,8 @@
 
   <div class="link-container">
     <div class="img-container">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/b/b9/2023_Facebook_icon.svg" width="40" height="40">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png" width="40" height="40">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/b/b9/2023_Facebook_icon.svg" alt="Icono de Facebook" width="40" height="40">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png" alt="Icono de Instagram" width="40" height="40">
     </div>
     <pv-button label="Contáctanos"></pv-button>
   </div>
@@ -52,7 +52,7 @@ body{
 }
 
 .container h1{
-  font-family: 'lato';
+  font-family: 'lato', sans-serif;
   color:white;
   position: absolute;
   top:50%;
