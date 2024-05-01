@@ -25,8 +25,9 @@
     <!-- Search tools -->
     <div class="input-text-section">
       <!-- Search icon -->
+     <router-link to="/search">
       <img src="../../../../assets/images/search-icon.png" alt="buildings banner" height="25px" width="25px">
-
+     </router-link>
       <!-- Input text -->
       <pv-input-text class="input-text" v-model="inputSearchString" placeholder="Buscar ubicación"/>
     </div>

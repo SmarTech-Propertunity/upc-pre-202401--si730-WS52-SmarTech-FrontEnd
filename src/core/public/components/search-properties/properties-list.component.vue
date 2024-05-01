@@ -1,6 +1,7 @@
 <script setup >
 import { PropertyApiService } from "@/core/public/services/property-api.service.js";
 import { ref, onMounted } from 'vue';
+import RetraceToolbar from "@/core/shared/components/retrace-toolbar.component.vue";
 
 const properties = ref([]);
 const search = ''; // Definición de constante search dentro de data
@@ -21,6 +22,7 @@ async function filtered() {
 </script>
 
 <template>
+  <RetraceToolbar/>
   <div class="search">
 
     <div class="search-bar" role="search">
