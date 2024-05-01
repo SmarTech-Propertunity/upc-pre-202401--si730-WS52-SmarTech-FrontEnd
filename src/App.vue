@@ -1,5 +1,6 @@
 <script setup>
 
+
 import TheToolbar from "@/core/public/components/home/the-toolbar.component.vue";
 import TheOptions from "@/core/public/components/home/the-options.component.vue";
 import Login from "@/core/domain/components/user-management/main-login.component.vue";
@@ -10,6 +11,7 @@ import TheSearchAndFilter from "@/core/public/components/home/the-search.compone
 </script>
 
 <template>
+
   <main>
 
 
@@ -20,6 +22,7 @@ import TheSearchAndFilter from "@/core/public/components/home/the-search.compone
 
     <router-view></router-view>
   </main>
+
 
 </template>
 
