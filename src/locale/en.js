@@ -17,7 +17,23 @@ const en = {
         searchResultBarTitle: 'Results',
         cardContent1: 'From',
         cardContent2: 'In',
-    }
+    },
+    welcome: 'Welcome to Propertunity',
+    username: 'Username',
+    password: 'Password',
+    into: 'Log in',
+    register: 'Sign up',
+    recovery: 'Forgot your password?',
+    buttonpassword: 'Recovery password',
+    contact: 'contact',
+    registerpropertunity: 'Register in Propertunity',
+    name: 'Name',
+    email: 'Email ',
+    recoveryemail: 'Recovery Email',
+    address: 'Address',
+    district: 'district',
+    phone: 'Phone Number',
+    rol: 'Select a rol',
 }
 
 export default en

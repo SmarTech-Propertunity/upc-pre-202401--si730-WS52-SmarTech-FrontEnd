@@ -17,6 +17,23 @@ const es = {
         searchResultBarTitle: 'Resultados',
         cardContent1: 'Desde',
         cardContent2: 'En',
-    }
+    },
+    welcome: 'Bienvenidos a Propertunity',
+    username: 'Usuario',
+    password: 'Contraseña',
+    into: 'Ingresar',
+    register:'Registrar',
+    recovery: '¿Perdiste tu contraseña?',
+    buttonpassword: 'Recuperar contraseña',
+    contact: 'Contáctanos',
+    registerpropertunity:'Regístrate en Propertunity',
+    name: 'Nombre',
+    email: 'Correo Electrónico',
+    recoveryemail: 'Correo de Recuperación',
+    address: 'Dirección',
+    district: 'Distrito',
+    phone: 'Número de teléfono',
+    rol: 'Selecciona un rol',
+
 }
 export default es
