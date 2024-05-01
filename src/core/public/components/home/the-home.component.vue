@@ -1,15 +1,11 @@
-<script>
-export default {
-  name: "the-home-base",
-}
-</script>
+<script/>
 
 <template>
 
-  <the-toolbar></the-toolbar>
-  <the-search-and-filter></the-search-and-filter>
-  <the-options></the-options>
-  <the-featured-publications></the-featured-publications>=
+  <Toolbar></Toolbar>
+  <TheSearchAndFilter></TheSearchAndFilter>
+  <TheOptions></TheOptions>
+  <TheFeaturedPublications></TheFeaturedPublications>=
 
 </template>
 

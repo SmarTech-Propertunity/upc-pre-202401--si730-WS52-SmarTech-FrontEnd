@@ -1,5 +1,6 @@
 <script setup>
 import {ref} from "vue";
+import TheFooter from "@/core/public/components/the-footer.component.vue";
 const username = ref('');
 const password = ref('');
 
@@ -24,11 +25,18 @@ const password = ref('');
   </div>
 
   <div class="button-container">
-    <pv-button label="Ingresar" class="custom-button"></pv-button>
+   <router-link to="/home">
+     <pv-button label="Ingresar" class="custom-button"></pv-button>
+   </router-link>
+
+    <router-link to="/register">
     <pv-button label="Registrar" class="custom-button"></pv-button>
+    </router-link>
   </div>
 
-
+  <div class="link-container">
+    <a href="/Recovery">Olvidaste tu contraseña?</a>
+  </div>
   </body>
 
 </template>

@@ -10,14 +10,14 @@ import Button from 'primevue/button';
 import Dropdown from "primevue/dropdown";
 import Card from "primevue/card";
 import FileUpload from 'primevue/fileupload';
-
-
 import Toolbar from "primevue/toolbar";
+import i18n from "@/locale/i18n.js";
 const app = createApp(App)
 
 //app.use(router)
 app.use(PrimeVue);
 app.use(router);
+app.use(i18n);
 app.component('pv-InputText', InputText);
 app.component('pv-toolbar', Toolbar);
 app.component('pv-floatLabel', FloatLabel);
