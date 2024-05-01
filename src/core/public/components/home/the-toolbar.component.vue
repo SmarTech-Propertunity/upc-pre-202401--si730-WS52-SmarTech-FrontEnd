@@ -18,10 +18,10 @@
     <template #end>
       <div class="p-toolbar-end">
         <!-- Propertunity button -->
-        <img src="@/assets/images/propertunity-logo.png" height="50px" width="50px" alt="propertunity">
+        <img src="../../../../assets/images/propertunity-logo.png" height="50px" width="50px" alt="propertunity">
 
         <!-- User (profile) button -->
-        <img src="@/assets/images/user-icon.png" height="50px" width="50px" alt="propertunity">
+        <img src="../../../../assets/images/user-icon.png" height="50px" width="50px" alt="propertunity">
       </div>
     </template>
   </pv-toolbar>

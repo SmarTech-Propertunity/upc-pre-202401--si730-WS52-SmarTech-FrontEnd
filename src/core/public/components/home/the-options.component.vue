@@ -1,5 +1,5 @@
 <script>
-import OptionBlock from "@/public/components/optionBlock.component.vue";
+import OptionBlock from "@/core/public/components/home/option-block.component.vue";
 
 export default
 {

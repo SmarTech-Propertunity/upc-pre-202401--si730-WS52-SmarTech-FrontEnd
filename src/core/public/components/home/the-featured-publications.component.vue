@@ -1,5 +1,5 @@
 <script>
-import PublicationCard from "@/public/components/publicationCard.component.vue";
+import PublicationCard from "@/core/public/components/home/publication-card.component.vue";
 
 export default
 {

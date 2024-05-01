@@ -20,12 +20,12 @@
   <div class="buildings-banner">
 
     <!-- Map banner -->
-    <img src="@/assets/images/buildings-banner.png" alt="buildings banner" style="height: 200px; width: 100%; overflow: hidden; object-fit: cover;">
+    <img src="../../../../assets/images/buildings-banner.png" alt="buildings banner" style="height: 200px; width: 100%; overflow: hidden; object-fit: cover;">
 
     <!-- Search tools -->
     <div class="input-text-section">
       <!-- Search icon -->
-      <img src="@/assets/images/search-icon.png" alt="buildings banner" height="25px" width="25px">
+      <img src="../../../../assets/images/search-icon.png" alt="buildings banner" height="25px" width="25px">
 
       <!-- Input text -->
       <pv-input-text class="input-text" v-model="inputSearchString" placeholder="Buscar ubicación"/>
@@ -37,7 +37,7 @@
       <!-- Price filter -->
       <div class="price-filter">
         <!-- Filter icon -->
-        <img src="@/assets/images/filter-icon.png" alt="buildings banner" height="30px" width="30px">
+        <img src="../../../../assets/images/filter-icon.png" alt="buildings banner" height="30px" width="30px">
 
         <!-- From -->
         <pv-input-text class="input-price" v-model="inputPriceFrom" placeholder="Desde"></pv-input-text>
