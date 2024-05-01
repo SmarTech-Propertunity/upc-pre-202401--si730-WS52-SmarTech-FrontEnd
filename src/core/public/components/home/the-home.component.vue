@@ -1,19 +1,25 @@
-<script setup>
-import TheToolbar from "@/core/public/components/home/the-toolbar.component.vue";
+<script>
+import Toolbar from "@/core/public/components/home/the-toolbar.component.vue";
 import TheSearchAndFilter from "@/core/public/components/home/the-search.component.vue";
 import TheOptions from "@/core/public/components/home/the-options.component.vue";
 import TheFeaturedPublications from "@/core/public/components/home/the-featured-publications.component.vue";
-</script>
 
+
+
+
+export default {
+  name: "the-home-component",
+  components: {Toolbar, TheSearchAndFilter, TheOptions, TheFeaturedPublications},
+}
+</script>
 <template>
 
-  <the-toolbar></the-toolbar>
-  <the-search-and-filter></the-search-and-filter>
-  <the-options></the-options>
-  <the-featured-publications></the-featured-publications>
+  <Toolbar></Toolbar>
+  <TheSearchAndFilter></TheSearchAndFilter>
+  <TheOptions></TheOptions>
+  <TheFeaturedPublications></TheFeaturedPublications>=
 
 </template>
 
 <style scoped>
-
 </style>
