@@ -9,6 +9,8 @@ import FloatLabel from 'primevue/floatlabel';
 import Button from 'primevue/button';
 import Dropdown from "primevue/dropdown";
 import Card from "primevue/card";
+import FileUpload from 'primevue/fileupload';
+
 
 const app = createApp(App)
 
@@ -20,5 +22,6 @@ app.component('pv-floatLabel', FloatLabel);
 app.component('pv-button', Button);
 app.component('pv-dropdown', Dropdown)
 app.component('pv-card', Card)
+app.component('pv-FileUpload', FileUpload)
 app.mount('#app')
 

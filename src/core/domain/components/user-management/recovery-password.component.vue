@@ -1,4 +1,8 @@
 <script setup>
+import {ref} from "vue";
+
+const username = ref('');
+const password = ref('');
 
 </script>
 
@@ -9,11 +13,11 @@
   </div>
   <div class="input-container">
     <pv-floatLabel class="p-float-label">
-      <pv-InputText id="username"  />
+      <pv-InputText id="username"  v-model="username"/>
       <label for="username">Username</label>
     </pv-floatLabel>
     <pv-floatLabel>
-      <pv-InputText id="password"  />
+      <pv-InputText id="password"  v-model="password"/>
       <label for="password">Password</label>
     </pv-floatLabel>
     <pv-button label="Recuperar Contraseña" class="custom-button"></pv-button>
@@ -51,11 +55,11 @@ h1{
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 15px;
+  padding: 20px;
 }
 
 .p-float-label {
-  margin-bottom: 15px;
+  margin-bottom: 22px;
 }
 
 
