@@ -10,6 +10,7 @@ export default
 
 <template>
   <div class="search-agency">
+
     <option-block
         button-label="Buscar"
         image-alt="Evaluación crediticia"

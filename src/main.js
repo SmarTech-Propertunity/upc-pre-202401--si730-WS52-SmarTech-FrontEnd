@@ -11,6 +11,7 @@ import Dropdown from "primevue/dropdown";
 import Card from "primevue/card";
 import FileUpload from 'primevue/fileupload';
 import Toolbar from "primevue/toolbar";
+import Galleria from 'primevue/galleria';
 import i18n from "@/locale/i18n.js";
 const app = createApp(App)
 
@@ -25,5 +26,6 @@ app.component('pv-button', Button);
 app.component('pv-dropdown', Dropdown)
 app.component('pv-card', Card)
 app.component('pv-FileUpload', FileUpload)
+app.component('pv-Galleria', Galleria)
 app.mount('#app')
 

@@ -13,7 +13,7 @@
 
 <style scoped>
 .footer-component{
-  background-color: #1c1c1c;
+  background-color: #ededed;
   color: white;
   padding: 50px;
   text-align: center;

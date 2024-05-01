@@ -1,1678 +1,214 @@
-let propiedades = {
-    "propiedades": [
-    {
-       "id_propiedad": 1,
-        "titulo": "Casa increible en Santiago de Surco",
-        "descripcion": "Excelente casa ubicada en una estratégica de Surco- muy cerca de avenidas principales como Av. Primavera, Av. Encalada, Av. El Polo y Av. El Derby, lo que permite el fácil acceso y salida desde diferentes puntos.",
-        "precio_dolares": 145000,
-        "tipo_propiedad": "Casa",
-        "operacion": "Venta",
-        "entrega": "Inmediata",
-        "area_techada_metros_cuadrados": 308,
-        "area_total_metros_cuadrados": 360,
-        "cantidad_dormitorios": 5,
-        "cantidad_banios": 4, 
-        "cantidad_estacionamientos": 2,
-        "estado_venta": "Disponible",
-        "etapa_proyecto": "Terminado",
-        "fecha_inicio_proyecto": "24/02/62",
-        "antiguedad": "62 años",
-        "anunciantes_id_anunciante": 1,
-        "ubicaciones_id_ubicacion": 1
-    },
-    {
-        "id_propiedad": 2,
-        "titulo": "Departamento de lujo en Miraflores",
-        "descripcion": "Espectacular departamento ubicado en el corazón de Miraflores, con vista panorámica al mar. Ideal para personas que buscan comodidad y exclusividad.",
-        "precio_dolares": 550,
-        "tipo_propiedad": "Departamento",
-        "operacion": "Alquiler",
-        "entrega": "Un mes después del pago",
-        "area_techada_metros_cuadrados": 180,
-        "area_total_metros_cuadrados": 220,
-        "cantidad_dormitorios": 3,
-        "cantidad_banios": 3,
-        "cantidad_estacionamientos": 2,
-        "estado_venta": "Disponible",
-        "etapa_proyecto": "Terminado",
-        "fecha_inicio_proyecto": "15/06/10",
-        "antiguedad": "14 años",
-        "anunciantes_id_anunciante": 2,
-        "ubicaciones_id_ubicacion": 2
-    },
-    {
-        "id_propiedad": 3,
-        "titulo": "Local comercial en San Isidro",
-        "descripcion": "Amplio local comercial ubicado en una zona de alto tránsito en San Isidro. Ideal para establecer tu negocio y captar una gran clientela.",
-        "precio_dolares": 480000,
-        "tipo_propiedad": "Local Comercial",
-        "operacion": "Venta",
-        "entrega": "Inmediata",
-        "area_techada_metros_cuadrados": 450,
-        "area_total_metros_cuadrados": 500,
-        "cantidad_dormitorios": 0,
-        "cantidad_banios": 2,
-        "cantidad_estacionamientos": 4,
-        "estado_venta": "Vendido",
-        "etapa_proyecto": "Terminado",
-        "fecha_inicio_proyecto": "10/03/05",
-        "antiguedad": "19 años",
-        "anunciantes_id_anunciante": 3,
-        "ubicaciones_id_ubicacion": 3
-    },
-    {
-        "id_propiedad": 4,
-        "titulo": "Penthouse de ensueño en Barranco",
-        "descripcion": "Espectacular penthouse ubicado en una de las zonas más bohemias y exclusivas de Barranco. Disfruta de vistas panorámicas y acabados de lujo.",
-        "precio_dolares": 225000,
-        "tipo_propiedad": "Penthouse",
-        "operacion": "Venta",
-        "entrega": "Una semana después del pago",
-        "area_techada_metros_cuadrados": 400,
-        "area_total_metros_cuadrados": 480,
-        "cantidad_dormitorios": 4,
-        "cantidad_banios": 5,
-        "cantidad_estacionamientos": 3,
-        "estado_venta": "Disponible",
-        "etapa_proyecto": "Terminado",
-        "fecha_inicio_proyecto": "20/09/12",
-        "antiguedad": "12 años",
-        "anunciantes_id_anunciante": 4,
-        "ubicaciones_id_ubicacion": 4
-    },
-    {
-        "id_propiedad": 5,
-        "titulo": "Oficina corporativa en San Borja",
-        "descripcion": "Moderna oficina corporativa ubicada en un edificio exclusivo en San Borja. Ideal para empresas que buscan una imagen profesional y espacios funcionales.",
-        "precio_dolares": 350,
-        "tipo_propiedad": "Oficina",
-        "operacion": "Alquiler",
-        "entrega": "Inmediata",
-        "area_techada_metros_cuadrados": 320,
-        "area_total_metros_cuadrados": 350,
-        "cantidad_dormitorios": 0,
-        "cantidad_banios": 2,
-        "cantidad_estacionamientos": 6,
-        "estado_venta": "Alquilado",
-        "etapa_proyecto": "Terminado",
-        "fecha_inicio_proyecto": "05/07/08",
-        "antiguedad": "16 años",
-        "anunciantes_id_anunciante": 5,
-        "ubicaciones_id_ubicacion": 5
-    },
-    {
-        "id_propiedad": 6,
-        "titulo": "Terreno residencial en Huaraz",
-        "descripcion": "Amplio terreno residencial ubicado en una zona tranquila y exclusiva de La Molina. Ideal para construir la casa de tus sueños.",
-        "precio_dolares": 290000,
-        "tipo_propiedad": "Terreno",
-        "operacion": "Venta",
-        "entrega": "Un mes después del pago",
-        "area_techada_metros_cuadrados": 0,
-        "area_total_metros_cuadrados": 1500,
-        "cantidad_dormitorios": 0,
-        "cantidad_banios": 0,
-        "cantidad_estacionamientos": 0,
-        "estado_venta": "Reservado",
-        "etapa_proyecto": "Terminado",
-        "fecha_inicio_proyecto": "30/11/15",
-        "antiguedad": "9 años",
-        "anunciantes_id_anunciante": 6,
-        "ubicaciones_id_ubicacion": 6
-    },
-    {
-        "id_propiedad": 7,
-        "titulo": "Local industrial en Callao",
-        "descripcion": "Amplio local industrial ubicado en una zona estratégica del Callao. Ideal para empresas que buscan un espacio funcional y accesible para sus operaciones.",
-        "precio_dolares": 620000,
-        "tipo_propiedad": "Local Industrial",
-        "operacion": "Venta",
-        "entrega": "Inmediata",
-        "area_techada_metros_cuadrados": 600,
-        "area_total_metros_cuadrados": 700,
-        "cantidad_dormitorios": 0,
-        "cantidad_banios": 2,
-        "cantidad_estacionamientos": 10,
-        "estado_venta": "Disponible",
-        "etapa_proyecto": "Terminado",
-        "fecha_inicio_proyecto": "12/04/07",
-        "antiguedad": "17 años",
-        "anunciantes_id_anunciante": 7,
-        "ubicaciones_id_ubicacion": 7
-    },
-    {
-        "id_propiedad": 8,
-        "titulo": "Departamento de estreno en Jesus Maria",
-        "descripcion": "Moderno departamento de estreno ubicado en una zona residencial de Jesús María. Ideal para familias que buscan comodidad y seguridad.",
-        "precio_dolares": 120000,
-        "tipo_propiedad": "Departamento",
-        "operacion": "Venta",
-        "entrega": "Inmediata",
-        "area_techada_metros_cuadrados": 120,
-        "area_total_metros_cuadrados": 150,
-        "cantidad_dormitorios": 3,
-        "cantidad_banios": 2,
-        "cantidad_estacionamientos": 1,
-        "estado_venta": "Disponible",
-        "etapa_proyecto": "En Construcción",
-        "fecha_inicio_proyecto": "05/09/23",
-        "antiguedad": "Nueva",
-        "anunciantes_id_anunciante": 8,
-        "ubicaciones_id_ubicacion": 8
-    },
-    {
-        "id_propiedad": 9,
-        "titulo": "Casa de playa en Asia",
-        "descripcion": "Acogedora casa de playa ubicada en un exclusivo condominio en Asia. Ideal para escapadas familiares y disfrutar del sol y la playa.",
-        "precio_dolares": 280000,
-        "tipo_propiedad": "Casa de Playa",
-        "operacion": "Venta",
-        "entrega": "Inmediata",
-        "area_techada_metros_cuadrados": 240,
-        "area_total_metros_cuadrados": 300,
-        "cantidad_dormitorios": 4,
-        "cantidad_banios": 3,
-        "cantidad_estacionamientos": 2,
-        "estado_venta": "Disponible",
-        "etapa_proyecto": "En planos",
-        "fecha_inicio_proyecto": "18/11/24",
-        "antiguedad": "Nueva",
-        "anunciantes_id_anunciante": 9,
-        "ubicaciones_id_ubicacion": 9
-    },
-    {
-        "id_propiedad": 10,
-        "titulo": "Departamento con vista al mar en Camaná",
-        "descripcion": "Departamento con excelente vista al mar ubicado en una zona tranquila de Chorrillos. Ideal para disfrutar del clima y la brisa marina.",
-        "precio_dolares": 100000,
-        "tipo_propiedad": "Departamento",
-        "operacion": "Venta",
-        "entrega": "Un mes después del pago",
-        "area_techada_metros_cuadrados": 180,
-        "area_total_metros_cuadrados": 200,
-        "cantidad_dormitorios": 3,
-        "cantidad_banios": 2,
-        "cantidad_estacionamientos": 1,
-        "estado_venta": "Vendido",
-        "etapa_proyecto": "Terminado",
-        "fecha_inicio_proyecto": "08/03/13",
-        "antiguedad": "11 años",
-        "anunciantes_id_anunciante": 10,
-        "ubicaciones_id_ubicacion": 10
-    }
-  ]
-};
-
-let ubicaciones = {
-    "ubicaciones": [
-    {
-        "id_ubicacion": "1",
-        "direccion": "Av. Pedro de Candia 394",
-        "distrito": "Santiago de Surco",
-        "provincia": "Lima Metropolitana",
-        "ciudad": "Lima",
-        "departamento": "Lima",
-        "latitud": "12°06'32.5\"S",
-        "longitud": "76°58'38.7\"W",
-        "mapa": "https://www.google.com/maps/@-12.110712,-76.977867,18z?hl=es-ES&entry=ttu"
-    },
-    {
-        "id_ubicacion": "2",
-        "direccion": "Av. Larco 123, Miraflores",
-        "distrito": "Miraflores",
-        "provincia": "Lima Metropolitana",
-        "ciudad": "Lima",
-        "departamento": "Lima",
-        "latitud": "12°07'21.4\"S",
-        "longitud": "77°01'34.3\"W",
-        "mapa": "https://www.google.com/maps/@-12.122610,-77.026196,17z?hl=es-ES&entry=ttu"
-    },
-    {
-        "id_ubicacion": "3",
-        "direccion": "Av. Javier Prado Este 2345, San Isidro",
-        "distrito": "San Isidro",
-        "provincia": "Lima Metropolitana",
-        "ciudad": "Lima",
-        "departamento": "Lima",
-        "latitud": "12°05'52.1\"S",
-        "longitud": "77°01'14.5\"W",
-        "mapa": "https://www.google.com/maps/@-12.097819,-77.025682,17z?hl=es-ES&entry=ttu"
-    },
-    {
-        "id_ubicacion": "4",
-        "direccion": "Av. Malecón Paul Harris 456, Barranco",
-        "distrito": "Barranco",
-        "provincia": "Lima Metropolitana",
-        "ciudad": "Lima",
-        "departamento": "Lima",
-        "latitud": "12°08'23.9\"S",
-        "longitud": "77°01'19.6\"W",
-        "mapa": "https://www.google.com/maps/@-12.139962,-77.021998,17z?hl=es-ES&entry=ttu"
-    },
-    {
-        "id_ubicacion": "5",
-        "direccion": "Av. Aviación 678, San Borja",
-        "distrito": "San Borja",
-        "provincia": "Lima Metropolitana",
-        "ciudad": "Lima",
-        "departamento": "Lima",
-        "latitud": "12°06'19.4\"S",
-        "longitud": "76°59'13.3\"W",
-        "mapa": "https://www.google.com/maps/@-12.105386,-76.987027,17z?hl=es-ES&entry=ttu"
-    },
-    {
-        "id_ubicacion": "6",
-        "direccion": "Av. Alameda del Corregidor 789, Huaraz",
-        "distrito": "Huaraz",
-        "provincia": "Huaraz",
-        "ciudad": "Huaraz",
-        "departamento": "Ancash",
-        "latitud": "12°05'39.9\"S",
-        "longitud": "76°56'47.6\"W",
-        "mapa": "https://www.google.com/maps/@-12.094414,-76.946563,17z?hl=es-ES&entry=ttu"
-    },
-    {
-        "id_ubicacion": "7",
-        "direccion": "Av. Argentina 1010, Callao",
-        "distrito": "Callao",
-        "provincia": "Callao",
-        "ciudad": "Callao",
-        "departamento": "Callao",
-        "latitud": "12°02'40.5\"S",
-        "longitud": "77°07'08.4\"W",
-        "mapa": "https://www.google.com/maps/@-12.044576,-77.119005,17z?hl=es-ES&entry=ttu"
-    },
-    {
-        "id_ubicacion": "8",
-        "direccion": "Av. Brasil 123, Jesus Maria",
-        "distrito": "Jesus Maria",
-        "provincia": "Lima Metropolitana",
-        "ciudad": "Lima",
-        "departamento": "Lima",
-        "latitud": "12°04'25.3\"S",
-        "longitud": "77°02'34.5\"W",
-        "mapa": "https://www.google.com/maps/@-12.073687,-77.042904,17z?hl=es-ES&entry=ttu"
-    },
-    {
-        "id_ubicacion": "9",
-        "direccion": "Playa Sarapampa, Asia",
-        "distrito": "Asia",
-        "provincia": "Cañete",
-        "ciudad": "Cañete",
-        "departamento": "Lima",
-        "latitud": "12°28'14.1\"S",
-        "longitud": "76°44'08.6\"W",
-        "mapa": "https://www.google.com/maps/@-12.470590,-76.736838,17z?hl=es-ES&entry=ttu"
-    },
-    {
-        "id_ubicacion": "10",
-        "direccion": "Av. Malecón Bolognesi 129, Camaná",
-        "distrito": "Camaná",
-        "provincia": "Camaná",
-        "ciudad": "Camaná",
-        "departamento": "Arequipa",
-        "latitud": "12°09'55.7\"S",
-        "longitud": "77°01'48.5\"W",
-        "mapa": "https://www.google.com/maps/@-12.165482,-77.030144,17z?hl=es-ES&entry=ttu"
-    }
-  ]
-};
-    
-let publicaciones = {
-    "publicaciones": [
-    {
-        "id_publicacion": 100,
-        "cantidad_de_visitas": 245,
-        "fecha_publicacion": "14/02/20",
-        "estado_publicacion": "Abierta",
-        "propiedades_id_propiedad": 1
-    },
-    {
-        "id_publicacion": 101,
-        "cantidad_de_visitas": 120,
-        "fecha_publicacion": "20/02/21",
-        "estado_publicacion": "Abierta",
-        "propiedades_id_propiedad": 2
-    },
-    {
-        "id_publicacion": 102,
-        "cantidad_de_visitas": 80,
-        "fecha_publicacion": "22/02/19",
-        "estado_publicacion": "Cerrada",
-        "propiedades_id_propiedad": 3
-    },
-    {
-        "id_publicacion": 103,
-        "cantidad_de_visitas": 180,
-        "fecha_publicacion": "25/02/23",
-        "estado_publicacion": "Abierta",
-        "propiedades_id_propiedad": 4
-    },
-    {
-        "id_publicacion": 104,
-        "cantidad_de_visitas": 300,
-        "fecha_publicacion": "01/03/20",
-        "estado_publicacion": "Cerrada",
-        "propiedades_id_propiedad": 5
-    },
-    {
-        "id_publicacion": 105,
-        "cantidad_de_visitas": 150,
-        "fecha_publicacion": "05/03/24",
-        "estado_publicacion": "Abierta",
-        "propiedades_id_propiedad": 6
-    },
-    {
-        "id_publicacion": 106,
-        "cantidad_de_visitas": 210,
-        "fecha_publicacion": "29/03/22",
-        "estado_publicacion": "Abierta",
-        "propiedades_id_propiedad": 7
-    },
-    {
-        "id_publicacion": 107,
-        "cantidad_de_visitas": 90,
-        "fecha_publicacion": "17/12/22",
-        "estado_publicacion": "Abierta",
-        "propiedades_id_propiedad": 8
-    },
-    {
-        "id_publicacion": 108,
-        "cantidad_de_visitas": 270,
-        "fecha_publicacion": "20/04/24",
-        "estado_publicacion": "Abierta",
-        "propiedades_id_propiedad": 9
-    },
-    {
-        "id_publicacion": 109,
-        "cantidad_de_visitas": 200,
-        "fecha_publicacion": "25/03/23",
-        "estado_publicacion": "Cerrada",
-        "propiedades_id_propiedad": 10
-    }
-  ]
-};
-
-let bancos = {
-  "bancos": [
-    {
-        "id_banco": 10,
-        "razon_social": "MiBanco",
-        "descripcion": "Uno de los bancos más grandes del Perú y el mejor banco para los pequeños emprendedores",
-        "telefono": "745 0055",
-        "correo_electronico": "MiBancoAtencion@mibanco.org.es"
-    },
-    {
-        "id_banco": 11,
-        "razon_social": "Banco de Crédito del Perú (BCP)",
-        "descripcion": "El banco líder en el Perú, ofreciendo una amplia gama de servicios financieros.",
-        "telefono": "311-9898",
-        "correo_electronico": "contacto@bcp.com.pe"
-    },
-    {
-        "id_banco": 12,
-        "razon_social": "Scotiabank Perú",
-        "descripcion": "Una de las principales instituciones financieras del país, comprometida con la innovación y la excelencia en el servicio.",
-        "telefono": "614-9898",
-        "correo_electronico": "servicioalcliente@scotiabank.com.pe"
-    },
-    {
-        "id_banco": 13,
-        "razon_social": "Interbank",
-        "descripcion": "Un banco reconocido por su compromiso con el cliente y su amplia red de servicios.",
-        "telefono": "311-9000",
-        "correo_electronico": "interbank@interbank.com.pe"
-    },
-    {
-        "id_banco": 14,
-        "razon_social": "BBVA Continental",
-        "descripcion": "Una entidad bancaria líder en el mercado, con una amplia oferta de productos y servicios financieros.",
-        "telefono": "595-0000",
-        "correo_electronico": "contacto@bbva.pe"
-    },
-    {
-        "id_banco": 15,
-        "razon_social": "Banco Pichincha",
-        "descripcion": "Un banco con presencia internacional, ofreciendo soluciones financieras integrales a sus clientes en el Perú.",
-        "telefono": "595-0505",
-        "correo_electronico": "contacto@banco.pichincha.pe"
-    },
-    {
-        "id_banco": 16,
-        "razon_social": "BanBif",
-        "descripcion": "Una institución financiera con más de 20 años de experiencia en el mercado peruano, ofreciendo servicios de calidad a sus clientes.",
-        "telefono": "626-2626",
-        "correo_electronico": "atencionalcliente@banbif.com.pe"
-    },
-    {
-        "id_banco": 17,
-        "razon_social": "Banco Falabella",
-        "descripcion": "Un banco enfocado en brindar soluciones financieras innovadoras y accesibles a sus clientes.",
-        "telefono": "619-9000",
-        "correo_electronico": "contacto@bancofalabella.pe"
-    },
-    {
-        "id_banco": 18,
-        "razon_social": "Caja Huancayo",
-        "descripcion": "Una institución financiera comprometida con el desarrollo de sus clientes y la comunidad, ofreciendo servicios de calidad y cercanía.",
-        "telefono": "0801-00123",
-        "correo_electronico": "atencionalcliente@cajahuancayo.com.pe"
-    },
-    {
-        "id_banco": 19,
-        "razon_social": "Caja Arequipa",
-        "descripcion": "Una caja municipal comprometida con el desarrollo económico y social de la región, ofreciendo servicios financieros a medida de sus clientes.",
-        "telefono": "0801-11111",
-        "correo_electronico": "atencionalcliente@cajaarequipa.com.pe"
-    }
-  ]
-};
-
-
-let propiedades_bancos = {
-   "propiedades_bancos": [
-    {
-        "propiedades_id_propiedad": 1,
-        "bancos_id_banco": 10,
-        "tasas": 3.9,
-        "intereses": 8.2,
-    },
-    {
-        "propiedades_id_propiedad": 2,
-        "bancos_id_banco": 10,
-        "tasas": 3.2,
-        "intereses": 9.8
-    },
-    {
-        "propiedades_id_propiedad": 3,
-        "bancos_id_banco": 11,
-        "tasas": 3.8,
-        "intereses": 11.2
-    },
-    {
-        "propiedades_id_propiedad": 4,
-        "bancos_id_banco": 13,
-        "tasas": 3.6,
-        "intereses": 10.9
-    },
-    {
-        "propiedades_id_propiedad": 5,
-        "bancos_id_banco": 12,
-        "tasas": 3.4,
-        "intereses": 10.3
-    },
-    {
-        "propiedades_id_propiedad": 6,
-        "bancos_id_banco": 14,
-        "tasas": 3.7,
-        "intereses": 11.5
-    },
-    {
-        "propiedades_id_propiedad": 7,
-        "bancos_id_banco": 18,
-        "tasas": 3.3,
-        "intereses": 10.1
-    },
-    {
-        "propiedades_id_propiedad": 8,
-        "bancos_id_banco": 19,
-        "tasas": 3.9,
-        "intereses": 12.0
-    },
-    {
-        "propiedades_id_propiedad": 9,
-        "bancos_id_banco": 12,
-        "tasas": 3.1,
-        "intereses": 9.5
-    },
-    {
-        "propiedades_id_propiedad": 10,
-        "bancos_id_banco": 10,
-        "tasas": 3.0,
-        "intereses": 9.2
-    }
-  ] 
-};
-
-let servicios_banco = {
-   "servicios_banco": [
-    {
-        "id_servicio_banco": 50,
-        "titulo": "Préstamo hipotecario",
-        "descripcion": "Ofrecen préstamos hipotecarios con tasas competitivas y flexibles plazos de pago para ayudarte a financiar la compra de tu propiedad."
-    },
-    {
-        "id_servicio_banco": 51,
-        "titulo": "Asesoramiento financiero para inversiones inmobiliarias",
-        "descripcion": "Poseen expertos financieros quienes brindan asesoramiento especializado para invertir en el mercado inmobiliario de manera rentable y segura."
-    },
-    {
-        "id_servicio_banco": 52,
-        "titulo": "Financiamiento para proyectos inmobiliarios",
-        "descripcion": "Proporcionan financiamiento para el desarrollo de proyectos inmobiliarios, desde la adquisición de terrenos hasta la construcción y comercialización de inmuebles."
-    },
-    {
-        "id_servicio_banco": 53,
-        "titulo": "Apertura de cuenta corriente empresarial",
-        "descripcion": "Facilitan la apertura de cuentas corrientes empresariales con beneficios exclusivos para empresas del rubro inmobiliario, como tasas preferenciales y servicios personalizados."
-    },
-    {
-        "id_servicio_banco": 54,
-        "titulo": "Financiamiento para compra de terrenos",
-        "descripcion": "Ofrecen opciones de financiamiento para la compra de terrenos destinados a proyectos inmobiliarios residenciales, comerciales o industriales."
-    },
-    {
-        "id_servicio_banco": 55,
-        "titulo": "Seguro para propiedades",
-        "descripcion": "Cuentan con seguros especializados para proteger la propiedad contra riesgos como incendios, robos, daños accidentales y más."
-    },
-    {
-        "id_servicio_banco": 56,
-        "titulo": "Asesoría legal para transacciones inmobiliarias",
-        "descripcion": "Integran abogados especializados en derecho inmobiliario quienes ofrecen asesoría legal integral para garantizar la seguridad jurídica en tus transacciones de compra y venta de propiedades."
-    },
-    {
-        "id_servicio_banco": 57,
-        "titulo": "Financiamiento para remodelaciones y mejoras",
-        "descripcion": "Financian los proyectos de remodelación y mejoras en propiedades existentes, brindándote el capital necesario para hacer realidad tus proyectos de renovación."
-    },
-    {
-        "id_servicio_banco": 58,
-        "titulo": "Servicio de avalúo de propiedades",
-        "descripcion": "Ofrecen servicios de avalúo de propiedades realizados por expertos para determinar el valor comercial de tu inmueble de manera precisa y confiable."
-    },
-    {
-        "id_servicio_banco": 59,
-        "titulo": "Gestión de trámites notariales",
-        "descripcion": "Facilitan la gestión de trámites notariales relacionados con la compra y venta de propiedades, garantizando una experiencia sin complicaciones para nuestros clientes."
-    }
-  ]
-};
-
-let banco_servicios_banco = {
-    "banco_servicios_banco": [
-    {
-        "bancos_id_banco": 10,
-        "servicios_id_servicio": 50,
-    },
-    {
-        "bancos_id_banco": 10,
-        "servicios_id_servicio": 51,
-    },
-    {
-        "bancos_id_banco": 11,
-        "servicios_id_servicio": 51,
-    },
-    {
-        "bancos_id_banco": 12,
-        "servicios_id_servicio": 51,
-    },
-    {
-        "bancos_id_banco": 13,
-        "servicios_id_servicio": 54,
-    },
-    {
-        "bancos_id_banco": 14,
-        "servicios_id_servicio": 54,
-    },
-    {
-        "bancos_id_banco": 15,
-        "servicios_id_servicio": 58
-    },
-    {
-        "bancos_id_banco": 16,
-        "servicios_id_servicio": 56
-    },
-    {
-        "bancos_id_banco": 17,
-        "servicios_id_servicio": 52
-    },
-    {
-        "bancos_id_banco": 18,
-        "servicios_id_servicio": 53
-    },
-    {
-        "bancos_id_banco": 19,
-        "servicios_id_servicio": 51
-    },
-  ]
-};
-
-let imagenes = {
-    "imagenes": [
-    {
-        "id_imagen": 10000,
-        "formato": "png",
-        "cantidad_pixeles": 1200,
-        "descripcion": "Fachada principal de la casa, con su puerta de entrada, su cochera y su timbre",
-        "enlace_imagen": "https://Propertunity.com/main/properties-base/images?1&10000/",
-        "propiedades_id": 1
-    },
-    {
-        "id_imagen": 10001,
-        "formato": "jpg",
-        "cantidad_pixeles": 1200,
-        "descripcion": "Vista panorámica del jardín trasero de la propiedad, con árboles frutales y una zona de descanso",
-        "enlace_imagen": "https://Propertunity.com/main/properties-base/images?2&10001/",
-        "propiedades_id": 2
-    },
-    {
-        "id_imagen": 10002,
-        "formato": "jpeg",
-        "cantidad_pixeles": 800,
-        "descripcion": "Salón principal del departamento, con una amplia sala de estar y grandes ventanales que permiten la entrada de luz natural",
-        "enlace_imagen": "https://Propertunity.com/main/properties-base/images?2&10002/",
-        "propiedades_id": 2
-    },
-    {
-        "id_imagen": 10003,
-        "formato": "png",
-        "cantidad_pixeles": 950,
-        "descripcion": "Cocina moderna y equipada, con electrodomésticos de última generación y una isla central",
-        "enlace_imagen": "https://Propertunity.com/main/properties-base/images?5&10003/",
-        "propiedades_id": 4
-    },
-    {
-        "id_imagen": 10004,
-        "formato": "jpg",
-        "cantidad_pixeles": 1500,
-        "descripcion": "Dormitorio principal con baño en suite, con amplio espacio de almacenamiento y vistas al jardín",
-        "enlace_imagen": "https://Propertunity.com/main/properties-base/images?7&10004/",
-        "propiedades_id": 10
-    },
-    {
-        "id_imagen": 10005,
-        "formato": "jpeg",
-        "cantidad_pixeles": 1100,
-        "descripcion": "Baño principal con acabados de alta calidad, bañera de hidromasaje y ducha independiente",
-        "enlace_imagen": "https://Propertunity.com/main/properties-base/images?8&10005/",
-        "propiedades_id": 8
-    },
-    {
-        "id_imagen": 10006,
-        "formato": "png",
-        "cantidad_pixeles": 850,
-        "descripcion": "Área de entretenimiento al aire libre, con parrilla y espacio para reuniones familiares y sociales",
-        "enlace_imagen": "https://Propertunity.com/main/properties-base/images?2&10006/",
-        "propiedades_id": 6
-    },
-    {
-        "id_imagen": 10007,
-        "formato": "jpg",
-        "cantidad_pixeles": 1300,
-        "descripcion": "Habitación adicional utilizada como estudio o sala de juegos, con vistas al patio trasero",
-        "enlace_imagen": "https://Propertunity.com/main/properties-base/images?1&10007/",
-        "propiedades_id": 1
-    },
-    {
-        "id_imagen": 10008,
-        "formato": "jpeg",
-        "cantidad_pixeles": 900,
-        "descripcion": "Área de lavandería y servicio, con espacio para lavadora, secadora y lavadero",
-        "enlace_imagen": "https://Propertunity.com/main/properties-base/images?10&10008/",
-        "propiedades_id": 9
-    },
-    {
-        "id_imagen": 10009,
-        "formato": "png",
-        "cantidad_pixeles": 1000,
-        "descripcion": "Vista nocturna de la fachada principal de la propiedad, iluminada con luces LED de bajo consumo",
-        "enlace_imagen": "https://Propertunity.com/main/properties-base/images?5&10009/",
-        "propiedades_id": 7
-    }
-  ]
-};
-
-let areas_comunes = {
-    "areas_comunes": [
-    {
-        "id_area_comun": 100,
-        "titulo": "Área de Parrillas",
-        "descripcion": "Espacio designado con parrillas y mesas al aire libre para que los residentes disfruten de asados y reuniones al aire libre.",
-        "tipo": "Recreativa"
-    },
-    {
-        "id_area_comun": 101,
-        "titulo": "Gimnasio",
-        "descripcion": "Equipado con máquinas de ejercicio de última generación y pesas libres para que los residentes se mantengan en forma sin salir de casa.",
-        "tipo": "Deportiva"
-    },
-    {
-        "id_area_comun": 102,
-        "titulo": "Salón de Eventos",
-        "descripcion": "Amplio salón con capacidad para grandes eventos y celebraciones, equipado con cocina y área de estar para comodidad de los residentes.",
-        "tipo": "Social"
-    },
-    {
-        "id_area_comun": 103,
-        "titulo": "Área de Juegos Infantiles",
-        "descripcion": "Espacio seguro y divertido para que los niños jueguen al aire libre, con columpios, resbaladillas y juegos interactivos.",
-        "tipo": "Recreativa"
-    },
-    {
-        "id_area_comun": 104,
-        "titulo": "Sala de Cine",
-        "descripcion": "Sala de proyección con cómodos asientos y sistema de sonido envolvente para disfrutar de películas y eventos deportivos en grupo.",
-        "tipo": "Entretenimiento"
-    },
-    {
-        "id_area_comun": 105,
-        "titulo": "Cancha Deportiva",
-        "descripcion": "Cancha multiusos para practicar deportes como fútbol, básquetbol y voleibol, con iluminación para partidos nocturnos.",
-        "tipo": "Deportiva"
-    },
-    {
-        "id_area_comun": 106,
-        "titulo": "Área de Lectura",
-        "descripcion": "Rincón tranquilo con biblioteca y cómodos sillones para que los residentes disfruten de la lectura y el estudio en un ambiente relajado.",
-        "tipo": "Educativa"
-    },
-    {
-        "id_area_comun": 107,
-        "titulo": "Sala de Billar",
-        "descripcion": "Espacio de entretenimiento con mesas de billar y ambiente acogedor para que los residentes practiquen este deporte en su tiempo libre.",
-        "tipo": "Entretenimiento"
-    },
-    {
-        "id_area_comun": 108,
-        "titulo": "Sauna y Spa",
-        "descripcion": "Área de relajación con sauna, baño de vapor y sala de masajes para que los residentes se relajen y recarguen energías después de un largo día.",
-        "tipo": "Relax"
-    },
-    {
-        "id_area_comun": 109,
-        "titulo": "Área de Yoga",
-        "descripcion": "Espacio tranquilo y sereno para practicar yoga y meditación al aire libre, rodeado de naturaleza y paz.",
-        "tipo": "Salud"
-    }
-  ]
-};
-
-let areas_comunes_propiedades = {
-    "areas_comunes_propiedades": [
-    {
-        "areas_comunes_id_area_comun": 100,
-        "propiedades_id_propiedad": 1
-    },
-    {
-        "areas_comunes_id_area_comun": 100,
-        "propiedades_id_propiedad": 2
-    },
-    {
-        "areas_comunes_id_area_comun": 100,
-        "propiedades_id_propiedad": 4
-    },
-    {
-        "areas_comunes_id_area_comun": 101,
-        "propiedades_id_propiedad": 2
-    },
-    {
-        "areas_comunes_id_area_comun": 107,
-        "propiedades_id_propiedad": 5
-    },
-    {
-        "areas_comunes_id_area_comun": 103,
-        "propiedades_id_propiedad": 7
-    },
-    {
-        "areas_comunes_id_area_comun": 104,
-        "propiedades_id_propiedad": 2
-    },
-    {
-        "areas_comunes_id_area_comun": 105,
-        "propiedades_id_propiedad": 8
-    },
-    {
-        "areas_comunes_id_area_comun": 102,
-        "propiedades_id_propiedad": 10
-    },
-    {
-        "areas_comunes_id_area_comun": 108,
-        "propiedades_id_propiedad": 9
-    },
-  ]
-};
-
-let servicios_propiedades = {
-    "servicios_propiedades": [
-    {
-        "id_servicio_propiedad": 200,
-        "titulo": "Suministro de Agua",
-        "descripcion": "Servicio de suministro de agua potable para uso doméstico y otras necesidades en la propiedad.",
-        "tipo": "Básico"
-    },
-    {
-        "id_servicio_propiedad": 201,
-        "titulo": "Electricidad",
-        "descripcion": "Suministro de energía eléctrica para iluminación, electrodomésticos y otros equipos en la propiedad.",
-        "tipo": "Básico"
-    },
-    {
-        "id_servicio_propiedad": 202,
-        "titulo": "Internet de Alta Velocidad",
-        "descripcion": "Conexión a internet de alta velocidad para navegación web, streaming de video y otras actividades en línea.",
-        "tipo": "Comunicaciones"
-    },
-    {
-      "id_servicio_propiedad": 203,
-      "titulo": "Televisión por Cable/Satélite",
-      "descripcion": "Servicio de televisión por cable o satélite con una variedad de canales y opciones de entretenimiento.",
-      "tipo": "Entretenimiento"
-    },
-    {
-      "id_servicio_propiedad": 204,
-      "titulo": "Servicio de Seguridad 24/7",
-      "descripcion": "Sistema de seguridad con monitoreo las 24 horas del día para proteger la propiedad y sus residentes.",
-      "tipo": "Seguridad"
-    },
-    {
-      "id_servicio_propiedad": 205,
-      "titulo": "Mantenimiento de Jardines",
-      "descripcion": "Servicio de mantenimiento regular para mantener los jardines y áreas verdes de la propiedad en óptimas condiciones.",
-      "tipo": "Mantenimiento"
-    },
-    {
-      "id_servicio_propiedad": 206,
-      "titulo": "Servicio de Limpieza",
-      "descripcion": "Limpieza regular de las áreas comunes y exteriores de la propiedad para garantizar un ambiente limpio y ordenado.",
-      "tipo": "Mantenimiento"
-    },
-    {
-      "id_servicio_propiedad": 207,
-      "titulo": "Recolección de Basura",
-      "descripcion": "Servicio de recolección de basura y reciclaje para mantener la propiedad limpia y libre de residuos.",
-      "tipo": "Mantenimiento"
-    },
-    {
-      "id_servicio_propiedad": 208,
-      "titulo": "Servicio de Conserjería",
-      "descripcion": "Asistencia y atención personalizada para los residentes, incluyendo recepción de paquetes y coordinación de servicios.",
-      "tipo": "Servicios"
-    },
-    {
-      "id_servicio_propiedad": 209,
-      "titulo": "Estacionamiento Privado",
-      "descripcion": "Acceso a espacios de estacionamiento privado para residentes y visitantes de la propiedad.",
-      "tipo": "Servicios"
-    }
-  ]
-};
-
-let propiedades_servicios_propiedades = {
-    "propiedades_servicios_propiedades": [
-    {
-        "servicios_propiedades_id_servicio_propiedad": 200,
-        "propiedades_id_propiedad": 1
-    },
-    {
-        "servicios_propiedades_id_servicio_propiedad": 200,
-        "propiedades_id_propiedad": 2
-    },
-    {
-        "servicios_propiedades_id_servicio_propiedad": 200,
-        "propiedades_id_propiedad": 5
-    },
-    {
-        "servicios_propiedades_id_servicio_propiedad": 201,
-        "propiedades_id_propiedad": 2
-    },
-    {
-        "servicios_propiedades_id_servicio_propiedad": 201,
-        "propiedades_id_propiedad": 8
-    },
-    {
-        "servicios_propiedades_id_servicio_propiedad": 201,
-        "propiedades_id_propiedad": 4
-    },
-    {
-        "servicios_propiedades_id_servicio_propiedad": 203,
-        "propiedades_id_propiedad": 2
-    },
-    {
-        "servicios_propiedades_id_servicio_propiedad": 202,
-        "propiedades_id_propiedad": 6
-    },
-    {
-        "servicios_propiedades_id_servicio_propiedad": 203,
-        "propiedades_id_propiedad": 7
-    },
-    {
-        "servicios_propiedades_id_servicio_propiedad": 202,
-        "propiedades_id_propiedad": 9
-    },
-  ]
-};
-
-let anunciantes = {
-    "anunciantes": [
-    {
-        "id_anunciante": 100,
-        "descripcion": "Inmobiliaria Terranova",
-        "cantidad_publicaciones": 25,
-        "pagina_web": "https://www.inmobiliariaterranova.com",
-        "tipo_anunciante": "Organización",
-        "usuarios_id_usuario": 1000
-    },
-    {
-        "id_anunciante": 101,
-        "descripcion": "Constructora Viviendas del Sol",
-        "cantidad_publicaciones": 18,
-        "pagina_web": "https://www.viviendasdelsol.com",
-        "tipo_anunciante": "Organización",
-        "usuarios_id_usuario": 1001
-    },
-    {
-        "id_anunciante": 102,
-        "descripcion": "Agente Inmobiliario Marcela Rojas",
-        "cantidad_publicaciones": 4,
-        "pagina_web": "https://www.marcelarojasbienesraices.com",
-        "tipo_anunciante": "Persona",
-        "usuarios_id_usuario": 1002
-    },
-    {
-        "id_anunciante": 103,
-        "descripcion": "Empresa de Construcción Innovación Urbana",
-        "cantidad_publicaciones": 30,
-        "pagina_web": "https://www.innovacionurbana.com",
-        "tipo_anunciante": "Organización",
-        "usuarios_id_usuario": 1003
-    },
-    {
-        "id_anunciante": 104,
-        "descripcion": "Agencia de Bienes Raíces Elite Properties",
-        "cantidad_publicaciones": 15,
-        "pagina_web": "https://www.eliteproperties.com",
-        "tipo_anunciante": "Organización",
-        "usuarios_id_usuario": 1004
-    },
-    {
-        "id_anunciante": 105,
-        "descripcion": "Constructora Concreto y Diseño",
-        "cantidad_publicaciones": 20,
-        "pagina_web": "https://www.concretoydiseno.com",
-        "tipo_anunciante": "Organización",
-        "usuarios_id_usuario": 1005
-    },
-    {
-        "id_anunciante": 106,
-        "descripcion": "Asesor Inmobiliario Carlos López",
-        "cantidad_publicaciones": 2,
-        "pagina_web": "https://www.carloslopezbienesraices.com",
-        "tipo_anunciante": "Persona",
-        "usuarios_id_usuario": 1006
-    },
-    {
-        "id_anunciante": 107,
-        "descripcion": "Promotora Residencial Nueva Vida",
-        "cantidad_publicaciones": 22,
-        "pagina_web": "https://www.nuevavidapromotora.com",
-        "tipo_anunciante": "Organización",
-        "usuarios_id_usuario": 1007
-    },
-    {
-        "id_anunciante": 108,
-        "descripcion": "Corredor de Bienes Raíces María Fernández",
-        "cantidad_publicaciones": 14,
-        "pagina_web": "https://www.mariafernandezbienesraices.com",
-        "tipo_anunciante": "Persona",
-        "usuarios_id_usuario": 1008
-    }
-  ]
-};
-
-let usuarios = {
-    "usuarios": [
-    {
-        "id_usuario": 1000,
-        "nombre": "Juan Pérez",
-        "fecha_registro": "2023-05-15",
-        "correo": "juanperez@inmobiliariaterranova.com",
-        "correo_recuperacion": "juanperez@correo.com",
-        "contrasenia": "password123",
-        "foto_perfil": "https://Propertunity.com/main/users/images?1000/",
-        "direccion": "Av. Los Constructores 123",
-        "distrito": "San Isidro",
-        "provincia": "Lima",
-        "departamento": "Lima"
-    },
-    {
-        "id_usuario": 1001,
-        "nombre": "María Rodríguez",
-        "fecha_registro": "2023-06-20",
-        "correo": "mariarodriguez@viviendasdelsol.com",
-        "correo_recuperacion": "mariarodriguez@correo.com",
-        "contrasenia": "clave1234",
-        "foto_perfil": "https://Propertunity.com/main/users/images?1001/",
-        "direccion": "Calle Las Flores 456",
-        "distrito": "Antioquía",
-        "provincia": "Huarochiri",
-        "departamento": "Lima"
-    },
-    {
-        "id_usuario": 1002,
-        "nombre": "Carlos Gómez",
-        "fecha_registro": "2023-07-10",
-        "correo": "carlosgomez@marcelarojasbienesraices.com",
-        "correo_recuperacion": null,
-        "contrasenia": "seguridad567",
-        "foto_perfil": "https://Propertunity.com/main/users/images?1002/",
-        "direccion": "Av. Los Cipreses 789",
-        "distrito": "San Borja",
-        "provincia": "Lima",
-        "departamento": "Lima"
-    },
-    {
-        "id_usuario": 1003,
-        "nombre": "Laura Martínez",
-        "fecha_registro": "2023-08-05",
-        "correo": "lauramartinez@innovacionurbana.com",
-        "correo_recuperacion": "lauramartinez@correo.com",
-        "contrasenia": "contraseña456",
-        "foto_perfil": "https://Propertunity.com/main/users/images?1003/",
-        "direccion": "Av. Los Almendros 101",
-        "distrito": "La Molina",
-        "provincia": "Lima",
-        "departamento": "Lima"
-    },
-    {
-        "id_usuario": 1004,
-        "nombre": "Pedro López",
-        "fecha_registro": "2023-09-12",
-        "correo": "pedrolopez@eliteproperties.com",
-        "correo_recuperacion": "pedritolopez2@correo.com",
-        "contrasenia": "pass1234",
-        "foto_perfil": "https://Propertunity.com/main/users/images?1004/",
-        "direccion": "Av. Los Pinos 210",
-        "distrito": "Yarinacocha",
-        "provincia": "Coronel Portillo",
-        "departamento": "Ucayali"
-    },
-    {
-        "id_usuario": 1005,
-        "nombre": "Ana Sánchez",
-        "fecha_registro": "2023-10-18",
-        "correo": "anasanchez@concretoydiseno.com",
-        "correo_recuperacion": "anasanchez@correo.com",
-        "contrasenia": "segura789",
-        "foto_perfil": "https://Propertunity.com/main/users/images?1005/",
-        "direccion": "Calle Los Girasoles 789",
-        "distrito": "Barranco",
-        "provincia": "Lima",
-        "departamento": "Lima"
-    },
-    {
-        "id_usuario": 1006,
-        "nombre": "Martín Castillo",
-        "fecha_registro": "2023-11-25",
-        "correo": "martincastillo@carloslopezbienesraices.com",
-        "correo_recuperacion": null,
-        "contrasenia": "clave7890",
-        "foto_perfil": "https://Propertunity.com/main/users/images?1006/",
-        "direccion": "Av. Los Rosales 456",
-        "distrito": "Callahuanca",
-        "provincia": "Huarochiri",
-        "departamento": "Lima"
-    },
-    {
-        "id_usuario": 1007,
-        "nombre": "Julia Fernández",
-        "fecha_registro": "2023-12-30",
-        "correo": "juliafernandez@nuevavidapromotora.com",
-        "correo_recuperacion": "juliafernandez@correo.com",
-        "contrasenia": "contraseña987",
-        "foto_perfil": "https://Propertunity.com/main/users/images?1007/",
-        "direccion": "Av. Las Palmeras 567",
-        "distrito": "Pachangara",
-        "provincia": "Oyón",
-        "departamento": "Lima"
-    },
-    {
-        "id_usuario": 1008,
-        "nombre": "Fernando Ruiz",
-        "fecha_registro": "2024-01-10",
-        "correo": "fernandoruiz@mariafernandezbienesraices.com",
-        "correo_recuperacion": "fernandoruiz@correo.com",
-        "contrasenia": "seguridad123",
-        "foto_perfil": "https://Propertunity.com/main/users/images?1008/",
-        "direccion": "Av. Los Sauces 789",
-        "distrito": "San Juan de Lurigancho",
-        "provincia": "Lima",
-        "departamento": "Lima"
-    },
-    {
-        "id_usuario": 1009,
-        "nombre": "Luisa García",
-        "fecha_registro": "2024-02-15",
-        "correo": "luisagarcia@correo.com",
-        "correo_recuperacion": "masagarcía@correo.com",
-        "contrasenia": "pass5678",
-        "foto_perfil": "https://Propertunity.com/main/users/images?1009/",
-        "direccion": "Calle Los Cedros 123",
-        "distrito": "Hongos",
-        "provincia": "Yauyos",
-        "departamento": "Lima"
-    },
-    {
-        "id_usuario": 1010,
-        "nombre": "Roberto Hernández",
-        "fecha_registro": "2024-03-20",
-        "correo": "robertohernandez@correo.com",
-        "correo_recuperacion": null,
-        "contrasenia": "segura12345",
-        "foto_perfil": "https://Propertunity.com/main/users/images?1010/",
-        "direccion": "Av. Las Acacias 456",
-        "distrito": "Lunahuaná",
-        "provincia": "Cañete",
-        "departamento": "Lima"
-    },
-    {
-        "id_usuario": 1011,
-        "nombre": "Mónica González",
-        "fecha_registro": "2024-04-25",
-        "correo": "monicagonzalez@correo.com",
-        "correo_recuperacion": "moragonzales@correo.com",
-        "contrasenia": "clave9876",
-        "foto_perfil": "https://Propertunity.com/main/users/images?1011/",
-        "direccion": "Av. Los Laureles 789",
-        "distrito": "San Borja",
-        "provincia": "Lima",
-        "departamento": "Lima"
-    },
-    {
-        "id_usuario": 1012,
-        "nombre": "Javier Torres",
-        "fecha_registro": "2024-05-15",
-        "correo": "javiertorres@correo.com",
-        "correo_recuperacion": null,
-        "contrasenia": "password9876",
-        "foto_perfil": "https://Propertunity.com/main/users/images?1012/",
-        "direccion": "Calle Las Orquídeas 123",
-        "distrito": "Miraflores",
-        "provincia": "Lima",
-        "departamento": "Lima"
-    },
-    {
-        "id_usuario": 1013,
-        "nombre": "Gabriela Díaz",
-        "fecha_registro": "2024-06-20",
-        "correo": "gabrieladiaz@correo.com",
-        "correo_recuperacion": "nuevosdiaz3@correo.com",
-        "contrasenia": "pass123456",
-        "foto_perfil": "https://Propertunity.com/main/users/images?1013/",
-        "direccion": "Av. El Roble 456",
-        "distrito": "Poroy",
-        "provincia": "Cuzco",
-        "departamento": "Cuzco"
-    },
-    {
-        "id_usuario": 1014,
-        "nombre": "Diego Vargas",
-        "fecha_registro": "2024-07-10",
-        "correo": "diegovargas@correo.com",
-        "correo_recuperacion": "avenida4s@correo.com",
-        "contrasenia": "seguridad789",
-        "foto_perfil": "https://Propertunity.com/main/users/images?1014/",
-        "direccion": "Calle Las Violetas 789",
-        "distrito": "27 de Noviembre",
-        "provincia": "Huaral",
-        "departamento": "Lima"
-    },
-    {
-        "id_usuario": 1015,
-        "nombre": "Carolina López",
-        "fecha_registro": "2024-08-05",
-        "correo": "carolinalopez@correo.com",
-        "correo_recuperacion": null,
-        "contrasenia": "clave123456",
-        "foto_perfil": "https://Propertunity.com/main/users/images?1015/",
-        "direccion": "Av. Los Naranjos 101",
-        "distrito": "Ventanilla",
-        "provincia": "Callao",
-        "departamento": "Lima"
-    },
-    {
-        "id_usuario": 1016,
-        "nombre": "Ricardo Castro",
-        "fecha_registro": "2024-09-12",
-        "correo": "ricardocastro@correo.com",
-        "correo_recuperacion": "Castañas2425@correo.com",
-        "contrasenia": "pass987654",
-        "foto_perfil": "https://Propertunity.com/main/users/images?1016/",
-        "direccion": "Av. Los Cactus 210",
-        "distrito": "Ate",
-        "provincia": "Lima",
-        "departamento": "Lima"
-    },
-    {
-        "id_usuario": 1017,
-        "nombre": "Valeria Soto",
-        "fecha_registro": "2024-10-18",
-        "correo": "valeriasoto@correo.com",
-        "correo_recuperacion": null,
-        "contrasenia": "segura7890",
-        "foto_perfil": "https://Propertunity.com/main/users/images?1017/",
-        "direccion": "Calle Incas Sol 456",
-        "distrito": "Santo Tomás",
-        "provincia": "Chumbivilcas",
-        "departamento": "Cuzco"
-    },
-    {
-        "id_usuario": 1018,
-        "nombre": "Miguel Ángel Torres",
-        "fecha_registro": "2024-11-25",
-        "correo": "miguelangeltorres@correo.com",
-        "correo_recuperacion": "angelitotorres234@correo.com",
-        "contrasenia": "password654321",
-        "foto_perfil": "https://Propertunity.com/main/users/images?1018/",
-        "direccion": "Av. Las Canarias 789",
-        "distrito": "Asia",
-        "provincia": "Cañete",
-        "departamento": "Lima"
-    },
-    {
-        "id_usuario": 1019,
-        "nombre": "Natalia Ramírez",
-        "fecha_registro": "2024-12-30",
-        "correo": "nataliaramirez@correo.com",
-        "correo_recuperacion": null,
-        "contrasenia": "clave654321",
-        "foto_perfil": "https://Propertunity.com/main/users/images?1019/",
-        "direccion": "Av. La Revolución 123",
-        "distrito": "San Pedro de Huacarpana",
-        "provincia": "Chincha",
-        "departamento": "Ica"
-    },
-    {
-        "id_usuario": 1020,
-        "nombre": "Santiago Martínez",
-        "fecha_registro": "2025-01-10",
-        "correo": "santiagomartinez@correo.com",
-        "correo_recuperacion": null,
-        "contrasenia": "seguridad654",
-        "foto_perfil": "https://Propertunity.com/main/users/images?1020/",
-        "direccion": "Calle Los Laureles 567",
-        "distrito": "Unión Agua Blanca",
-        "provincia": "San Miguel",
-        "departamento": "Cajamarca"
-    }
-  ]
-};
-
-let notificaciones = {
-    "notificaciones": [
-    {
-        "notificacion_id": 100000,
-        "tipo": "Recordatorio",
-        "titulo": "Visita programada",
-        "contenido": "Recuerda que tienes una visita programada para hoy a las 10:00 a.m. en la propiedad de Av. Los Constructores 123.",
-        "estado": "Pendiente"
-    },
-    {
-        "notificacion_id": 100001,
-        "tipo": "Promoción",
-        "titulo": "Oferta especial",
-        "contenido": "¡No te pierdas nuestra oferta especial! Descuento del 10% en la compra de propiedades este fin de semana.",
-        "estado": "Leído"
-    },
-    {
-        "notificacion_id": 100002,
-        "tipo": "Recordatorio",
-        "titulo": "Reunión de seguimiento",
-        "contenido": "Te recordamos que tienes una reunión de seguimiento agendada para mañana a las 15:00 horas en nuestras oficinas.",
-        "estado": "Pendiente"
-    },
-    {
-        "notificacion_id": 100003,
-        "tipo": "Actualización",
-        "titulo": "Nuevas propiedades disponibles",
-        "contenido": "¡Hemos añadido nuevas propiedades a nuestro catálogo! Descubre las últimas opciones disponibles en nuestro sitio web.",
-        "estado": "No leído"
-    },
-    {
-        "notificacion_id": 100004,
-        "tipo": "Recordatorio",
-        "titulo": "Cita con el agente",
-        "contenido": "No olvides tu cita con el agente inmobiliario mañana a las 11:00 horas en la propiedad de Av. Las Flores 456.",
-        "estado": "Pendiente"
-    },
-    {
-        "notificacion_id": 100005,
-        "tipo": "Promoción",
-        "titulo": "Fin de semana de puertas abiertas",
-        "contenido": "¡Este fin de semana es nuestro evento de puertas abiertas! Visita nuestras propiedades sin compromiso.",
-        "estado": "No leído"
-    },
-    {
-        "notificacion_id": 100006,
-        "tipo": "Recordatorio",
-        "titulo": "Entrega de documentación",
-        "contenido": "Recuerda entregar la documentación requerida para la compra de la propiedad antes del viernes.",
-        "estado": "Pendiente"
-    },
-    {
-        "notificacion_id": 100007,
-        "tipo": "Actualización",
-        "titulo": "Horario de atención",
-        "contenido": "Nuestro horario de atención ha sido extendido. Ahora te esperamos de lunes a domingo de 9:00 a.m. a 7:00 p.m.",
-        "estado": "No leído"
-    },
-    {
-        "notificacion_id": 100008,
-        "tipo": "Recordatorio",
-        "titulo": "Pago de cuota mensual",
-        "contenido": "Recuerda realizar el pago de tu cuota mensual de mantenimiento antes del 10 de cada mes.",
-        "estado": "Pendiente"
-    },
-    {
-        "notificacion_id": 100009,
-        "tipo": "Promoción",
-        "titulo": "Descuento por referidos",
-        "contenido": "¡Obtén un descuento adicional por cada amigo que refieras y compre una propiedad con nosotros!",
-        "estado": "No leído"
-    }
-  ]
-};
-
-let notificaciones_usuarios = {
-    "notificaciones_usuarios": [
-    {
-        "usuarios_id": 1000,
-        "notificaciones_id_notificacion": 100000,
-    },
-    {
-        "usuarios_id": 1001,
-        "notificaciones_id_notificacion": 100001,
-    },
-    {
-        "usuarios_id": 1002,
-        "notificaciones_id_notificacion": 100002,
-    },
-    {
-        "usuarios_id": 1003,
-        "notificaciones_id_notificacion": 100003,
-    },
-    {
-        "usuarios_id": 1004,
-        "notificaciones_id_notificacion": 100004,
-    },
-    {
-        "usuarios_id": 1005,
-        "notificaciones_id_notificacion": 100005,
-    },
-    {
-        "usuarios_id": 1006,
-        "notificaciones_id_notificacion": 100006,
-    },
-    {
-        "usuarios_id": 1007,
-        "notificaciones_id_notificacion": 100007,
-    },
-    {
-        "usuarios_id": 1008,
-        "notificaciones_id_notificacion": 100008,
-    },
-    {
-        "usuarios_id": 1009,
-        "notificaciones_id_notificacion": 100009,
-    },
-  ]
-};
-
-let telefonos = {
-    "telefonos" : [
-    {
-      "id_telefono": 500,
-      "numero": "925 291 999",
-      "tipo": "Teléfono Celular",
-      "usuarios_id_usuario": 1002
-    },
-    {
-      "id_telefono": 501,
-      "numero": "553 6678",
-      "tipo": "Teléfono Fijo",
-      "usuarios_id_usuario": 1009
-    },
-    {
-      "id_telefono": 502,
-      "numero": "457 6666",
-      "tipo": "Teléfono Fijo",
-      "usuarios_id_usuario": 1012
-    },
-    {
-      "id_telefono": 503,
-      "numero": "944 987 654",
-      "tipo": "Teléfono Celular",
-      "usuarios_id_usuario": 1007
-    },
-    {
-      "id_telefono": 504,
-      "numero": "986 123 789",
-      "tipo": "Teléfono Celular",
-      "usuarios_id_usuario": 1018
-    },
-    {
-      "id_telefono": 505,
-      "numero": "999 2452",
-      "tipo": "Teléfono Fijo",
-      "usuarios_id_usuario": 1004
-    },
-    {
-      "id_telefono": 506,
-      "numero": "955 987 654",
-      "tipo": "Teléfono Celular",
-      "usuarios_id_usuario": 1013
-    },
-    {
-      "id_telefono": 507,
-      "numero": "977 123 456",
-      "tipo": "Teléfono Celular",
-      "usuarios_id_usuario": 1015
-    },
-    {
-      "id_telefono": 508,
-      "numero": "778 2929",
-      "tipo": "Teléfono Fijo",
-      "usuarios_id_usuario": 1017
-    },
-    {
-      "id_telefono": 509,
-      "numero": "986 987 654",
-      "tipo": "Teléfono Celular",
-      "usuarios_id_usuario": 1014
-    }
-  ]
-};
-
-let membresias = {
-    "membresias": [
-    {
-        "id_membresia": 1,
-        "titulo": "Plan Básico",
-        "descripcion": "Es el plan básico que ofrece Propertunity para todas las personas que desean tener mejores funcionalidades de búsqueda, control y consejos de financiamente, y la oportunidad de anunciar sus propiedades para vender o alquilar. El plan perfecto para los anunciantes y agentes.",
-        "precio_soles": 9.99,
-        "modelo_pago": "Pago Mensual"
-    },
-    {
-        "id_membresia": 2,
-        "titulo": "Plan Premium",
-        "descripcion": "Es el plan premium que ofrece Propertunity con las mejores funcionalidades que tiene para ofrecer. Entre estas funcionalidades se encuentra un motor de búsqueda potenciado y con más filtros, mejora en la información provista por las propiedades, mejores modelos de personalización y preferencias avanzadas, y una mayor cantidad de propiedades posibles para publicar.",
-        "precio_soles": 14.99,
-        "modelo_pago": "Pago Mensual"
-    }
-  ]
-};
-
-let anunciantes_membresias = {
-    "anunciantes_membresias":[
-    {
-        "membresias_id_membresia": 1,
-        "anunciantes_id_anunciante": 100,
-        "fecha_inicio": "20/12/22",
-        "fecha_salida": null,
-        "meses_miembro": 16,
-    },
-    {
-        "membresias_id_membresia": 1,
-        "anunciantes_id_anunciante": 101,
-        "fecha_inicio": "12/10/21",
-        "fecha_salida": null,
-        "meses_miembro": 30,
-    },
-    {
-        "membresias_id_membresia": 2,
-        "anunciantes_id_anunciante": 102,
-        "fecha_inicio": "03/02/24",
-        "fecha_salida": null,
-        "meses_miembro": 2,
-    },
-    {
-        "membresias_id_membresia": 1,
-        "anunciantes_id_anunciante": 103,
-        "fecha_inicio": "13/01/24",
-        "fecha_salida": null,
-        "meses_miembro": 4,
-    },
-    {
-        "membresias_id_membresia": 2,
-        "anunciantes_id_anunciante": 104,
-        "fecha_inicio": "29/04/20",
-        "fecha_salida": "08/05/23",
-        "meses_miembro": 37,
-    },
-    {
-        "membresias_id_membresia": 1,
-        "anunciantes_id_anunciante": 105,
-        "fecha_inicio": "20/04/21",
-        "fecha_salida": null,
-        "meses_miembro": 36,
-    },
-    {
-        "membresias_id_membresia": 2,
-        "anunciantes_id_anunciante": 106,
-        "fecha_inicio": "29/11/23",
-        "fecha_salida": null,
-        "meses_miembro": 6,
-    },
-    {
-        "membresias_id_membresia": 1,
-        "anunciantes_id_anunciante": 107,
-        "fecha_inicio": "20/12/22",
-        "fecha_salida": "05/04/23",
-        "meses_miembro": 4,
-    },
-    {
-        "membresias_id_membresia": 1,
-        "anunciantes_id_anunciante": 108,
-        "fecha_inicio": "17/07/23",
-        "fecha_salida": null,
-        "meses_miembro": 9,
-    },
-    {
-        "membresias_id_membresia": 1,
-        "anunciantes_id_anunciante": 109,
-        "fecha_inicio": "14/02/22",
-        "fecha_salida": "02/08/23",
-        "meses_miembro": 18,
-    }
-  ]
-};
-
-let beneficios = {
-    "beneficios":[
-    {
-        "beneficios_id": 1,
-        "titulo": "Búsquedas personalizadas",
-        "descripcion": "El programa agrega una función que permite realizar búsquedas personalizadas de propiedades con el uso de filtros avanzados en la barra de búsqueda de la aplicación."
-    },
-    {
-        "beneficios_id": 2,
-        "titulo": "Contacto directo con los agentes",
-        "descripcion": "Se permite que compradores puedan comunicarse directamente con los anunciantes mediante el uso de canal de chat directo dentro de la aplicación. Es necesario que ambos usuarios tengan este beneficio para usar los canales de chat."
-    },
-    {
-        "beneficios_id": 3,
-        "titulo": "Alertas de nuevas propiedades",
-        "descripcion": "Los usuarios reciben notificaciones instantáneas sobre nuevas propiedades que se ajustan a sus criterios de búsqueda."
-    },
-    {
-        "beneficios_id": 4,
-        "titulo": "Acceso a historial de propiedades vistas",
-        "descripcion": "Los usuarios pueden acceder a un historial de las propiedades que han visitado recientemente, lo que facilita la revisión y comparación de opciones."
-    },
-    {
-        "beneficios_id": 5,
-        "titulo": "Guardar propiedades favoritas",
-        "descripcion": "Los usuarios pueden marcar propiedades como favoritas para poder acceder fácilmente a ellas en el futuro."
-    },
-    {
-        "beneficios_id": 6,
-        "titulo": "Búsquedas avanzadas",
-        "descripcion": "Los usuarios premium tienen acceso a funciones de búsqueda avanzadas que les permiten refinar sus criterios de búsqueda y encontrar propiedades que se ajusten perfectamente a sus necesidades y preferencias."
-    },
-    {
-        "beneficios_id": 7,
-        "titulo": "Personalización avanzada",
-        "descripcion": "Los usuarios premium pueden personalizar completamente su experiencia en la plataforma, desde la configuración de notificaciones hasta la organización de propiedades favoritas, brindándoles un mayor control sobre su búsqueda de propiedades."
-    },
-    {
-        "beneficios_id": 8,
-        "titulo": "Permitir publicar más propiedades",
-        "descripcion": "Los usuarios premium tienen la capacidad de publicar un número ilimitado de propiedades en la plataforma, lo que les permite maximizar su exposición y aumentar sus oportunidades de venta o alquiler."
-    },
-    {
-        "beneficios_id": 9,
-        "titulo": "Soporte prioritario",
-        "descripcion": "Los usuarios premium reciben soporte prioritario por parte del equipo de atención al cliente, garantizando respuestas rápidas y soluciones eficientes a sus consultas y necesidades."
-    },
-    {
-        "beneficios_id": 10,
-        "titulo": "Herramientas de cálculo de valor crediticio",
-        "descripcion": "Los usuarios premium tienen acceso a herramientas especializadas que les permiten calcular su valor crediticio de manera precisa y obtener información detallada sobre su capacidad de financiamiento para la compra de propiedades."
-    }
-  ] 
-};
-
-let membresias_beneficios = {
-    "membresias_beneficios": [
-    {
-        "membresias_id_membresia": 1,
-        "beneficios_id_beneficio": 1
-    }, 
-    {
-        "membresias_id_membresia": 1,
-        "beneficios_id_beneficio": 2
-    }, 
-    {
-        "membresias_id_membresia": 1,
-        "beneficios_id_beneficio": 3
-    }, 
-    {
-        "membresias_id_membresia": 1,
-        "beneficios_id_beneficio": 4
-    }, 
-    {
-        "membresias_id_membresia": 1,
-        "beneficios_id_beneficio": 5
-    }, 
-    {
-        "membresias_id_membresia": 2,
-        "beneficios_id_beneficio": 6
-    }, 
-    {
-        "membresias_id_membresia": 2,
-        "beneficios_id_beneficio": 7
-    }, 
-    {
-        "membresias_id_membresia": 2,
-        "beneficios_id_beneficio": 8
-    }, 
-    {
-        "membresias_id_membresia": 2,
-        "beneficios_id_beneficio": 9
-    }, 
-    {
-        "membresias_id_membresia": 2,
-        "beneficios_id_beneficio": 10
-    }
-  ]
+{
+    "properties": [
+        {
+            "id_propiedad": 1,
+            "titulo": "Casa increible en Santiago de Surco",
+            "imagen": "https://e.nexoinmobiliario.pe/customers/grupo-t-c/2951-pardo-coast/departamentos-miraflores-65e86e8f7c9a1_b.jpg",
+            "descripcion": "Excelente casa ubicada en una estratégica de Surco- muy cerca de avenidas principales como Av. Primavera, Av. Encalada, Av. El Polo y Av. El Derby, lo que permite el fácil acceso y salida desde diferentes puntos.",
+            "precio_dolares": 145000,
+            "tipo_propiedad": "Casa",
+            "operacion": "Venta",
+            "entrega": "Inmediata",
+            "area_techada_metros_cuadrados": 308,
+            "area_total_metros_cuadrados": 360,
+            "cantidad_dormitorios": 5,
+            "cantidad_banios": 4,
+            "cantidad_estacionamientos": 2,
+            "estado_venta": "Disponible",
+            "etapa_proyecto": "Terminado",
+            "fecha_inicio_proyecto": "24/02/62",
+            "antiguedad": "62 años",
+            "anunciantes_id_anunciante": 1,
+            "ubicaciones_id_ubicacion": 1
+        },
+        {
+            "id_propiedad": 2,
+            "titulo": "Departamento de lujo en Miraflores",
+            "imagen": "https://e.nexoinmobiliario.pe/customers/andiamo-investments/2095-alvarado/departamentos-chorrillos-6495b06be780e_b.jpg",
+            "descripcion": "Espectacular departamento ubicado en el corazón de Miraflores, con vista panorámica al mar. Ideal para personas que buscan comodidad y exclusividad.",
+            "precio_dolares": 550,
+            "tipo_propiedad": "Departamento",
+            "operacion": "Alquiler",
+            "entrega": "Un mes después del pago",
+            "area_techada_metros_cuadrados": 180,
+            "area_total_metros_cuadrados": 220,
+            "cantidad_dormitorios": 3,
+            "cantidad_banios": 3,
+            "cantidad_estacionamientos": 2,
+            "estado_venta": "Disponible",
+            "etapa_proyecto": "Terminado",
+            "fecha_inicio_proyecto": "15/06/10",
+            "antiguedad": "14 años",
+            "anunciantes_id_anunciante": 2,
+            "ubicaciones_id_ubicacion": 2
+        },
+        {
+            "id_propiedad": 3,
+            "titulo": "Local comercial en San Isidro",
+            "imagen": "https://e.nexoinmobiliario.pe/customers/abril-grupo-inmobiliario-ft/3208-girasol/departamentos-jesus-maria-65e1ecafd53ce_b.jpg",
+            "descripcion": "Amplio local comercial ubicado en una zona de alto tránsito en San Isidro. Ideal para establecer tu negocio y captar una gran clientela.",
+            "precio_dolares": 480000,
+            "tipo_propiedad": "Local Comercial",
+            "operacion": "Venta",
+            "entrega": "Inmediata",
+            "area_techada_metros_cuadrados": 450,
+            "area_total_metros_cuadrados": 500,
+            "cantidad_dormitorios": 0,
+            "cantidad_banios": 2,
+            "cantidad_estacionamientos": 4,
+            "estado_venta": "Vendido",
+            "etapa_proyecto": "Terminado",
+            "fecha_inicio_proyecto": "10/03/05",
+            "antiguedad": "19 años",
+            "anunciantes_id_anunciante": 3,
+            "ubicaciones_id_ubicacion": 3
+        },
+        {
+            "id_propiedad": 4,
+            "titulo": "Penthouse de ensueño en Barranco",
+            "imagen": "https://e.nexoinmobiliario.pe/customers/grupo-t-c/2951-pardo-coast/departamentos-miraflores-65e86e8f7c9a1_b.jpg",
+            "descripcion": "Espectacular penthouse ubicado en una de las zonas más bohemias y exclusivas de Barranco. Disfruta de vistas panorámicas y acabados de lujo.",
+            "precio_dolares": 225000,
+            "tipo_propiedad": "Penthouse",
+            "operacion": "Venta",
+            "entrega": "Una semana después del pago",
+            "area_techada_metros_cuadrados": 400,
+            "area_total_metros_cuadrados": 480,
+            "cantidad_dormitorios": 4,
+            "cantidad_banios": 5,
+            "cantidad_estacionamientos": 3,
+            "estado_venta": "Disponible",
+            "etapa_proyecto": "Terminado",
+            "fecha_inicio_proyecto": "20/09/12",
+            "antiguedad": "12 años",
+            "anunciantes_id_anunciante": 4,
+            "ubicaciones_id_ubicacion": 4
+        },
+        {
+            "id_propiedad": 5,
+            "titulo": "Oficina corporativa en San Borja",
+            "imagen": "https://e.nexoinmobiliario.pe/customers/andiamo-investments/2095-alvarado/departamentos-chorrillos-6495b06be780e_b.jpg",
+            "descripcion": "Moderna oficina corporativa ubicada en un edificio exclusivo en San Borja. Ideal para empresas que buscan una imagen profesional y espacios funcionales.",
+            "precio_dolares": 350,
+            "tipo_propiedad": "Oficina",
+            "operacion": "Alquiler",
+            "entrega": "Inmediata",
+            "area_techada_metros_cuadrados": 320,
+            "area_total_metros_cuadrados": 350,
+            "cantidad_dormitorios": 0,
+            "cantidad_banios": 2,
+            "cantidad_estacionamientos": 6,
+            "estado_venta": "Alquilado",
+            "etapa_proyecto": "Terminado",
+            "fecha_inicio_proyecto": "05/07/08",
+            "antiguedad": "16 años",
+            "anunciantes_id_anunciante": 5,
+            "ubicaciones_id_ubicacion": 5
+        },
+        {
+            "id_propiedad": 6,
+            "titulo": "Terreno residencial en Huaraz",
+            "imagen": "https://e.nexoinmobiliario.pe/customers/abril-grupo-inmobiliario-ft/3208-girasol/departamentos-jesus-maria-65e1ecafd53ce_b.jpg",
+            "descripcion": "Amplio terreno residencial ubicado en una zona tranquila y exclusiva de La Molina. Ideal para construir la casa de tus sueños.",
+            "precio_dolares": 290000,
+            "tipo_propiedad": "Terreno",
+            "operacion": "Venta",
+            "entrega": "Un mes después del pago",
+            "area_techada_metros_cuadrados": 0,
+            "area_total_metros_cuadrados": 1500,
+            "cantidad_dormitorios": 0,
+            "cantidad_banios": 0,
+            "cantidad_estacionamientos": 0,
+            "estado_venta": "Reservado",
+            "etapa_proyecto": "Terminado",
+            "fecha_inicio_proyecto": "30/11/15",
+            "antiguedad": "9 años",
+            "anunciantes_id_anunciante": 6,
+            "ubicaciones_id_ubicacion": 6
+        },
+        {
+            "id_propiedad": 7,
+            "titulo": "Local industrial en Callao",
+            "imagen": "https://e.nexoinmobiliario.pe/customers/grupo-t-c/2951-pardo-coast/departamentos-miraflores-65e86e8f7c9a1_b.jpg",
+            "descripcion": "Amplio local industrial ubicado en una zona estratégica del Callao. Ideal para empresas que buscan un espacio funcional y accesible para sus operaciones.",
+            "precio_dolares": 620000,
+            "tipo_propiedad": "Local Industrial",
+            "operacion": "Venta",
+            "entrega": "Inmediata",
+            "area_techada_metros_cuadrados": 600,
+            "area_total_metros_cuadrados": 700,
+            "cantidad_dormitorios": 0,
+            "cantidad_banios": 2,
+            "cantidad_estacionamientos": 10,
+            "estado_venta": "Disponible",
+            "etapa_proyecto": "Terminado",
+            "fecha_inicio_proyecto": "12/04/07",
+            "antiguedad": "17 años",
+            "anunciantes_id_anunciante": 7,
+            "ubicaciones_id_ubicacion": 7
+        },
+        {
+            "id_propiedad": 8,
+            "titulo": "Departamento de estreno en Jesus Maria",
+            "imagen": "https://e.nexoinmobiliario.pe/customers/andiamo-investments/2095-alvarado/departamentos-chorrillos-6495b06be780e_b.jpg",
+            "descripcion": "Moderno departamento de estreno ubicado en una zona residencial de Jesús María. Ideal para familias que buscan comodidad y seguridad.",
+            "precio_dolares": 120000,
+            "tipo_propiedad": "Departamento",
+            "operacion": "Venta",
+            "entrega": "Inmediata",
+            "area_techada_metros_cuadrados": 120,
+            "area_total_metros_cuadrados": 150,
+            "cantidad_dormitorios": 3,
+            "cantidad_banios": 2,
+            "cantidad_estacionamientos": 1,
+            "estado_venta": "Disponible",
+            "etapa_proyecto": "En Construcción",
+            "fecha_inicio_proyecto": "05/09/23",
+            "antiguedad": "Nueva",
+            "anunciantes_id_anunciante": 8,
+            "ubicaciones_id_ubicacion": 8
+        },
+        {
+            "id_propiedad": 9,
+            "titulo": "Casa de playa en Asia",
+            "imagen": "https://e.nexoinmobiliario.pe/customers/abril-grupo-inmobiliario-ft/3208-girasol/departamentos-jesus-maria-65e1ecafd53ce_b.jpg",
+            "descripcion": "Acogedora casa de playa ubicada en un exclusivo condominio en Asia. Ideal para escapadas familiares y disfrutar del sol y la playa.",
+            "precio_dolares": 280000,
+            "tipo_propiedad": "Casa de Playa",
+            "operacion": "Venta",
+            "entrega": "Inmediata",
+            "area_techada_metros_cuadrados": 240,
+            "area_total_metros_cuadrados": 300,
+            "cantidad_dormitorios": 4,
+            "cantidad_banios": 3,
+            "cantidad_estacionamientos": 2,
+            "estado_venta": "Disponible",
+            "etapa_proyecto": "En planos",
+            "fecha_inicio_proyecto": "18/11/24",
+            "antiguedad": "Nueva",
+            "anunciantes_id_anunciante": 9,
+            "ubicaciones_id_ubicacion": 9
+        },
+        {
+            "id_propiedad": 10,
+            "titulo": "Departamento con vista al mar en Camaná",
+            "imagen": "https://e.nexoinmobiliario.pe/customers/grupo-t-c/2951-pardo-coast/departamentos-miraflores-65e86e8f7c9a1_b.jpg",
+            "descripcion": "Departamento con excelente vista al mar ubicado en una zona tranquila de Chorrillos. Ideal para disfrutar del clima y la brisa marina.",
+            "precio_dolares": 100000,
+            "tipo_propiedad": "Departamento",
+            "operacion": "Venta",
+            "entrega": "Un mes después del pago",
+            "area_techada_metros_cuadrados": 180,
+            "area_total_metros_cuadrados": 200,
+            "cantidad_dormitorios": 3,
+            "cantidad_banios": 2,
+            "cantidad_estacionamientos": 1,
+            "estado_venta": "Vendido",
+            "etapa_proyecto": "Terminado",
+            "fecha_inicio_proyecto": "08/03/13",
+            "antiguedad": "11 años",
+            "anunciantes_id_anunciante": 10,
+            "ubicaciones_id_ubicacion": 10
+        }
+    ]
 }
