@@ -35,5 +35,13 @@ const es = {
     phone: 'Número de teléfono',
     rol: 'Selecciona un rol',
 
+    annualInterestRate: 'Tasa de Interés Anual',
+    term: 'Plazo (meses)',
+    currency: 'Moneda',
+    propertyPrice: 'Precio de Inmueble',
+    initialFee: 'Cuota Inicial',
+    additionalCosts: 'Costos Adicionales',
+    amountToBeFinanced: 'Monto a Financiar',
+    monthlyPayment: 'Cuota Mensual'
 }
 export default es

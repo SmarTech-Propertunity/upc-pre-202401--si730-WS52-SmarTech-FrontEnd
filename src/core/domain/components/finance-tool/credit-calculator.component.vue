@@ -1,4 +1,5 @@
 <template>
+  <RetraceToolbar/>
   <div>
     <div class="header"></div>
 
@@ -47,10 +48,15 @@
       </div>
     </div>
   </div>
+  <TheFooter/>
 </template>
 
 <script>
+import TheFooter from "@/core/public/components/the-footer.component.vue";
+import RetraceToolbar from "@/core/shared/components/retrace-toolbar.component.vue";
+
 export default {
+  components: {RetraceToolbar, TheFooter},
   data() {
     return {
       annualInterestRate: null,

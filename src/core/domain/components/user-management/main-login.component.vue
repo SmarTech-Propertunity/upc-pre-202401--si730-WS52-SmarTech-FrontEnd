@@ -114,6 +114,8 @@ pv-button {
   display: flex;
   justify-content: space-between;
   padding: 15px;
+  margin-top: 1rem;
+  margin-left: 43%;
 }
 
 .img-container{

@@ -34,6 +34,15 @@ const en = {
     district: 'district',
     phone: 'Phone Number',
     rol: 'Select a rol',
+
+    annualInterestRate: 'Annual Interest Rate',
+    term: 'Term (months)',
+    currency: 'Currency',
+    propertyPrice: 'Property Price',
+    initialFee: 'Initial Fee',
+    additionalCosts: 'Additional Costs',
+    amountToBeFinanced: 'Amount to be Financed',
+    monthlyPayment: 'Monthly Payment'
 }
 
 export default en
