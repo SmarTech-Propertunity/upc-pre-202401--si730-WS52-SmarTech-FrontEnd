@@ -28,13 +28,7 @@ const password = ref('');
     <pv-button label="Registrar" class="custom-button"></pv-button>
   </div>
 
-  <div class="link-container">
-    <pv-button label="Contáctanos" class="custom-button"></pv-button>
-    <div class="img-container">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/b/b9/2023_Facebook_icon.svg" alt="Icono de Facebook" width="40" height="40">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png" alt="Icono de Instagram" width="40" height="40">
-    </div>
-  </div>
+
   </body>
 
 </template>

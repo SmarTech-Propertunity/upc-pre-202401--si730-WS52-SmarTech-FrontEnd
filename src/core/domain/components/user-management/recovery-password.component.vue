@@ -38,7 +38,7 @@ body{
 
 .head-content {
   text-align: center;
-  background-color: #B89CF2;
+  background-color: #03145c;
   padding: 15px;
   border-radius: 10px;
   width:80%;

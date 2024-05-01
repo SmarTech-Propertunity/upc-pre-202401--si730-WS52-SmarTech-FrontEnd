@@ -12,12 +12,14 @@ import Card from "primevue/card";
 import FileUpload from 'primevue/fileupload';
 
 
+import Toolbar from "primevue/toolbar";
 const app = createApp(App)
 
 //app.use(router)
 app.use(PrimeVue);
 app.use(router);
 app.component('pv-InputText', InputText);
+app.component('pv-toolbar', Toolbar);
 app.component('pv-floatLabel', FloatLabel);
 app.component('pv-button', Button);
 app.component('pv-dropdown', Dropdown)

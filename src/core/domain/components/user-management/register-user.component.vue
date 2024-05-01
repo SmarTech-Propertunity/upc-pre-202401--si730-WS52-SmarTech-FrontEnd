@@ -61,14 +61,6 @@ const phonenumber = ref('');
 
   </div>
 
-  <div class="link-container">
-    <pv-button label="Contáctanos" class="custom-button"></pv-button>
-    <div class="img-container">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/b/b9/2023_Facebook_icon.svg" alt="Icono de Facebook" width="40" height="40">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png" alt="Icono de Instagram" width="40" height="40">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/2044px-WhatsApp.svg.png" alt="Icono de Whatsapp" width="40" height="40">
-    </div>
-  </div>
   </body>
 
 
@@ -84,10 +76,10 @@ body{
 
 .head-content {
   text-align: center;
-  background-color: #B89CF2;
+  background-color: #03145c;
   padding: 15px;
   border-radius: 10px;
-  width:80%;
+  width:100%;
   margin: 0 auto;
 }
 

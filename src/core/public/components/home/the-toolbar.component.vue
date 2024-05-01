@@ -1,8 +1,5 @@
 <script>
-  export default
-  {
-    name: "the-toolbar",
-  }
+
 </script>
 
 <template>
@@ -18,10 +15,10 @@
     <template #end>
       <div class="p-toolbar-end">
         <!-- Propertunity button -->
-        <img src="../../../../assets/images/propertunity-logo.png" height="50px" width="50px" alt="propertunity">
+        <img src="../../../../assets/images/home-icon.png" height="50px" width="50px" alt="home icon">
 
         <!-- User (profile) button -->
-        <img src="../../../../assets/images/user-icon.png" height="50px" width="50px" alt="propertunity">
+        <img src="../../../../assets/images/user-icon.png" height="50px" width="50px" alt="Account Icon">
       </div>
     </template>
   </pv-toolbar>
@@ -34,9 +31,9 @@
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-
-    background: #0000cd;
-    height: 4.0rem;
+    background: hsl(252, 84%, 24%);
+    width: 100%;
+    padding: 1rem;
   }
 
   .p-toolbar-start {
@@ -45,8 +42,10 @@
     padding-left: 2.5rem;
   }
   .p-toolbar-start-title {
-    font-weight: normal;
-    font-size: 1.5rem;
+    font-size: 2em;
+    font-weight: bold;
+    font-style: italic;
+    font-family: Lato, sans-serif;
     color: #ffffff;
   }
 
@@ -56,4 +55,11 @@
     padding-right: 1.5rem;
     gap: 2.0rem;
   }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 </style>

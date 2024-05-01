@@ -11,12 +11,13 @@ import TheSearchAndFilter from "@/core/public/components/home/the-search.compone
 
 <template>
   <main>
-    <nav>
-      <RouterLink to="/">Login</RouterLink>
-      <RouterLink to="/recovery">Create user v2</RouterLink>
-      <RouterLink to="/register">List of users</RouterLink>
-      <RouterLink to="/home">Home</RouterLink>
-    </nav>
+
+
+      <RouterLink to="/"></RouterLink>
+      <RouterLink to="/recovery"></RouterLink>
+      <RouterLink to="/register"></RouterLink>
+      <RouterLink to="/home"></RouterLink>
+
     <router-view></router-view>
   </main>
 
