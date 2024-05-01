@@ -1,6 +1,6 @@
 <script>
 export default {
-  name: "the-home",
+  name: "the-home-base",
 }
 </script>
 
