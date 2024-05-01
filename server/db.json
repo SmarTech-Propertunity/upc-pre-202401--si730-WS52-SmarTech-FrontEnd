@@ -1,7 +1,7 @@
 let propiedades = {
     "propiedades": [
     {
-        "id_propiedad": 1,
+       "id_propiedad": 1,
         "titulo": "Casa increible en Santiago de Surco",
         "descripcion": "Excelente casa ubicada en una estratégica de Surco- muy cerca de avenidas principales como Av. Primavera, Av. Encalada, Av. El Polo y Av. El Derby, lo que permite el fácil acceso y salida desde diferentes puntos.",
         "precio_dolares": 145000,

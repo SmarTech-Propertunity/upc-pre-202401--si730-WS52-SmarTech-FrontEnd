@@ -7,7 +7,7 @@ import "primevue/resources/themes/saga-blue/theme.css"
 import InputText from 'primevue/inputtext';
 import FloatLabel from 'primevue/floatlabel';
 import Button from 'primevue/button';
-
+import i18n from "@/locale/i18n.js";
 
 const app = createApp(App)
 
