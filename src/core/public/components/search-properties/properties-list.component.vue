@@ -27,25 +27,25 @@ async function filtered() {
 
     <div class="search-bar" role="search">
       <a @click="filtered()" aria-label="Busqueda filtrada"><img src="https://www.freeiconspng.com/uploads/magnifying-glass-icon-13.png" alt="icono de lupa que inicia la busqueda al ser clikeado" /></a>
-      <input class="search-input" type="text" v-model="search" placeholder="Buscar ubicación" aria-label="Término de búsqueda ingresada por el usuario">
+      <input class="search-input" type="text" v-model="search" v-bind:placeholder="$t('searchInput.searchText')" aria-label="Término de búsqueda ingresada por el usuario">
       <select id="dropdown" aria-label="Opciones de tipo de propiedad">
-        <option value="" disabled selected hidden>Tipo de Propiedad</option>
-        <option value="Casa"> Casa </option>
-        <option value="Departamento"> Departamento </option>
-        <option value="LocalComercial"> Local Comercial </option>
+        <option value="" disabled selected hidden>{{$t('searchInput.selectDefault')}}</option>
+        <option value="Casa"> {{$t('searchInput.select1')}} </option>
+        <option value="Departamento"> {{$t('searchInput.select2')}} </option>
+        <option value="LocalComercial"> {{ $t('searchInput.select3') }} </option>
       </select>
       <img src="https://cdn-icons-png.flaticon.com/512/3388/3388744.png" alt="icono de filtro">
-      <input class="filter-input" type="number" v-model="minvalue" placeholder="Desde" aria-label="Precio mínimo de busqueda">
-      <input class="filter-input" type="number" v-model="maxvalue" placeholder="Hasta" aria-label="Precio máximo de busqueda">
+      <input class="filter-input" type="number" v-model="minvalue" v-bind:placeholder="$t('searchInput.filterInputMin')" aria-label="Precio mínimo de busqueda">
+      <input class="filter-input" type="number" v-model="maxvalue" v-bind:placeholder="$t('searchInput.filterInputMax')" aria-label="Precio máximo de busqueda">
     </div>
 
     <div class="title">
-      <h1> Encuentra tu inmueble de ensueño</h1>
+      <h1>{{ $t('title.searchTitle') }}</h1>
     </div>
 
     <div class="search-results">
       <div class="search-result-bar">
-        <h3> Resultados </h3>
+        <h3> {{ $t('searchResult.searchResultBarTitle') }} </h3>
       </div>
 
       <div class="search-result-content">
@@ -57,8 +57,8 @@ async function filtered() {
               </div>
               <div class="card-content">
                 <h3>{{ property.titulo }}</h3>
-                <img src="https://icons.veryicon.com/png/o/business/business-finance/coin-10.png" alt="icono de moneda" > Desde {{property.precio_dolares}} <br>
-                <img src="https://www.iconpacks.net/icons/1/free-pin-icon-48-thumb.png" alt="icono de ubicacion" > En Av.La marina
+                <img src="https://icons.veryicon.com/png/o/business/business-finance/coin-10.png" alt="icono de moneda" > {{ $t('searchResult.cardContent1') }} {{property.precio_dolares}} <br>
+                <img src="https://www.iconpacks.net/icons/1/free-pin-icon-48-thumb.png" alt="icono de ubicacion" > {{ $t('searchResult.cardContent2') }} Av.La marina
               </div>
             </div>
           </li>
