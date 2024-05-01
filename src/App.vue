@@ -10,15 +10,18 @@ import TheSearchAndFilter from "@/core/public/components/home/the-search.compone
 </script>
 
 <template>
-  <the-toolbar></the-toolbar>
-  <the-search-and-filter></the-search-and-filter>
-  <the-options></the-options>
-  <the-featured-publications></the-featured-publications>
-  <Login/>
-  <RecoveryPassword/>
-  <Register/>
+  <main>
+    <nav>
+      <RouterLink to="/">Login</RouterLink>
+      <RouterLink to="/recovery">Create user v2</RouterLink>
+      <RouterLink to="/register">List of users</RouterLink>
+      <RouterLink to="/home">Home</RouterLink>
+    </nav>
+    <router-view></router-view>
+  </main>
 
 </template>
 
 <style scoped>
+
 </style>

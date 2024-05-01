@@ -1,5 +1,5 @@
 <script setup >
-import { PropertyApiService } from "@/public/services/property-api.service.js";
+import { PropertyApiService } from "@/core/public/services/property-api.service.js";
 import { ref, onMounted } from 'vue';
 
 const properties = ref([]);
