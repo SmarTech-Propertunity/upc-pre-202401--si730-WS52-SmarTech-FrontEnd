@@ -1,5 +1,4 @@
 <script setup>
-
 import TheToolbar from "@/public/components/theToolbar.component.vue";
 import TheOptions from "@/public/components/theOptions.component.vue";
 import Login from "@/core/domain/components/user-management/main-login.component.vue";
@@ -10,6 +9,7 @@ import TheSearchAndFilter from "@/public/components/theSearchAndFilters.componen
 </script>
 
 <template>
+
   <the-toolbar></the-toolbar>
   <the-search-and-filter></the-search-and-filter>
   <the-options></the-options>
