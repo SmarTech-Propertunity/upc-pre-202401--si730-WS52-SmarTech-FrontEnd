@@ -40,16 +40,16 @@ export default
     <template #content>
       <div style="justify-content: center; display: flex;">
         <div>
-          <p style="font-size: 1.25rem;">Ofrecido por <span style="font-weight: bold">{{offeredBy}}</span></p>
+          <p style="font-size: 1.25rem;">{{$t('publicationCard.offeredBy')}} <span style="font-weight: bold">{{offeredBy}}</span></p>
 
           <div style="display: flex; gap: 0.75rem; align-items: center;">
             <img alt="Costo" src="../../../../assets/images/money-symbol.png" width="25px"/>
-            <p class="card-description" style="font-size: 1.0rem;">Desde S/.{{price}}</p>
+            <p class="card-description" style="font-size: 1.0rem;">{{$t('publicationCard.cost')}} {{price}}</p>
           </div>
 
           <div style="display: flex; gap: 0.75rem; align-items: center;">
             <img alt="Ubicación" src="../../../../assets/images/map-symbol.png" width="22px"/>
-            <p class="card-description" style="font-size: 1.0rem;">En {{location}}</p>
+            <p class="card-description" style="font-size: 1.0rem;">{{$t('publicationCard.location')}} {{location}}</p>
           </div>
         </div>
       </div>

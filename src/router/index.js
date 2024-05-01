@@ -15,7 +15,7 @@ const routes = [
     { path: '/home', component: HomeComponent },
     {path: '/search', component: SearchComponent},
     { path: '/calculator', component: CreditCalculatorComponent },
-    { path: '/property/:id', component: PostOverview }
+    { path: '/property/:id', component: PostOverview, props: true}
 
 ]
 

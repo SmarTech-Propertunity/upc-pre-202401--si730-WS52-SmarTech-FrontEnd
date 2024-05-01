@@ -10,45 +10,44 @@ export default
 
 <template>
   <div class="main-block">
-    <p style="font-size: 1.75rem; padding-left: 1.0rem;">Destacados</p>
+    <p style="font-size: 1.75rem; padding-left: 1.0rem;">{{$t('featuredPublications.featuredLabel')}}</p>
     <div class="cards">
 
       <publication-card
-          location="Av. La Marina"
+          location= "La Marina"
           price="100.00"
           card-size=350
           publication-image-path="src/assets/images/user-icon.png"
           offered-by="Sedapal"
       ></publication-card>
       <publication-card
-          location="Av. La Marina"
+          location= "La Marina"
           price="100.00"
           card-size=350
           publication-image-path="src/assets/images/user-icon.png"
           offered-by="Sedapal"
       ></publication-card>
       <publication-card
-          location="Av. La Marina"
+          location= "La Marina"
           price="100.00"
           card-size=350
           publication-image-path="src/assets/images/user-icon.png"
           offered-by="Sedapal"
       ></publication-card>
       <publication-card
-          location="Av. La Marina"
+          location= "La Marina"
           price="100.00"
           card-size=350
           publication-image-path="src/assets/images/user-icon.png"
           offered-by="Sedapal"
       ></publication-card>
       <publication-card
-          location="Av. La Marina"
+          location= "La Marina"
           price="100.00"
           card-size=350
           publication-image-path="src/assets/images/user-icon.png"
           offered-by="Sedapal"
       ></publication-card>
-
 
     </div>
   </div>

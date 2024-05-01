@@ -12,19 +12,19 @@ export default
   <div class="search-agency">
 
     <option-block
-        button-label="Buscar"
-        image-alt="Evaluación crediticia"
+        :button-label="$t('blocksOptions[0].buttonLabel')"
+        :image-alt="$t('blocksOptions[0].imageAlt')"
         image-path="src/assets/images/saved-icon.png"
-        description="Una evaluación crediticia le permitirá analizar el riesgo crediticio sobre la adquisición de un inmueble"
+        :description="$t('blocksOptions[0].description')"
         image-width=75
         image-height=50
     ></option-block>
 
     <option-block
-        button-label="Evalúe ahora"
-        image-alt="Buscar inmobiliaria"
+        :button-label="$t('blocksOptions[1].buttonLabel')"
+        :image-alt="$t('blocksOptions[1].imageAlt')"
         image-path="src/assets/images/edit-icon.png"
-        description="Una evaluación crediticia le permitirá analizar el riesgo crediticio sobre la adquisición de un inmueble"
+        :description="$t('blocksOptions[1].description')"
         image-width=75
         image-height=75
     ></option-block>

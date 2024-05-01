@@ -1,44 +1,50 @@
-<script setup>
-import { ref, onMounted, defineProps } from 'vue';
-import { PropertyApiService } from "@/core/public/services/property-api.service.js";
+<script>
+import {PropertyApiService} from "@/core/public/services/property-api.service.js";
 import RetraceToolbar from "@/core/shared/components/retrace-toolbar.component.vue";
-const props = defineProps(['id'])
-const property = ref({});
-const value = ref(null);
 
-onMounted(async () => {
-  const response = await PropertyApiService.getPropertyById(props.id);
-  PhotoService.getImages().then((data) => (images.value = data));
-  property.value = response.data;
-  console.log(property.value);
-})
-
-const responsiveOptions = ref([
-  {
-    breakpoint: '1300px',
-    numVisible: 4
+export default
+{
+  name: "post-overview",
+  components: {
+    RetraceToolbar
   },
+  props: {
+    id: {
+      type: String
+    }
+  },
+
+  data()
   {
-    breakpoint: '575px',
-    numVisible: 1
+    return {
+      properties: [],
+    }
+  },
+  beforeMount()
+  {
+    PropertyApiService.getAll().then((response) => {
+      if (response.status === 200)
+      {
+        this.properties = response.data;
+      }
+      else
+      {
+        alert("There was a warning (or error) fetching data.");
+      }
+    }).catch((error) => {
+      alert("An error has occurred. Full error info: " + error.message);
+    })
   }
-]);
+}
 </script>
 
 <template>
   <RetraceToolbar/>
 
+  <div>{{this.properties[id].imagen}}</div>
+  <img :src="this.properties[id].imagen">
 
-    <div class="card">
-      <Galleria :value="property" :responsiveOptions="responsiveOptions" :numVisible="5" containerStyle="max-width: 640px">
-        <template #item="slotProps">
-          <img :src="property?.imagen" :alt="slotProps.item.alt" style="width: 100%" />
-        </template>
-        <template #thumbnail="slotProps">
-          <img :src="property?.imagen" :alt="slotProps.item.alt" />
-        </template>
-      </Galleria>
-    </div>
+
 
 
 </template>

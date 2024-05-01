@@ -9,7 +9,7 @@
         inputSearchString: "",
         inputPriceFrom: "",
         inputPriceTo: "",
-        filterOptions: ["Departamento", "Inmueble", "Terreno"],
+        filterOptions: [this.$t('searchType.department'), this.$t('searchType.property'), this.$t('searchType.land')],
         selectedFilter: ""
       }
     },
@@ -29,11 +29,11 @@
       <img src="../../../../assets/images/search-icon.png" alt="buildings banner" height="25px" width="25px">
      </router-link>
       <!-- Input text -->
-      <pv-input-text class="input-text" v-model="inputSearchString" placeholder="Buscar ubicación"/>
+      <pv-input-text class="input-text" v-model="inputSearchString" :placeholder="$t('searchInput.searchText')"/>
     </div>
     <div class="input-filters">
       <!-- Dropdown -->
-      <pv-dropdown class="dropdown-filter" v-model="selectedFilter" :options="filterOptions" placeholder="Tipo"></pv-dropdown>
+      <pv-dropdown class="dropdown-filter" v-model="selectedFilter" :options="filterOptions" :placeholder="$t('searchType.notDefined')"></pv-dropdown>
 
       <!-- Price filter -->
       <div class="price-filter">
@@ -41,10 +41,10 @@
         <img src="../../../../assets/images/filter-icon.png" alt="buildings banner" height="30px" width="30px">
 
         <!-- From -->
-        <pv-input-text class="input-price" v-model="inputPriceFrom" placeholder="Desde"></pv-input-text>
+        <pv-Input-text class="input-price" v-model="inputPriceFrom" :placeholder="$t('inputPrice.from')"></pv-Input-text>
 
         <!-- To -->
-        <pv-input-text class="input-price" v-model="inputPriceTo" placeholder="Hasta"></pv-input-text>
+        <pv-Input-text class="input-price" v-model="inputPriceTo" :placeholder="$t('inputPrice.to')"></pv-Input-text>
       </div>
     </div>
 
