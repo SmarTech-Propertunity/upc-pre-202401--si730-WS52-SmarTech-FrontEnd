@@ -1,5 +1,4 @@
-//  'Router' is not defined yet for use.
-//  All add it later :]
+
 
 import '@/assets/styles/main.css'
 import PrimeVue from "primevue/config";
@@ -12,8 +11,9 @@ import InputText from "primevue/inputtext";
 import FloatLabel from "primevue/floatlabel";
 import Dropdown from "primevue/dropdown";
 import Card from "primevue/card";
-//  import router from './router'
-
+//import router from './router'
+import "primevue/resources/themes/saga-blue/theme.css"
+import i18n from "@/locale/i18n.js";
 
 
 const app = createApp(App)
@@ -26,4 +26,6 @@ app.use(PrimeVue, {unstyled: true })
     .component('pv-dropdown', Dropdown)
     .component('pv-card', Card)
 //  app.use(router)
+
 app.mount('#app')
+
