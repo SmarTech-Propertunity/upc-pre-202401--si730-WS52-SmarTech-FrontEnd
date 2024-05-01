@@ -18,6 +18,7 @@ const es = {
         cardContent1: 'Desde',
         cardContent2: 'En',
     },
+
     searchType: {
         notDefined: "Tipo",
         department: "Departamento",
@@ -41,6 +42,33 @@ const es = {
         offeredBy: "Ofrecido por ",
         cost: "Desde S/.",
         location: "En "
-    }
+    },
+
+    welcome: 'Bienvenidos a Propertunity',
+    username: 'Usuario',
+    password: 'Contraseña',
+    into: 'Ingresar',
+    register:'Registrar',
+    recovery: '¿Perdiste tu contraseña?',
+    buttonpassword: 'Recuperar contraseña',
+    contact: 'Contáctanos',
+    registerpropertunity:'Regístrate en Propertunity',
+    name: 'Nombre',
+    email: 'Correo Electrónico',
+    recoveryemail: 'Correo de Recuperación',
+    address: 'Dirección',
+    district: 'Distrito',
+    phone: 'Número de teléfono',
+    rol: 'Selecciona un rol',
+
+    annualInterestRate: 'Tasa de Interés Anual',
+    term: 'Plazo (meses)',
+    currency: 'Moneda',
+    propertyPrice: 'Precio de Inmueble',
+    initialFee: 'Cuota Inicial',
+    additionalCosts: 'Costos Adicionales',
+    amountToBeFinanced: 'Monto a Financiar',
+    monthlyPayment: 'Cuota Mensual'
+
 }
 export default es

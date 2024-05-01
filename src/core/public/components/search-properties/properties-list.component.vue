@@ -53,7 +53,9 @@ async function filtered() {
           <li class="card-container" role="listitem">
             <div class="card">
               <div class="card-image">
-                <img :src="property.imagen" alt="imagen de propiedad">
+                <router-link to="/property/1" >
+                  <img :src="property.imagen" alt="imagen de propiedad">
+                </router-link>
               </div>
               <div class="card-content">
                 <h3>{{ property.titulo }}</h3>

@@ -18,6 +18,7 @@ const en = {
         cardContent1: 'From',
         cardContent2: 'In',
     },
+
     searchType: {
         notDefined: "Type",
         department: "Department",
@@ -47,7 +48,34 @@ const en = {
         offeredBy: "Offered by ",
         cost: "Starting at S/.",
         location: "At "
-    }
+    },
+
+    welcome: 'Welcome to Propertunity',
+    username: 'Username',
+    password: 'Password',
+    into: 'Log in',
+    register: 'Sign up',
+    recovery: 'Forgot your password?',
+    buttonpassword: 'Recovery password',
+    contact: 'contact',
+    registerpropertunity: 'Register in Propertunity',
+    name: 'Name',
+    email: 'Email ',
+    recoveryemail: 'Recovery Email',
+    address: 'Address',
+    district: 'district',
+    phone: 'Phone Number',
+    rol: 'Select a rol',
+
+    annualInterestRate: 'Annual Interest Rate',
+    term: 'Term (months)',
+    currency: 'Currency',
+    propertyPrice: 'Property Price',
+    initialFee: 'Initial Fee',
+    additionalCosts: 'Additional Costs',
+    amountToBeFinanced: 'Amount to be Financed',
+    monthlyPayment: 'Monthly Payment'
+
 }
 
 export default en

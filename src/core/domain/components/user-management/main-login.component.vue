@@ -8,34 +8,34 @@ const password = ref('');
 
 <template>
   <body>
-  <div class="container">
-    <h1>Bienvenidos a Propertunity</h1>
+  <div class="container" aria-label="Encabezado de bienvenida y fondo de edificios">
+    <h1>{{ $t('welcome')}}</h1>
     <img src="https://www.condominiosverdes.com.br/wp-content/uploads/2017/10/condominio-sustentavel-dicas.jpg" alt="Edificios de fondo">
   </div>
 
   <div class="input-container">
-    <pv-floatLabel class="p-float-label" >
+    <pv-floatLabel class="p-float-label" aria-label="Campo de nombre de usuario">
       <pv-InputText id="username" v-model="username" />
-      <label for="username">Username</label>
+      <label for="username">{{ $t('username')}}</label>
     </pv-floatLabel>
-    <pv-floatLabel>
+    <pv-floatLabel aria-label="Campo de contraseña">
       <pv-InputText id="password"  v-model="password"/>
-      <label for="password">Password</label>
+      <label for="password">{{ $t('password')}}</label>
     </pv-floatLabel>
   </div>
 
   <div class="button-container">
    <router-link to="/home">
-     <pv-button label="Ingresar" class="custom-button"></pv-button>
+     <pv-button label="Ingresar" class="custom-button" aria-label="Botón de Ingresar">{{$t('into')}}</pv-button>
    </router-link>
 
     <router-link to="/register">
-    <pv-button label="Registrar" class="custom-button"></pv-button>
+    <pv-button label="Registrar" class="custom-button" aria-label="Botón de Registrar">{{$t('register')}}</pv-button>
     </router-link>
   </div>
 
   <div class="link-container">
-    <a href="/Recovery">Olvidaste tu contraseña?</a>
+    <a href="/Recovery" aria-label="passwordRecoveryLabel">{{ $t('recovery')}}</a>
   </div>
   </body>
 
@@ -114,6 +114,8 @@ pv-button {
   display: flex;
   justify-content: space-between;
   padding: 15px;
+  margin-top: 1rem;
+  margin-left: 43%;
 }
 
 .img-container{

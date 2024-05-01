@@ -19,44 +19,43 @@ const phonenumber = ref('');
 <template>
   <body>
   <div class="head-content">
-    <h1>Regístrate en Propertunity</h1>
+    <h1>{{ $t('registerpropertunity')}}</h1>
   </div>
 
   <div class="info-content">
-    <pv-floatLabel class="p-float-label">
-      <pv-InputText id="username" v-model="username"/>
-      <label for="username">Nombre</label>
+    <pv-floatLabel class="p-float-label" aria-label="Nombre">
+      <pv-InputText id="username" v-model="username" aria-label="Ingrese su nombre"/>
+      <label for="username">{{ $t('name')}}</label>
     </pv-floatLabel>
-    <pv-floatLabel class="p-float-label">
-      <pv-InputText id="email" v-model="email"/>
-      <label for="email">Correo Electrónico</label>
+    <pv-floatLabel class="p-float-label" aria-label="Correo Electrónico">
+      <pv-InputText id="email" v-model="email" aria-label="Ingrese su correo electrónico"/>
+      <label for="email">{{ $t('email')}}</label>
     </pv-floatLabel>
-    <pv-floatLabel class="p-float-label">
-      <pv-InputText id="backup_mail"  v-model="backup_mail"/>
-      <label for="backup_mail">Correo de recuperación</label>
+    <pv-floatLabel class="p-float-label" aria-label="Correo de recuperación">
+      <pv-InputText id="backup_mail"  v-model="backup_mail" aria-label="Ingrese su correo de recuperación"/>
+      <label for="backup_mail">{{ $t('recoveryemail')}}</label>
     </pv-floatLabel>
-    <pv-floatLabel class="p-float-label">
-      <pv-InputText id="password"  v-model="password"/>
-      <label for="password">Contraseña</label>
+    <pv-floatLabel class="p-float-label" aria-label="Contraseña">
+      <pv-InputText id="password"  v-model="password" aria-label="Ingrese su contraseña"/>
+      <label for="password">{{ $t('password')}}</label>
     </pv-floatLabel>
-
-    <pv-floatLabel class="p-float-label">
-      <pv-InputText id="address"  v-model="address"/>
-      <label for="address">Dirección</label>
+    <pv-floatLabel class="p-float-label" aria-label="Dirección">
+      <pv-InputText id="address"  v-model="address" aria-label="Ingrese su dirección"/>
+      <label for="address">{{ $t('address')}}</label>
     </pv-floatLabel>
-    <pv-floatLabel class="p-float-label">
-      <pv-InputText id="district"  v-model="district"/>
-      <label for="district">Distrito</label>
+    <pv-floatLabel class="p-float-label" aria-label="Distrito">
+      <pv-InputText id="district"  v-model="district" aria-label="Ingrese su distrito"/>
+      <label for="district">{{ $t('district')}}</label>
     </pv-floatLabel>
-    <pv-floatLabel class="p-float-label">
-      <pv-InputText id="phone-number"  v-model="phonenumber"/>
-      <label for="phone-number">Número de teléfono</label>
+    <pv-floatLabel class="p-float-label" aria-label="Número de teléfono">
+      <pv-InputText id="phone-number"  v-model="phonenumber" aria-label="Ingrese su número de teléfono"/>
+      <label for="phone-number">{{ $t('phone')}}</label>
     </pv-floatLabel>
-    <pv-dropdown  v-model="selectedOption" :options="dropdownOptions" optionLabel="name" placeholder="Selecciona un rol" class="w-full md:w-14rem dropdown-con-padding" />
+    <pv-dropdown  v-model="selectedOption" :options="dropdownOptions" optionLabel="name" placeholder="Selecciona un rol" class="w-full md:w-14rem dropdown-con-padding" aria-label="Selecciona un rol"/>
     <div class="button-container">
-      <pv-FileUpload class="updata" mode="basic" name="demo[]" url="/api/upload" accept="image/*" :maxFileSize="1000000" @upload="onUpload" />
+      <pv-FileUpload class="updata" mode="basic" name="demo[]" url="/api/upload" accept="image/*" :maxFileSize="1000000" @upload="onUpload" aria-label="Subir archivo"/>
     </div>
-      <pv-button class="button-register" label="Registrar" ></pv-button>
+      <pv-button class="button-register" label="Registrar" aria-label="Botón Registrar">{{ $t('register')}}</pv-button>
 
 
   </div>
