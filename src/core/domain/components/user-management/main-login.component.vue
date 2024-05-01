@@ -21,16 +21,16 @@
   </div>
 
   <div class="button-container">
-    <pv-button label="Ingresar"></pv-button>
-    <pv-button label="Registrar"></pv-button>
+    <pv-button label="Ingresar" class="custom-button"></pv-button>
+    <pv-button label="Registrar" class="custom-button"></pv-button>
   </div>
 
   <div class="link-container">
+    <pv-button label="Contáctanos" class="custom-button"></pv-button>
     <div class="img-container">
       <img src="https://upload.wikimedia.org/wikipedia/commons/b/b9/2023_Facebook_icon.svg" alt="Icono de Facebook" width="40" height="40">
       <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png" alt="Icono de Instagram" width="40" height="40">
     </div>
-    <pv-button label="Contáctanos"></pv-button>
   </div>
   </body>
 
@@ -89,6 +89,13 @@ body{
   justify-content: center;
   gap: 20px;
 }
+@media screen and (max-width: 600px) {
+  .button-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+  }
+}
 
 pv-button {
   padding: 10px 20px;
@@ -107,5 +114,21 @@ pv-button {
 .img-container{
   display: flex;
   gap: 10px;
+}
+
+@media screen and (max-width: 600px) {
+  .link-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .img-container {
+    margin-top: 10px;
+  }
+}
+
+.custom-button{
+  background-color:#FFA500;
+  border-color:#FFA500;
 }
 </style>

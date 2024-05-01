@@ -5,7 +5,7 @@
 <template>
   <body>
   <div class="head-content">
-    <h1>Regístrate en Propertunity</h1>
+    <h1>¿Perdiste tu contraseña?</h1>
   </div>
   <div class="input-container">
     <pv-floatLabel class="p-float-label">
@@ -16,10 +16,11 @@
       <pv-InputText id="password"  />
       <label for="password">Password</label>
     </pv-floatLabel>
+    <pv-button label="Recuperar Contraseña" class="custom-button"></pv-button>
   </div>
 
   <div class="link-container">
-    <pv-button label="Contáctanos"></pv-button>
+    <pv-button label="Contáctanos" class="custom-button"></pv-button>
   </div>
   </body>
 </template>
@@ -33,7 +34,7 @@ body{
 
 .head-content {
   text-align: center;
-  background-color: rgba(169, 169, 169, 0.5);
+  background-color: #B89CF2;
   padding: 15px;
   border-radius: 10px;
   width:80%;
@@ -62,5 +63,18 @@ h1{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 15px;
+}
+
+@media screen and (max-width: 600px) {
+  .link-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.custom-button{
+  background-color:#FFA500;
+  border-color:#FFA500;
 }
 </style>
