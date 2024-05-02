@@ -30,10 +30,10 @@ export default
 
 <template>
   <div class="block-object">
-    <img :src="imagePath" :alt="imageAlt" :height=imageWidth :width=imageHeight>
+    <img :src="imagePath" :alt="imageAlt" :height=imageWidth :width=imageHeight aria-checked="true" :aria-label="imageAlt">
     <div class="block-description">
       <p style="padding-bottom: 1rem;">{{description}}</p>
-      <pv-button class="option-button" :label="buttonLabel"></pv-button>
+      <pv-button class="option-button" :label="buttonLabel" :aria-label="buttonLabel"></pv-button>
     </div>
   </div>
 </template>

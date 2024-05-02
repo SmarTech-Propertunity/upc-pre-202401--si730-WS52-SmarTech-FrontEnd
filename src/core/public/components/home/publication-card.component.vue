@@ -32,7 +32,7 @@ export default
     <!-- Publication's image -->
     <template #header>
       <div class="publication-image">
-        <img alt="Imagen de referencia" :src="publicationImagePath" :width=cardSize :height=cardSize>
+        <img alt="referenceImage" :src="publicationImagePath" :width=cardSize :height=cardSize>
       </div>
     </template>
 
@@ -43,13 +43,13 @@ export default
           <p style="font-size: 1.25rem;">{{$t('publicationCard.offeredBy')}} <span style="font-weight: bold">{{offeredBy}}</span></p>
 
           <div style="display: flex; gap: 0.75rem; align-items: center;">
-            <img alt="Costo" src="../../../../assets/images/money-symbol.png" width="25px"/>
-            <p class="card-description" style="font-size: 1.0rem;">{{$t('publicationCard.cost')}} {{price}}</p>
+            <img alt="cost" src="../../../../assets/images/money-symbol.png" width="25px"/>
+            <p class="card-description" style="font-size: 1.0rem;" :aria-label="$t('publicationCard.cost') + price">{{$t('publicationCard.cost')}} {{price}}</p>
           </div>
 
           <div style="display: flex; gap: 0.75rem; align-items: center;">
-            <img alt="Ubicación" src="../../../../assets/images/map-symbol.png" width="22px"/>
-            <p class="card-description" style="font-size: 1.0rem;">{{$t('publicationCard.location')}} {{location}}</p>
+            <img alt="location" src="../../../../assets/images/map-symbol.png" width="22px"/>
+            <p class="card-description" style="font-size: 1.0rem;" :aria-label="$t('publicationCard.location') + location">{{$t('publicationCard.location')}} {{location}}</p>
           </div>
         </div>
       </div>

@@ -8,17 +8,17 @@
   <pv-toolbar class="p-toolbar">
     <template #start>
       <div class="p-toolbar-start">
-        <p class="p-toolbar-start-title">Propertunity</p>
+        <p class="p-toolbar-start-title" aria-label="Propertunity">Propertunity</p>
       </div>
     </template>
 
     <template #end>
       <div class="p-toolbar-end">
         <!-- Propertunity button -->
-        <img src="../../../../assets/images/home-icon.png" height="50px" width="50px" alt="home icon">
+        <img src="../../../../assets/images/home-icon.png" height="50px" width="50px" alt="home icon" aria-label="home">
 
         <!-- User (profile) button -->
-        <img src="../../../../assets/images/user-icon.png" height="50px" width="50px" alt="Account Icon">
+        <img src="../../../../assets/images/user-icon.png" height="50px" width="50px" alt="Account Icon" aria-label="account">
       </div>
     </template>
   </pv-toolbar>

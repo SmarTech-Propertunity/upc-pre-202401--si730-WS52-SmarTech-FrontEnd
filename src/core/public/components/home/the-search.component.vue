@@ -41,10 +41,10 @@
         <img src="../../../../assets/images/filter-icon.png" alt="buildings banner" height="30px" width="30px">
 
         <!-- From -->
-        <pv-Input-text class="input-price" v-model="inputPriceFrom" :placeholder="$t('inputPrice.from')"></pv-Input-text>
+        <pv-Input-text class="input-price" v-model="inputPriceFrom" :placeholder="$t('inputPrice.from')" :aria-label="$t('inputPrice.from')"></pv-Input-text>
 
         <!-- To -->
-        <pv-Input-text class="input-price" v-model="inputPriceTo" :placeholder="$t('inputPrice.to')"></pv-Input-text>
+        <pv-Input-text class="input-price" v-model="inputPriceTo" :placeholder="$t('inputPrice.to')" :aria-label="$t('inputPrice.to')"></pv-Input-text>
       </div>
     </div>
 
