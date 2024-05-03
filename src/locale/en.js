@@ -25,7 +25,7 @@ const en = {
         property: "Property",
         land: "Land"
     },
-    inputPride: {
+    inputPrice: {
         from: "From",
         to: "To"
     },

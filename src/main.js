@@ -19,7 +19,7 @@ const app = createApp(App)
 app.use(PrimeVue);
 app.use(router);
 app.use(i18n);
-app.component('pv-InputText', InputText);
+app.component('pv-inputText', InputText);
 app.component('pv-toolbar', Toolbar);
 app.component('pv-floatLabel', FloatLabel);
 app.component('pv-button', Button);

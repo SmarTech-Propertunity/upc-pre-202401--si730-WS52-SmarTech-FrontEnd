@@ -25,6 +25,10 @@ const es = {
         property: "Propiedad",
         land: "Terreno"
     },
+    inputPrice: {
+        from: "Desde",
+        to: "Hasta"
+    },
     blocksOptions: [
         {
             buttonLabel: "Buscar",

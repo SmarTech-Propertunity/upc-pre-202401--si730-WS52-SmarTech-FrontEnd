@@ -43,7 +43,7 @@ export default
   align-items: center;
   display: flex;
   width: 26rem;
-  height: 8rem;
+  height: 10rem;
   background: #ffa07a;
   padding: 1rem;
   border: 0.25rem solid #2c3e50;
@@ -51,7 +51,6 @@ export default
   padding-left: 2.5rem;
 }
 .block-description {
-  justify-content: center;
   align-items: center;
   text-align: center;
   font-size: 0.85rem;

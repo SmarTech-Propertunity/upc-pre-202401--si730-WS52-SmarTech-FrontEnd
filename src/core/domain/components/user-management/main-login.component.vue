@@ -1,6 +1,5 @@
 <script setup>
 import {ref} from "vue";
-import TheFooter from "@/core/public/components/the-footer.component.vue";
 const username = ref('');
 const password = ref('');
 

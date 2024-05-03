@@ -29,7 +29,7 @@
       <img src="../../../../assets/images/search-icon.png" alt="buildings banner" height="25px" width="25px">
      </router-link>
       <!-- Input text -->
-      <pv-input-text class="input-text" v-model="inputSearchString" :placeholder="$t('searchInput.searchText')"/>
+      <input class="input-text" v-model="inputSearchString" :placeholder="$t('searchInput.searchText')"/>
     </div>
     <div class="input-filters">
       <!-- Dropdown -->
@@ -41,10 +41,10 @@
         <img src="../../../../assets/images/filter-icon.png" alt="buildings banner" height="30px" width="30px">
 
         <!-- From -->
-        <pv-Input-text class="input-price" v-model="inputPriceFrom" :placeholder="$t('inputPrice.from')" :aria-label="$t('inputPrice.from')"></pv-Input-text>
+        <input class="input-price" v-model="inputPriceFrom" :placeholder="$t('inputPrice.from')" :aria-label="$t('inputPrice.from')"></input>
 
         <!-- To -->
-        <pv-Input-text class="input-price" v-model="inputPriceTo" :placeholder="$t('inputPrice.to')" :aria-label="$t('inputPrice.to')"></pv-Input-text>
+        <input class="input-price" v-model="inputPriceTo" :placeholder="$t('inputPrice.to')" :aria-label="$t('inputPrice.to')"></input>
       </div>
     </div>
 
@@ -69,7 +69,7 @@
     border-radius: 2.5rem;
   }
   .input-text {
-    border: 0 solid #ffffff;
+    border: 0 solid #000000;
     padding: 0.5rem 0.75rem;
     width: 22rem;
   }
