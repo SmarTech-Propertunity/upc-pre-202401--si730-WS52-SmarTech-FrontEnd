@@ -4,7 +4,6 @@
 
 <template>
 
-  <!-- Toolbar -->
   <pv-toolbar class="p-toolbar">
     <template #start>
       <div class="p-toolbar-start">
@@ -14,11 +13,7 @@
 
     <template #end>
       <div class="p-toolbar-end">
-        <!-- Propertunity button -->
-        <img src="../../../../assets/images/home-icon.png" height="50px" width="50px" alt="home icon" aria-label="home">
-
-        <!-- User (profile) button -->
-        <img src="../../../../assets/images/user-icon.png" height="50px" width="50px" alt="Account Icon" aria-label="account">
+        <img class="a" src="../../../../assets/images/material-icons/account-icon.png" height="65px" width="65px" alt="Account Icon" aria-label="account">
       </div>
     </template>
   </pv-toolbar>
@@ -31,11 +26,10 @@
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    background: hsl(252, 84%, 24%);
+    background: #427bf5;
     width: 100%;
-    padding: 1rem;
+    padding: 0;
   }
-
   .p-toolbar-start {
     display: flex;
     align-items: center;
@@ -48,7 +42,6 @@
     font-family: Lato, sans-serif;
     color: #ffffff;
   }
-
   .p-toolbar-end {
     display: flex;
     align-items: center;
@@ -56,10 +49,10 @@
     gap: 2.0rem;
   }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
+  .a {
+    background-color: #80aaf5;
+    border-radius: 99rem;
+    padding: 0.5rem;
+  }
 </style>
