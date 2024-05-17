@@ -1,25 +1,30 @@
 <script setup>
+import {ref} from "vue";
+
+const username = ref('');
+const password = ref('');
 
 </script>
 
 <template>
   <body>
   <div class="head-content">
-    <h1>Regístrate en Propertunity</h1>
+    <h1 aria-label="lostPasswordTitle">{{ $t('recovery')}}</h1>
   </div>
   <div class="input-container">
-    <pv-floatLabel class="p-float-label">
-      <pv-InputText id="username"  />
-      <label for="username">Username</label>
+    <pv-floatLabel class="p-float-label" aria-label="Campo de nombre de usuario">
+      <pv-InputText id="username"  v-model="username" aria-label="Nombre de usuario"/>
+      <label for="username" aria-label="Ingrese su nombre de usuario">{{ $t('username')}}</label>
     </pv-floatLabel>
-    <pv-floatLabel>
-      <pv-InputText id="password"  />
-      <label for="password">Password</label>
+    <pv-floatLabel aria-label="Campo de contraseña">
+      <pv-InputText id="password"  v-model="password" aria-label="Contraseña"/>
+      <label for="password" aria-label="Ingrese su contraseña">{{ $t('password')}}</label>
     </pv-floatLabel>
+    <pv-button label="Recuperar Contraseña" class="custom-button" aria-label="Recuperar Contraseña">{{ $t('buttonpassword')}}</pv-button>
   </div>
 
   <div class="link-container">
-    <pv-button label="Contáctanos"></pv-button>
+    <pv-button label="Contáctanos" class="custom-button" aria-label="Contactar con nosotros">{{$t('contact')}}</pv-button>
   </div>
   </body>
 </template>
@@ -33,7 +38,7 @@ body{
 
 .head-content {
   text-align: center;
-  background-color: rgba(169, 169, 169, 0.5);
+  background-color: #03145c;
   padding: 15px;
   border-radius: 10px;
   width:80%;
@@ -50,11 +55,11 @@ h1{
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 15px;
+  padding: 20px;
 }
 
 .p-float-label {
-  margin-bottom: 15px;
+  margin-bottom: 22px;
 }
 
 
@@ -62,5 +67,18 @@ h1{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 15px;
+}
+
+@media screen and (max-width: 600px) {
+  .link-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.custom-button{
+  background-color:#FFA500;
+  border-color:#FFA500;
 }
 </style>
