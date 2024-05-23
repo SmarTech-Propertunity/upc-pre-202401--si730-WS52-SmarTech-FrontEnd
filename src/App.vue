@@ -3,9 +3,8 @@
 
 <template>
   <router-view></router-view>
+
 <TheFooter/>
-
-
 
 </template>
 

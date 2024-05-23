@@ -12,39 +12,59 @@
         filterOptions: [this.$t('searchType.department'), this.$t('searchType.property'), this.$t('searchType.land')],
         selectedFilter: ""
       }
-    },
+
+    }
+
   }
 </script>
 
 <template>
   <div class="buildings-banner">
 
-    <!-- Map banner -->
-    <img src="../../../../assets/images/buildings-banner.png" alt="buildings banner" style="height: 200px; width: 100%; overflow: hidden; object-fit: cover;">
 
-    <!-- Search tools -->
+    <img src="../../../../assets/images/home-section/buildings-banner.png"
+         alt="buildings banner"
+         style="height: 200px; width: 100%; overflow: hidden; object-fit: cover;"/>
+
     <div class="input-text-section">
-      <!-- Search icon -->
-     <router-link to="/search">
-      <img src="../../../../assets/images/search-icon.png" alt="buildings banner" height="25px" width="25px">
-     </router-link>
-      <!-- Input text -->
+      <router-link to="/search">
+        <div class="search-icon-wrapper">
+          <img class="search-icon"
+               src="../../../../assets/images/material-icons/search-black-icon.png"
+               alt="buildings banner"
+               height="50px" width="50px"
+               aria-label="Search button"
+          >
+        </div>
+      </router-link>
       <input class="input-text" v-model="inputSearchString" :placeholder="$t('searchInput.searchText')"/>
     </div>
     <div class="input-filters">
-      <!-- Dropdown -->
-      <pv-dropdown class="dropdown-filter" v-model="selectedFilter" :options="filterOptions" :placeholder="$t('searchType.notDefined')"></pv-dropdown>
+      <pv-dropdown class="dropdown-filter"
+                   v-model="selectedFilter"
+                   :options="filterOptions"
+                   :placeholder="$t('searchType.notDefined')"
+      ></pv-dropdown>
 
-      <!-- Price filter -->
       <div class="price-filter">
-        <!-- Filter icon -->
-        <img src="../../../../assets/images/filter-icon.png" alt="buildings banner" height="30px" width="30px">
+        <img src="../../../../assets/images/material-icons/filter-icon.png"
+             alt="Filter"
+             height="40px" width="40px"
+             aria-label="Filter"
+             style="filter: brightness(0%)"
+             onclick=""
+        >
+        <input class="input-price"
+               v-model="inputPriceFrom"
+               :placeholder="$t('inputPrice.from')"
+               :aria-label="$t('inputPrice.from')"
+        >
+        <input class="input-price"
+               v-model="inputPriceTo"
+               :placeholder="$t('inputPrice.to')"
+               :aria-label="$t('inputPrice.to')"
+        >
 
-        <!-- From -->
-        <input class="input-price" v-model="inputPriceFrom" :placeholder="$t('inputPrice.from')" :aria-label="$t('inputPrice.from')"></input>
-
-        <!-- To -->
-        <input class="input-price" v-model="inputPriceTo" :placeholder="$t('inputPrice.to')" :aria-label="$t('inputPrice.to')"></input>
       </div>
     </div>
 
@@ -54,6 +74,8 @@
 <style lang="scss" scoped>
   .buildings-banner {
     position: relative;
+    display: flex;
+
   }
 
   .input-text-section {
@@ -63,6 +85,8 @@
     left: 50%;
     display: flex;
     align-items: center;
+    background-color: #ffffff;
+    padding: 0.25rem 1.25rem;
     gap: 0.75rem;
     background-color: #ffffff;
     padding: 0.75rem 2.0rem;
@@ -71,7 +95,9 @@
   .input-text {
     border: 0 solid #000000;
     padding: 0.5rem 0.75rem;
-    width: 22rem;
+    width: 30rem;
+    font-size: 1.2rem;
+
   }
   .input-text:focus {
     outline: 0;
@@ -84,30 +110,52 @@
     left: 50%;
     display: flex;
     align-items: center;
-    gap: 2.0rem;
+    gap: 1.5rem;
+
   }
   .dropdown-filter {
     display: flex;
     background-color: #ffffff;
     color: #000000;
-    padding: 0.5rem 1.5rem;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    width: auto;
+
+    padding: 0.15rem 1rem;
+    width: 14rem;
     gap: 1.5rem;
-    border-radius: 1.5rem;
+    border-radius: 99rem;
+    font-size: 1rem;
+
   }
 
   .price-filter {
     display: flex;
-    gap: 1rem;
+
+    gap: 0.75rem;
+
     align-items: center;
   }
   .input-price {
     border: 0 solid #ffffff;
     padding: 0.75rem 0.75rem;
     width: 7rem;
-    border-radius: 1.5rem;
+
+    border-radius: 99rem;
+
+    font-size: 1rem;
+  }
+  .input-price:focus {
+    outline: 0;
+  }
+  .search-icon {
+    filter: brightness(100%);
+    transition: background-color 150ms ease-in-out;
+    border-radius: 99rem;
+    padding: 0.35rem;
+  }
+  .search-icon:hover {
+    background-color: #cccccc;
+  }
+  .search-icon-wrapper {
+    display: flex;
+
   }
 </style>

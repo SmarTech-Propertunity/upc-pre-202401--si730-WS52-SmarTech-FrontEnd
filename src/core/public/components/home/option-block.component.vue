@@ -23,6 +23,10 @@ export default
     },
     imageHeight: {
       type: Number
+    },
+    miniTitle: {
+      type: String
+
     }
   }
 }
@@ -30,41 +34,92 @@ export default
 
 <template>
   <div class="block-object">
-    <img :src="imagePath" :alt="imageAlt" :height=imageWidth :width=imageHeight aria-checked="true" :aria-label="imageAlt">
-    <div class="block-description">
-      <p style="padding-bottom: 1rem;">{{description}}</p>
-      <pv-button class="option-button" :label="buttonLabel" :aria-label="buttonLabel"></pv-button>
+
+
+    <div class="block-image">
+      <div class="image-section">
+        <img style="border-radius: 1.5rem;"
+             :src="imagePath"
+             :alt="imageAlt"
+             :height=imageHeight
+             :width=imageWidth
+             aria-checked="true"
+             :aria-label="imageAlt"
+        >
+      </div>
     </div>
+
+    <div class="block-descriptor-wrapper">
+      <div class="block-description">
+        <div class="descriptor">
+          <div style="font-size: 0.65rem">{{miniTitle}}</div>
+          <div style="font-size: 0.85rem; font-weight: bold;">{{description}}</div>
+        </div>
+        <pv-button class="option-button" :label="buttonLabel" :aria-label="buttonLabel"></pv-button>
+      </div>
+    </div>
+
+
   </div>
 </template>
 
 <style scoped>
 .block-object {
-  align-items: center;
+
   display: flex;
-  width: 26rem;
-  height: 10rem;
-  background: #ffa07a;
-  padding: 1rem;
-  border: 0.25rem solid #2c3e50;
-  gap: 2.5rem;
-  padding-left: 2.5rem;
+
+  background: white;
+  border: 0.1rem solid #4E4E4E;
+  border-radius: 2.5rem;
 }
+
+.block-image {
+  display: flex;
+
+  box-sizing: border-box;
+  border-right-width: 0.1rem;
+  border-right-color: #4E4E4E;
+  border-right-style: solid;
+}
+.image-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding: 1rem 1.5rem;
+}
+
 .block-description {
+  display: flex;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
+
   text-align: center;
   font-size: 0.85rem;
-  width: 14rem;
+  width: 16.25rem;
   line-height: 1.15rem;
+}
+.descriptor {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  line-height: 1rem;
+  padding-bottom: 0.5rem;
+}
+.block-descriptor-wrapper {
+  display: flex;
+  padding: 0.8rem 2rem;
 }
 .option-button {
   border: 0 solid #ffffff;
   font-size: 1.0rem;
-  background-color: #ffcc00;
-  border-radius: 1.0rem;
+  background-color: #79ADFA;
+  border-radius: 99rem;
   padding: 0.5rem 2.8rem;
 }
 .option-button:hover {
-  background-color: #ffffa0;
+  background-color: #AFD0FFFF;
+
 }
 </style>

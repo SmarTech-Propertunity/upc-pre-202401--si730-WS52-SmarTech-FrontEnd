@@ -2,7 +2,8 @@ const es = {
     copyright:'Derechos de autor © 2024 Fake Store, inc. Todos los derechos reservados.',
 
     searchInput:{
-        searchText: 'Buscar ubicación',
+
+        searchText: 'Buscar propiedades o ubicaciones',
         selectDefault: 'Tipo de Propiedad',
         select1: 'Casa',
         select2: 'Departamento',
@@ -32,11 +33,12 @@ const es = {
     blocksOptions: [
         {
             buttonLabel: "Buscar",
-            description: "No encuentra la inmobiliaria adecuada? Busque aquí"
+
+            description: "¿No encuentra la inmobiliaria adecuada? Busque ahora para encontrar entre cientas de alternativas."
         },
         {
             buttonLabel: "Evalúe ahora",
-            description: "Una evaluación crediticia le permitirá analizar el riesgo crediticio sobre la adquisición de un inmueble"
+            description: "Una evaluación crediticia le permitirá analizar el riesgo crediticio sobre la adquisición de un inmueble."
         }
     ],
     featuredPublications: {
@@ -44,7 +46,7 @@ const es = {
     },
     publicationCard: {
         offeredBy: "Ofrecido por ",
-        cost: "Desde S/.",
+        cost: "Desde ",
         location: "En "
     },
 

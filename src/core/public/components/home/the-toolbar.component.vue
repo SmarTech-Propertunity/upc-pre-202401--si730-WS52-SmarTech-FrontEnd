@@ -7,13 +7,31 @@
   <pv-toolbar class="p-toolbar">
     <template #start>
       <div class="p-toolbar-start">
-        <p class="p-toolbar-start-title" aria-label="Propertunity">Propertunity</p>
+
+        <img class="pertuny-logo"
+             src="../../../../assets/images/common/propertunity-logo.png"
+             alt="Propertunity"
+             width="50" height="50"
+             aria-label="Propertunity logo"
+        >
+        <div class="p-toolbar-start-title" aria-label="Propertunity">Propertunity</div>
       </div>
     </template>
 
     <template #end>
       <div class="p-toolbar-end">
-        <img class="a" src="../../../../assets/images/material-icons/account-icon.png" height="65px" width="65px" alt="Account Icon" aria-label="account">
+
+        <router-link to="/search">
+          <div class="profile-shortcut-wrapper">
+            <img class="account-shortcut"
+                 src="../../../../assets/images/material-icons/account-icon.png"
+                 height="60px" width="60px"
+                 alt="Account Icon"
+                 aria-label="account"
+            >
+          </div>
+        </router-link>
+
       </div>
     </template>
   </pv-toolbar>
@@ -24,19 +42,22 @@
   .p-toolbar {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    background: #427bf5;
-    width: 100%;
-    padding: 0;
+    background: #4478FF;
+    padding: 0.25rem 0;
+
+    border-width: 0;
+    border-radius: 0;
+
   }
   .p-toolbar-start {
     display: flex;
     align-items: center;
     padding-left: 2.5rem;
+    gap: 1rem;
   }
   .p-toolbar-start-title {
-    font-size: 2em;
+    font-size: 1.75rem;
+
     font-weight: bold;
     font-style: italic;
     font-family: Lato, sans-serif;
@@ -49,10 +70,20 @@
     gap: 2.0rem;
   }
 
-
-  .a {
-    background-color: #80aaf5;
+  .account-shortcut {
     border-radius: 99rem;
-    padding: 0.5rem;
+    padding: 0.15rem;
+    transition: background-color 150ms ease-in-out;
+  }
+  .account-shortcut:hover {
+    background-color: #80aaf5;
+    cursor: pointer;
+  }
+  .pertuny-logo {
+    border-radius: 99rem;
+  }
+  .profile-shortcut-wrapper {
+    display: flex;
+
   }
 </style>

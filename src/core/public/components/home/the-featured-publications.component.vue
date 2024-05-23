@@ -9,64 +9,76 @@ export default
 </script>
 
 <template>
+
   <div class="main-block">
-    <p style="font-size: 1.75rem; padding-left: 1.0rem;">{{$t('featuredPublications.featuredLabel')}}</p>
+    <div class="bar-section">
+      <div class="featured-publications-option">
+        <div class="label">
+          {{$t('featuredPublications.featuredLabel')}}
+        </div>
+        <div class="slider">
+
+        </div>
+      </div>
+    </div>
+
     <div class="cards">
-
       <publication-card
           location= "La Marina"
-          price="100.00"
-          card-size=350
-          publication-image-path="src/assets/images/user-icon.png"
-          offered-by="Sedapal"
+          price="69.00"
+          card-size="400"
+          publication-image-path="src/assets/images/home-section/publication-1.png"
+          offered-by="Inmobilística"
       ></publication-card>
       <publication-card
           location= "La Marina"
-          price="100.00"
-          card-size=350
-          publication-image-path="src/assets/images/user-icon.png"
-          offered-by="Sedapal"
+          price="uwu"
+          card-size="400"
+          publication-image-path="src/assets/images/home-section/publication-2.png"
+          offered-by="Inmobilística"
       ></publication-card>
       <publication-card
           location= "La Marina"
-          price="100.00"
-          card-size=350
-          publication-image-path="src/assets/images/user-icon.png"
-          offered-by="Sedapal"
+          price="lmao"
+          card-size="400"
+          publication-image-path="src/assets/images/home-section/publication-3.png"
+          offered-by="Inmobilística"
       ></publication-card>
-      <publication-card
-          location= "La Marina"
-          price="100.00"
-          card-size=350
-          publication-image-path="src/assets/images/user-icon.png"
-          offered-by="Sedapal"
-      ></publication-card>
-      <publication-card
-          location= "La Marina"
-          price="100.00"
-          card-size=350
-          publication-image-path="src/assets/images/user-icon.png"
-          offered-by="Sedapal"
-      ></publication-card>
-
     </div>
   </div>
+
 </template>
 
 <style scoped>
-.main-block {
-  background: #add8e6;
-}
-.single-card {
-  background: #ccdddd;
-  margin: 1.5rem;
-  border: 1.0rem solid #ccdddd;
-}
+
 .cards {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 2rem;
   align-items: center;
+
+  padding: 1.5rem;
+}
+.bar-section {
+  display: flex;
+  font-size: 1.75rem;
+  padding-left: 1.0rem;
+
+  background-color: #A3B7FF;
+}
+.featured-publications-option {
+  display: flex;
+  flex-direction: column;
+}
+.label {
+  font-size: 1.5rem;
+  padding: 0.4rem;
+}
+.slider {
+  background-color: #5772FF;
+  padding: 0.15rem 0;
+  border-radius: 1rem;
+
 }
 </style>

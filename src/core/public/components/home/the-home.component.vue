@@ -15,7 +15,7 @@ export default {
   <TheToolbar></TheToolbar>
   <TheSearchAndFilter></TheSearchAndFilter>
   <TheOptions></TheOptions>
-  <TheFeaturedPublications></TheFeaturedPublications>=
+  <TheFeaturedPublications></TheFeaturedPublications>
 
 </template>
 
