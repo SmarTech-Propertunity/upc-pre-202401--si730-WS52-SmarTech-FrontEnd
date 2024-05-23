@@ -50,12 +50,14 @@ export default
 </template>
 
 <style scoped>
+
 .cards {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 2rem;
   align-items: center;
+
   padding: 1.5rem;
 }
 .bar-section {
@@ -77,5 +79,6 @@ export default
   background-color: #5772FF;
   padding: 0.15rem 0;
   border-radius: 1rem;
+
 }
 </style>

@@ -26,6 +26,7 @@ export default
     },
     miniTitle: {
       type: String
+
     }
   }
 }
@@ -33,6 +34,7 @@ export default
 
 <template>
   <div class="block-object">
+
 
     <div class="block-image">
       <div class="image-section">
@@ -57,11 +59,13 @@ export default
       </div>
     </div>
 
+
   </div>
 </template>
 
 <style scoped>
 .block-object {
+
   display: flex;
 
   background: white;
@@ -116,5 +120,6 @@ export default
 }
 .option-button:hover {
   background-color: #AFD0FFFF;
+
 }
 </style>

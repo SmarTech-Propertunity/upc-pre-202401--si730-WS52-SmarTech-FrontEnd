@@ -7,6 +7,7 @@
   <pv-toolbar class="p-toolbar">
     <template #start>
       <div class="p-toolbar-start">
+
         <img class="pertuny-logo"
              src="../../../../assets/images/common/propertunity-logo.png"
              alt="Propertunity"
@@ -19,6 +20,7 @@
 
     <template #end>
       <div class="p-toolbar-end">
+
         <router-link to="/search">
           <div class="profile-shortcut-wrapper">
             <img class="account-shortcut"
@@ -29,6 +31,7 @@
             >
           </div>
         </router-link>
+
       </div>
     </template>
   </pv-toolbar>
@@ -44,6 +47,7 @@
 
     border-width: 0;
     border-radius: 0;
+
   }
   .p-toolbar-start {
     display: flex;
@@ -53,6 +57,7 @@
   }
   .p-toolbar-start-title {
     font-size: 1.75rem;
+
     font-weight: bold;
     font-style: italic;
     font-family: Lato, sans-serif;
@@ -64,7 +69,6 @@
     padding-right: 1.5rem;
     gap: 2.0rem;
   }
-
 
   .account-shortcut {
     border-radius: 99rem;
@@ -80,5 +84,6 @@
   }
   .profile-shortcut-wrapper {
     display: flex;
+
   }
 </style>

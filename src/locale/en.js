@@ -2,6 +2,7 @@ const en = {
     copyright: 'Copyright © 2024 Propertunity, inc. All rights reserved.',
 
     searchInput:{
+
         searchText: 'Search places or real states',
         selectDefault: 'Property type',
         select1: 'House',
@@ -46,6 +47,7 @@ const en = {
     },
     publicationCard: {
         offeredBy: "Offered by ",
+
         cost: "Starting at ",
         location: "At "
     },

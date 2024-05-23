@@ -11,10 +11,12 @@ export default {
 </script>
 
 <template>
+
   <TheToolbar></TheToolbar>
   <TheSearchAndFilter></TheSearchAndFilter>
   <TheOptions></TheOptions>
   <TheFeaturedPublications></TheFeaturedPublications>
+
 </template>
 
 <style scoped>

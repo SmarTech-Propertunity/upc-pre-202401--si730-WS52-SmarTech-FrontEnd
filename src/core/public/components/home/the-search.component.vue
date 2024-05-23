@@ -12,12 +12,15 @@
         filterOptions: [this.$t('searchType.department'), this.$t('searchType.property'), this.$t('searchType.land')],
         selectedFilter: ""
       }
+
     }
+
   }
 </script>
 
 <template>
   <div class="buildings-banner">
+
 
     <img src="../../../../assets/images/home-section/buildings-banner.png"
          alt="buildings banner"
@@ -61,6 +64,7 @@
                :placeholder="$t('inputPrice.to')"
                :aria-label="$t('inputPrice.to')"
         >
+
       </div>
     </div>
 
@@ -71,6 +75,7 @@
   .buildings-banner {
     position: relative;
     display: flex;
+
   }
 
   .input-text-section {
@@ -82,14 +87,17 @@
     align-items: center;
     background-color: #ffffff;
     padding: 0.25rem 1.25rem;
+    gap: 0.75rem;
+    background-color: #ffffff;
+    padding: 0.75rem 2.0rem;
     border-radius: 2.5rem;
   }
   .input-text {
     border: 0 solid #000000;
     padding: 0.5rem 0.75rem;
     width: 30rem;
-
     font-size: 1.2rem;
+
   }
   .input-text:focus {
     outline: 0;
@@ -103,28 +111,33 @@
     display: flex;
     align-items: center;
     gap: 1.5rem;
+
   }
   .dropdown-filter {
     display: flex;
     background-color: #ffffff;
     color: #000000;
+
     padding: 0.15rem 1rem;
     width: 14rem;
     gap: 1.5rem;
     border-radius: 99rem;
-
     font-size: 1rem;
+
   }
 
   .price-filter {
     display: flex;
+
     gap: 0.75rem;
+
     align-items: center;
   }
   .input-price {
     border: 0 solid #ffffff;
     padding: 0.75rem 0.75rem;
     width: 7rem;
+
     border-radius: 99rem;
 
     font-size: 1rem;
@@ -143,5 +156,6 @@
   }
   .search-icon-wrapper {
     display: flex;
+
   }
 </style>

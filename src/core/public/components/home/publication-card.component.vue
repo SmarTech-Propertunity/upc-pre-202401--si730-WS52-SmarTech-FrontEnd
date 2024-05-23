@@ -29,6 +29,7 @@ export default
 
 <template>
   <pv-card class="single-card">
+
     <template #header>
       <img class="publication-image"
            alt="referenceImage"
@@ -64,6 +65,7 @@ export default
 
 <style scoped>
 .single-card {
+
   border-radius: 1.5rem;
   background-color: #B6C2FF;
 }
@@ -87,5 +89,6 @@ export default
 
 .icon {
   filter: invert(1);
+
 }
 </style>

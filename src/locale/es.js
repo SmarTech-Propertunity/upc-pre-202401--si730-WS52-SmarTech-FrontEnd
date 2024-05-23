@@ -2,6 +2,7 @@ const es = {
     copyright:'Derechos de autor © 2024 Fake Store, inc. Todos los derechos reservados.',
 
     searchInput:{
+
         searchText: 'Buscar propiedades o ubicaciones',
         selectDefault: 'Tipo de Propiedad',
         select1: 'Casa',
@@ -32,6 +33,7 @@ const es = {
     blocksOptions: [
         {
             buttonLabel: "Buscar",
+
             description: "¿No encuentra la inmobiliaria adecuada? Busque ahora para encontrar entre cientas de alternativas."
         },
         {
