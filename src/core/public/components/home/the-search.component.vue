@@ -21,10 +21,7 @@
 <template>
   <div class="buildings-banner">
 
-
-    <img src="../../../../assets/images/home-section/buildings-banner.png"
-         alt="buildings banner"
-         style="height: 200px; width: 100%; overflow: hidden; object-fit: cover;"/>
+    <div style="height: 200px; width: 100%; overflow: hidden; object-fit: cover;"></div>
 
     <div class="input-text-section">
       <router-link to="/search">
@@ -88,15 +85,14 @@
     background-color: #ffffff;
     padding: 0.25rem 1.25rem;
     gap: 0.75rem;
-    background-color: #ffffff;
-    padding: 0.75rem 2.0rem;
     border-radius: 2.5rem;
   }
   .input-text {
-    border: 0 solid #000000;
+    border: 0.1rem solid rgba(128, 128, 128, 0.51);
     padding: 0.5rem 0.75rem;
     width: 30rem;
     font-size: 1.2rem;
+    border-radius: 9rem;
 
   }
   .input-text:focus {
@@ -134,14 +130,13 @@
     align-items: center;
   }
   .input-price {
-    border: 0 solid #ffffff;
+    border: 0.1rem solid rgba(128, 128, 128, 0.51);
     padding: 0.75rem 0.75rem;
     width: 7rem;
-
     border-radius: 99rem;
-
     font-size: 1rem;
   }
+
   .input-price:focus {
     outline: 0;
   }

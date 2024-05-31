@@ -50,7 +50,9 @@ export default
 </template>
 
 <style scoped>
-
+.label{
+  margin-left: 30px;
+}
 .cards {
   display: flex;
   flex-wrap: wrap;
@@ -65,7 +67,7 @@ export default
   font-size: 1.75rem;
   padding-left: 1.0rem;
 
-  background-color: #A3B7FF;
+  background-color: #ffffff;
 }
 .featured-publications-option {
   display: flex;
@@ -76,9 +78,9 @@ export default
   padding: 0.4rem;
 }
 .slider {
-  background-color: #5772FF;
+  background-color: rgba(3, 20, 92, 1);
   padding: 0.15rem 0;
   border-radius: 1rem;
-
+  margin-left: 4vh;
 }
 </style>

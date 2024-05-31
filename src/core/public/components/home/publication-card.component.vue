@@ -67,7 +67,7 @@ export default
 .single-card {
 
   border-radius: 1.5rem;
-  background-color: #B6C2FF;
+  background-color: #ffffff;
 }
 .publication-image {
   border-top-left-radius: 1.5rem;

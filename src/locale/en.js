@@ -1,6 +1,7 @@
 const en = {
     copyright: 'Copyright © 2024 Propertunity, inc. All rights reserved.',
-
+    NotFound: 'Page Not Found',
+    NotFoundButton: "Back to Home",
     searchInput:{
 
         searchText: 'Search places or real states',
@@ -56,7 +57,7 @@ const en = {
     username: 'Username',
     password: 'Password',
     into: 'Log in',
-    register: 'Sign up',
+    register: '¿Don´t have an account?',
     recovery: 'Forgot your password?',
     buttonpassword: 'Recovery password',
     contact: 'contact',
@@ -76,8 +77,13 @@ const en = {
     initialFee: 'Initial Fee',
     additionalCosts: 'Additional Costs',
     amountToBeFinanced: 'Amount to be Financed',
-    monthlyPayment: 'Monthly Payment'
+    monthlyPayment: 'Monthly Payment',
 
+    ariaLabels: {
+
+
+    }
 }
+
 
 export default en

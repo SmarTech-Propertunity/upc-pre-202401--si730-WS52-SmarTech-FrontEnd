@@ -39,7 +39,7 @@ export default
 <style scoped>
 
   .more-options {
-    background: #C9D1FF;
+    background: #ffffff;
     padding: 1rem;
     display: flex;
 

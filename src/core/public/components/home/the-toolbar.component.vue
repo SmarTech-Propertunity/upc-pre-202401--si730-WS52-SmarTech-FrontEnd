@@ -42,7 +42,7 @@
   .p-toolbar {
     display: flex;
     align-items: center;
-    background: #4478FF;
+    background: #03145c;
     padding: 0.25rem 0;
 
     border-width: 0;

@@ -1,6 +1,7 @@
 const es = {
-    copyright:'Derechos de autor © 2024 Fake Store, inc. Todos los derechos reservados.',
-
+    copyright:'Derechos de autor © 2024 Propertunity, inc. Todos los derechos reservados.',
+    NotFound: "Pagina no encontrada",
+    NotFoundButton: "Volver",
     searchInput:{
 
         searchText: 'Buscar propiedades o ubicaciones',
@@ -54,7 +55,7 @@ const es = {
     username: 'Usuario',
     password: 'Contraseña',
     into: 'Ingresar',
-    register:'Registrar',
+    register:'¿No tienes una cuenta?',
     recovery: '¿Perdiste tu contraseña?',
     buttonpassword: 'Recuperar contraseña',
     contact: 'Contáctanos',

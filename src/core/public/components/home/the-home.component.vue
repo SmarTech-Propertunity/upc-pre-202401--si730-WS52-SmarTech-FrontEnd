@@ -6,7 +6,7 @@ import TheFeaturedPublications from "@/core/public/components/home/the-featured-
 
 export default {
   name: "the-home-component",
-  components: {TheToolbar, TheSearchAndFilter, TheOptions, TheFeaturedPublications},
+  components: { TheToolbar, TheSearchAndFilter, TheOptions, TheFeaturedPublications},
 }
 </script>
 

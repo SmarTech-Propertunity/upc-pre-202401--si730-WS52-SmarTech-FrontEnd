@@ -15,7 +15,7 @@ import Galleria from 'primevue/galleria';
 import i18n from "@/locale/i18n.js";
 const app = createApp(App)
 
-//app.use(router)
+app.use(router)
 app.use(PrimeVue);
 app.use(router);
 app.use(i18n);
