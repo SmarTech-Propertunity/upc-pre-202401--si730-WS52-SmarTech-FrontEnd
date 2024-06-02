@@ -1,8 +1,10 @@
 const en = {
     copyright: 'Copyright © 2024 Propertunity, inc. All rights reserved.',
-
+    NotFound: 'Page Not Found',
+    NotFoundButton: "Back to Home",
     searchInput:{
-        searchText: 'Location search',
+
+        searchText: 'Search places or real states',
         selectDefault: 'Property type',
         select1: 'House',
         select2: 'Department',
@@ -18,11 +20,44 @@ const en = {
         cardContent1: 'From',
         cardContent2: 'In',
     },
+
+    searchType: {
+        notDefined: "Type",
+        department: "Department",
+        property: "Property",
+        land: "Land"
+    },
+    inputPrice: {
+        from: "From",
+        to: "To"
+    },
+    blocksOptions: [
+        {
+            buttonLabel: "Search",
+            description: "Can't find the right real estate agency? Search here!",
+            imageAlt: "Search real state agency"
+        },
+        {
+            buttonLabel: "Evaluate now",
+            description: "A credit evaluation will allow you to analyze the credit risk related to the acquisition of a property.",
+            imageAlt: "Credit evaluation"
+        }
+    ],
+    featuredPublications: {
+        featuredLabel: "Featured"
+    },
+    publicationCard: {
+        offeredBy: "Offered by ",
+
+        cost: "Starting at ",
+        location: "At "
+    },
+
     welcome: 'Welcome to Propertunity',
     username: 'Username',
     password: 'Password',
     into: 'Log in',
-    register: 'Sign up',
+    register: '¿Don´t have an account?',
     recovery: 'Forgot your password?',
     buttonpassword: 'Recovery password',
     contact: 'contact',
@@ -34,6 +69,21 @@ const en = {
     district: 'district',
     phone: 'Phone Number',
     rol: 'Select a rol',
+
+    annualInterestRate: 'Annual Interest Rate',
+    term: 'Term (months)',
+    currency: 'Currency',
+    propertyPrice: 'Property Price',
+    initialFee: 'Initial Fee',
+    additionalCosts: 'Additional Costs',
+    amountToBeFinanced: 'Amount to be Financed',
+    monthlyPayment: 'Monthly Payment',
+
+    ariaLabels: {
+
+
+    }
 }
+
 
 export default en

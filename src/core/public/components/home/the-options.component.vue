@@ -9,34 +9,40 @@ export default
 </script>
 
 <template>
-  <div class="search-agency">
 
+  <div class="more-options">
     <option-block
-        button-label="Buscar"
-        image-alt="Evaluación crediticia"
-        image-path="src/assets/images/saved-icon.png"
-        description="Una evaluación crediticia le permitirá analizar el riesgo crediticio sobre la adquisición de un inmueble"
-        image-width=75
-        image-height=50
+        :button-label="$t('blocksOptions[0].buttonLabel')"
+        :image-alt="$t('blocksOptions[0].imageAlt')"
+        image-path="src/assets/images/home-section/inmobiliaria-banner.png"
+        :description="$t('blocksOptions[0].description')"
+        image-width=115
+        image-height=85
+        mini-title="Buscar inmobiliaria"
+
     ></option-block>
 
     <option-block
-        button-label="Evalúe ahora"
-        image-alt="Buscar inmobiliaria"
-        image-path="src/assets/images/edit-icon.png"
-        description="Una evaluación crediticia le permitirá analizar el riesgo crediticio sobre la adquisición de un inmueble"
-        image-width=75
-        image-height=75
+        :button-label="$t('blocksOptions[1].buttonLabel')"
+        :image-alt="$t('blocksOptions[1].imageAlt')"
+
+        image-path="src/assets/images/home-section/evaluacion-crediticia-banner.png"
+        :description="$t('blocksOptions[1].description')"
+        image-width=105
+        image-height=85
+        mini-title="Evaluación crediticia"
+
     ></option-block>
   </div>
 </template>
 
 <style scoped>
-  .search-agency {
-    background: #f0f0f0;
+
+  .more-options {
+    background: #ffffff;
     padding: 1rem;
     display: flex;
-    align-items: center;
+
     justify-content: center;
     gap: 5rem;
   }

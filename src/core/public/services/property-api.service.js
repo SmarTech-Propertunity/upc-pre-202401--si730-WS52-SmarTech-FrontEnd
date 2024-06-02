@@ -15,5 +15,10 @@ export class PropertyApiService {
     static async getImages(){
         return await axios.get('http://localhost:3000/properties/')
     }
+
+    static GetResponse()
+    {
+        return axios.get('http://localhost:3000/properties/')
+    }
 }
 

@@ -6,7 +6,7 @@ import HomeComponent from "@/core/public/components/home/the-home.component.vue"
 import SearchComponent from "@/core/public/components/search-properties/properties-list.component.vue";
 import CreditCalculatorComponent from "@/core/domain/components/finance-tool/credit-calculator.component.vue";
 import PostOverview from "@/core/domain/components/property-post/post-overview.component.vue";
-
+import NotFoundComponent from "@/core/public/pages/not-found.component.vue";
 
 const routes = [
     { path: '/', component: MainLoginComponent },
@@ -15,8 +15,9 @@ const routes = [
     { path: '/home', component: HomeComponent },
     {path: '/search', component: SearchComponent},
     { path: '/calculator', component: CreditCalculatorComponent },
-    { path: '/property/:id', component: PostOverview }
-
+    { path: '/property/:id', component: PostOverview, props: true},
+    { path: '/:pathMatch(.*)', redirect: '/404' },
+    { path: '/404', name: '404', component: NotFoundComponent }
 ]
 
 const router = createRouter({
