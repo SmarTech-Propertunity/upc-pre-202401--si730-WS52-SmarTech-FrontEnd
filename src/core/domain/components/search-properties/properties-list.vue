@@ -3,8 +3,9 @@ import { PropertyApiService } from "@/public/services/property-api.service.js";
 import { ref, onMounted } from 'vue';
 
 const properties = ref([]);
-const search = ''; // Definición de constante search dentro de data
-const maxvalue = ref(null); // Definición de constante maxvalue dentro de data
+const propertyDistrict = ref("");
+const propertyType = ref("");
+const maxvalue = ref(null);
 const minvalue = ref(null);
 
 onMounted(async () => {
@@ -14,7 +15,17 @@ onMounted(async () => {
 })
 
 async function filtered() {
-  const response = await PropertyApiService.getFiltered();
+  properties.value = [];
+  console.log(minvalue.value,
+      maxvalue.value,
+      propertyType.value,
+      propertyDistrict.value);
+  const response = await PropertyApiService.getFiltered(
+      minvalue.value,
+      maxvalue.value,
+      propertyType.value,
+      propertyDistrict.value
+  );
   properties.value = response.data;
   console.log(properties.value);
 }
@@ -22,19 +33,35 @@ async function filtered() {
 
 <template>
   <div class="search">
-
     <div class="search-bar" role="search">
-      <a @click="filtered()" aria-label="Busqueda filtrada"><img src="https://www.freeiconspng.com/uploads/magnifying-glass-icon-13.png" alt="icono de lupa que inicia la busqueda al ser clikeado" /></a>
-      <input class="search-input" type="text" v-model="search" placeholder="Buscar ubicación" aria-label="Término de búsqueda ingresada por el usuario">
-      <select id="dropdown" aria-label="Opciones de tipo de propiedad">
+      <select v-model="propertyDistrict" aria-label="Opciones de distritos">
+        <option value="" disabled selected hidden>Distrito</option>
+        <option value="Santiago de Surco">Santiago de Surco</option>
+        <option value="Miraflores">Miraflores</option>
+        <option value="San Isidro">San Isidro</option>
+        <option value="Barranco">Barranco</option>
+        <option value="San Borja">San Borja</option>
+        <option value="Huaraz">Huaraz</option>
+        <option value="Callao">Callao</option>
+        <option value="Jesus Maria">Jesus Maria</option>
+        <option value="Asia">Asia</option>
+        <option value="Camaná">Camaná</option>
+      </select>
+      <select v-model="propertyType" aria-label="Opciones de tipo de propiedad">
         <option value="" disabled selected hidden>Tipo de Propiedad</option>
-        <option value="Casa"> Casa </option>
-        <option value="Departamento"> Departamento </option>
-        <option value="LocalComercial"> Local Comercial </option>
+        <option value="Casa">Casa</option>
+        <option value="Departamento">Departamento</option>
+        <option value="Local Comercial">Local Comercial</option>
+        <option value="Penthouse">Penthouse</option>
+        <option value="Oficina">Oficina</option>
+        <option value="Terreno">Terreno</option>
+        <option value="Local Industrial">Local Industrial</option>
+        <option value="Casa de Playa">Casa de Playa</option>
       </select>
       <img src="https://cdn-icons-png.flaticon.com/512/3388/3388744.png" alt="icono de filtro">
       <input class="filter-input" type="number" v-model="minvalue" placeholder="Desde" aria-label="Precio mínimo de busqueda">
       <input class="filter-input" type="number" v-model="maxvalue" placeholder="Hasta" aria-label="Precio máximo de busqueda">
+      <a @click="filtered()" aria-label="Busqueda filtrada"><img src="https://www.freeiconspng.com/uploads/magnifying-glass-icon-13.png" alt="icono de lupa que inicia la busqueda al ser clikeado" /></a>
     </div>
 
     <div class="title">
@@ -56,7 +83,7 @@ async function filtered() {
               <div class="card-content">
                 <h3>{{ property.titulo }}</h3>
                 <img src="https://icons.veryicon.com/png/o/business/business-finance/coin-10.png" alt="icono de moneda" > Desde {{property.precio_dolares}} <br>
-                <img src="https://www.iconpacks.net/icons/1/free-pin-icon-48-thumb.png" alt="icono de ubicacion" > En Av.La marina
+                <img src="https://www.iconpacks.net/icons/1/free-pin-icon-48-thumb.png" alt="icono de ubicacion" > En el distrito de {{property.distrito}}
               </div>
             </div>
           </li>

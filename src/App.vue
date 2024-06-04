@@ -10,6 +10,7 @@ import TheSearchAndFilter from "@/public/components/theSearchAndFilters.componen
 </script>
 
 <template>
+
   <the-toolbar></the-toolbar>
   <the-search-and-filter></the-search-and-filter>
   <the-options></the-options>
@@ -17,6 +18,7 @@ import TheSearchAndFilter from "@/public/components/theSearchAndFilters.componen
   <Login/>
   <RecoveryPassword/>
   <Register/>
+
 
 </template>
 
