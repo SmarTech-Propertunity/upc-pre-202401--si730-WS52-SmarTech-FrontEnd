@@ -4,11 +4,17 @@ const en = {
     NotFoundButton: "Back to Home",
     searchInput:{
 
-        searchText: 'Search places or real states',
-        selectDefault: 'Property type',
-        select1: 'House',
-        select2: 'Department',
-        select3: 'Commercial Local',
+        selectDefaultDistrict: 'District',
+        selectDefaultType: 'Property type',
+        selectType1: 'House',
+        selectType2: 'Department',
+        selectType3: 'Commercial Local',
+        selectType4: 'Penthouse',
+        selectType5: 'Office',
+        selectType6: 'Land',
+        selectType7: 'Industrial Premises',
+        selectType8: 'Beach house',
+
         filterInputMin: 'From',
         filterInputMax: 'To',
     },
@@ -18,7 +24,7 @@ const en = {
     searchResult:{
         searchResultBarTitle: 'Results',
         cardContent1: 'From',
-        cardContent2: 'In',
+        cardContent2: 'In the district of',
     },
 
     searchType: {

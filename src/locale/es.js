@@ -4,11 +4,17 @@ const es = {
     NotFoundButton: "Volver",
     searchInput:{
 
-        searchText: 'Buscar propiedades o ubicaciones',
-        selectDefault: 'Tipo de Propiedad',
-        select1: 'Casa',
-        select2: 'Departamento',
-        select3: 'Local Comercial',
+        selectDefaultDistrict: 'Distrito',
+        selectDefaultType: 'Tipo de Propiedad',
+        selectType1: 'Casa',
+        selectType2: 'Departamento',
+        selectType3: 'Local Comercial',
+        selectType4: 'Penthouse',
+        selectType5: 'Oficina',
+        selectType6: 'Terreno',
+        selectType7: 'Local Industrial',
+        selectType8: 'Casa de Playa',
+
         filterInputMin: 'Desde',
         filterInputMax: 'Hasta',
     },
@@ -18,7 +24,7 @@ const es = {
     searchResult:{
         searchResultBarTitle: 'Resultados',
         cardContent1: 'Desde',
-        cardContent2: 'En',
+        cardContent2: 'En el distrito de',
     },
 
     searchType: {
