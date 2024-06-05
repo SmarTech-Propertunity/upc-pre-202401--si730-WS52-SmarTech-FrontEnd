@@ -84,8 +84,7 @@ async function filtered() {
           <li class="card-container" role="listitem">
             <div class="card">
               <div class="card-image">
-                <!--<router-link to="/property/${{property.id_propiedad}}" >-->
-                <router-link to="/property/1">
+                <router-link :to="`/property/${property.id_propiedad - 1}`">
                   <img :src="property.imagen" alt="imagen de propiedad">
                 </router-link>
               </div>
