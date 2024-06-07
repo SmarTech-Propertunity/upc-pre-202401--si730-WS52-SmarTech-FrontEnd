@@ -18,7 +18,7 @@ const routes = [
         path: '/search/:propertyDistrict/:propertyType/:maxvalue/:minvalue',
         name: 'SearchComponent',
         component: SearchComponent,
-        props: true // Habilita la recepción de props desde la URL
+        props: true // Habilita la recepción de props desde la URL   
     },
     { path: '/calculator', component: CreditCalculatorComponent },
     { path: '/property/:id', component: PostOverview, props: true},
