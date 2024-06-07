@@ -4,17 +4,11 @@ const es = {
     NotFoundButton: "Volver",
     searchInput:{
 
-        selectDefaultDistrict: 'Distrito',
-        selectDefaultType: 'Tipo de Propiedad',
-        selectType1: 'Casa',
-        selectType2: 'Departamento',
-        selectType3: 'Local Comercial',
-        selectType4: 'Penthouse',
-        selectType5: 'Oficina',
-        selectType6: 'Terreno',
-        selectType7: 'Local Industrial',
-        selectType8: 'Casa de Playa',
-
+        searchText: 'Buscar propiedades o ubicaciones',
+        selectDefault: 'Tipo de Propiedad',
+        select1: 'Casa',
+        select2: 'Departamento',
+        select3: 'Local Comercial',
         filterInputMin: 'Desde',
         filterInputMax: 'Hasta',
     },
@@ -24,7 +18,7 @@ const es = {
     searchResult:{
         searchResultBarTitle: 'Resultados',
         cardContent1: 'Desde',
-        cardContent2: 'En el distrito de',
+        cardContent2: 'En',
     },
 
     searchType: {
@@ -40,11 +34,12 @@ const es = {
     blocksOptions: [
         {
             buttonLabel: "Buscar",
-
+            routerPath: "/search",
             description: "¿No encuentra la inmobiliaria adecuada? Busque ahora para encontrar entre cientas de alternativas."
         },
         {
             buttonLabel: "Evalúe ahora",
+            routerPath: "/calculator",
             description: "Una evaluación crediticia le permitirá analizar el riesgo crediticio sobre la adquisición de un inmueble."
         }
     ],
@@ -57,10 +52,15 @@ const es = {
         location: "En "
     },
 
+    loginTitle: 'Iniciar Sesión',
+    registerTitle: 'Registrarse',
+    recoveryTitle: 'Restaura tu Contraseña',
+    recoveryDescription: 'Ingresa tu correo electrónico y te enviaremos un enlace para restablecer tu contraseña',
     welcome: 'Bienvenidos a Propertunity',
     username: 'Usuario',
     password: 'Contraseña',
     into: 'Ingresar',
+    registerBTN: 'Registrarse',
     register:'¿No tienes una cuenta?',
     recovery: '¿Perdiste tu contraseña?',
     buttonpassword: 'Recuperar contraseña',

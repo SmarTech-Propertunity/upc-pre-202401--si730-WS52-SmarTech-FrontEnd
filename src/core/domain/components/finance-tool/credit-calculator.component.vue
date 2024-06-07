@@ -1,7 +1,7 @@
 <template>
   <RetraceToolbar />
   <div>
-    <div class="header"></div>
+
 
     <div class="screen">
       <h2 class="title">Calculadora Crediticia</h2>
@@ -43,12 +43,14 @@
             <label aria-label="Cuota Mensual">Cuota Mensual:</label>
             <div class="result">{{ monthlyPayment }}</div>
           </div>
-          <button type="submit" aria-label="Calcular">Calcular</button>
+          <div class="calculate-button">
+            <button type="submit" aria-label="Calcular">Calcular</button>
+          </div>
         </form>
       </div>
     </div>
   </div>
-  <TheFooter />
+
 </template>
 
 <script>
@@ -115,13 +117,10 @@ export default {
 </script>
 
 <style scoped>
-.header {
-  height: 50px;
-  background-color: blue;
-}
+
 
 .screen {
-  background-color: #ccc;
+  background-color: #ffffff;
   padding: 20px;
   text-align: center;
 }
@@ -130,13 +129,15 @@ export default {
   margin-top: 0;
   color: black;
   font-weight: normal;
+  font-size: 2rem;
 }
 
 .form-container {
-  border: 2px solid yellow;
+  border: 2px solid #000000;
   padding: 30px;
   max-width: 600px;
   margin: 0 auto;
+  border-radius: 50px;
 }
 
 .form-group {
@@ -168,4 +169,5 @@ button {
   width: 100%;
   padding: 10px;
 }
+
 </style>

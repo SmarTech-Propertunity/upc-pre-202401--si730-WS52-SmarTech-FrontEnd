@@ -44,7 +44,6 @@
     align-items: center;
     background: #03145c;
     padding: 0.25rem 0;
-
     border-width: 0;
     border-radius: 0;
 

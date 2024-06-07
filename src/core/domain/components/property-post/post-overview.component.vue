@@ -59,7 +59,7 @@ export default
 
   <div class="project-information">
     <h1>Información del proyecto</h1>
-    <h1>¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯</h1>
+
     <table>
       <tr>
         <td>Tipo de propiedad</td>
@@ -127,7 +127,7 @@ export default
   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.086776376948!2d-122.41941548537805!3d37.77492977975861!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085809c4b3bf63b%3A0x0e26b97d74c3fbc3!2sSan%20Francisco%2C%20CA!5e0!3m2!1sen!2sus!4v1598479535569!5m2!1sen!2sus" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 </div>
 </body>
-  <TheFooter/>
+
 
 </template>
 
@@ -163,7 +163,7 @@ body{
 .project-information table {
   width: 100%;
   padding:10px;
-  border: 1px solid #FFA500;
+  border: 1px solid #8f8f8f;
 }
 
 .project-information th, .project-information td {

@@ -13,7 +13,7 @@
 
 <style scoped>
 .footer-component{
-  background-color: #ededed;
+  background: linear-gradient(180deg, rgb(138, 150, 197) 0%, rgb(255, 255, 255) 100%);
   color: #000000;
   padding: 50px;
   text-align: center;

@@ -229,6 +229,7 @@ a{
   padding: 1rem;
   font-size: 25px;
   color: black;
+  border-radius: 50px;
 }
 .card-content img{
   width: 30px;

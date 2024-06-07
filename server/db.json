@@ -3,7 +3,7 @@
         {
             "id_propiedad": 1,
             "titulo": "Casa increible en Santiago de Surco",
-            "imagen": "https://e.nexoinmobiliario.pe/customers/grupo-t-c/1478-look-and-feel/departamentos-santiago-de-surco-60c3799850e32_b.jpg",
+            "imagen": "https://e.nexoinmobiliario.pe/customers/grupo-t-c/2951-pardo-coast/departamentos-miraflores-65e86e8f7c9a1_b.jpg",
             "descripcion": "Excelente casa ubicada en una estratégica de Surco- muy cerca de avenidas principales como Av. Primavera, Av. Encalada, Av. El Polo y Av. El Derby, lo que permite el fácil acceso y salida desde diferentes puntos.",
             "precio_dolares": 145000,
             "tipo_propiedad": "Casa",
@@ -19,13 +19,12 @@
             "fecha_inicio_proyecto": "24/02/62",
             "antiguedad": "62 años",
             "anunciantes_id_anunciante": 1,
-            "ubicaciones_id_ubicacion": 1,
-            "distrito": "Santiago de Surco"
+            "ubicaciones_id_ubicacion": 1
         },
         {
             "id_propiedad": 2,
             "titulo": "Departamento de lujo en Miraflores",
-            "imagen": "https://e.nexoinmobiliario.pe/customers/gerencia-de-proyectos-edifica-s-a-c/3215-urban-heights/departamentos-miraflores-661ea368a5a5c_b.jpg",
+            "imagen": "https://e.nexoinmobiliario.pe/customers/andiamo-investments/2095-alvarado/departamentos-chorrillos-6495b06be780e_b.jpg",
             "descripcion": "Espectacular departamento ubicado en el corazón de Miraflores, con vista panorámica al mar. Ideal para personas que buscan comodidad y exclusividad.",
             "precio_dolares": 550,
             "tipo_propiedad": "Departamento",
@@ -41,13 +40,12 @@
             "fecha_inicio_proyecto": "15/06/10",
             "antiguedad": "14 años",
             "anunciantes_id_anunciante": 2,
-            "ubicaciones_id_ubicacion": 2,
-            "distrito": "Miraflores"
+            "ubicaciones_id_ubicacion": 2
         },
         {
             "id_propiedad": 3,
             "titulo": "Local comercial en San Isidro",
-            "imagen": "https://e.nexoinmobiliario.pe/customers/corporacion-inmobiliaria-sudamericana-s-a-c/2475-casaparq-ii-monterrico/departamentos-santiago-de-surco-62558e3d77feb_b.jpg",
+            "imagen": "https://e.nexoinmobiliario.pe/customers/abril-grupo-inmobiliario-ft/3208-girasol/departamentos-jesus-maria-65e1ecafd53ce_b.jpg",
             "descripcion": "Amplio local comercial ubicado en una zona de alto tránsito en San Isidro. Ideal para establecer tu negocio y captar una gran clientela.",
             "precio_dolares": 480000,
             "tipo_propiedad": "Local Comercial",
@@ -63,13 +61,12 @@
             "fecha_inicio_proyecto": "10/03/05",
             "antiguedad": "19 años",
             "anunciantes_id_anunciante": 3,
-            "ubicaciones_id_ubicacion": 3,
-            "distrito": "San Isidro"
+            "ubicaciones_id_ubicacion": 3
         },
         {
             "id_propiedad": 4,
             "titulo": "Penthouse de ensueño en Barranco",
-            "imagen": "https://e.nexoinmobiliario.pe/customers/grupo-caral/1955-nerea/departamentos-pueblo-libre-60761056a2a38_b.jpg",
+            "imagen": "https://e.nexoinmobiliario.pe/customers/grupo-t-c/2951-pardo-coast/departamentos-miraflores-65e86e8f7c9a1_b.jpg",
             "descripcion": "Espectacular penthouse ubicado en una de las zonas más bohemias y exclusivas de Barranco. Disfruta de vistas panorámicas y acabados de lujo.",
             "precio_dolares": 225000,
             "tipo_propiedad": "Penthouse",
@@ -85,13 +82,12 @@
             "fecha_inicio_proyecto": "20/09/12",
             "antiguedad": "12 años",
             "anunciantes_id_anunciante": 4,
-            "ubicaciones_id_ubicacion": 4,
-            "distrito": "Barranco"
+            "ubicaciones_id_ubicacion": 4
         },
         {
             "id_propiedad": 5,
             "titulo": "Oficina corporativa en San Borja",
-            "imagen": "https://e.nexoinmobiliario.pe/customers/evergran-grupo-inmobiliario/2110-sb-norte-1189/departamentos-san-borja-6616a7c3712e9_b.jpg",
+            "imagen": "https://e.nexoinmobiliario.pe/customers/andiamo-investments/2095-alvarado/departamentos-chorrillos-6495b06be780e_b.jpg",
             "descripcion": "Moderna oficina corporativa ubicada en un edificio exclusivo en San Borja. Ideal para empresas que buscan una imagen profesional y espacios funcionales.",
             "precio_dolares": 350,
             "tipo_propiedad": "Oficina",
@@ -107,13 +103,12 @@
             "fecha_inicio_proyecto": "05/07/08",
             "antiguedad": "16 años",
             "anunciantes_id_anunciante": 5,
-            "ubicaciones_id_ubicacion": 5,
-            "distrito": "San Borja"
+            "ubicaciones_id_ubicacion": 5
         },
         {
             "id_propiedad": 6,
             "titulo": "Terreno residencial en Huaraz",
-            "imagen": "https://e.nexoinmobiliario.pe/customers/grupo-t-c/2951-pardo-coast/departamentos-miraflores-65e86e8f7c9a1_b.jpg",
+            "imagen": "https://e.nexoinmobiliario.pe/customers/abril-grupo-inmobiliario-ft/3208-girasol/departamentos-jesus-maria-65e1ecafd53ce_b.jpg",
             "descripcion": "Amplio terreno residencial ubicado en una zona tranquila y exclusiva de La Molina. Ideal para construir la casa de tus sueños.",
             "precio_dolares": 290000,
             "tipo_propiedad": "Terreno",
@@ -129,13 +124,12 @@
             "fecha_inicio_proyecto": "30/11/15",
             "antiguedad": "9 años",
             "anunciantes_id_anunciante": 6,
-            "ubicaciones_id_ubicacion": 6,
-            "distrito": "Huaraz"
+            "ubicaciones_id_ubicacion": 6
         },
         {
             "id_propiedad": 7,
             "titulo": "Local industrial en Callao",
-            "imagen": "https://e.nexoinmobiliario.pe/customers/la-venturosa-sa/2385-edificio-altaurora/departamentos-surquillo-664fc3be69a02_b.jpg",
+            "imagen": "https://e.nexoinmobiliario.pe/customers/grupo-t-c/2951-pardo-coast/departamentos-miraflores-65e86e8f7c9a1_b.jpg",
             "descripcion": "Amplio local industrial ubicado en una zona estratégica del Callao. Ideal para empresas que buscan un espacio funcional y accesible para sus operaciones.",
             "precio_dolares": 620000,
             "tipo_propiedad": "Local Industrial",
@@ -151,13 +145,12 @@
             "fecha_inicio_proyecto": "12/04/07",
             "antiguedad": "17 años",
             "anunciantes_id_anunciante": 7,
-            "ubicaciones_id_ubicacion": 7,
-            "distrito": "Callao"
+            "ubicaciones_id_ubicacion": 7
         },
         {
             "id_propiedad": 8,
             "titulo": "Departamento de estreno en Jesus Maria",
-            "imagen": "https://e.nexoinmobiliario.pe/customers/abril-grupo-inmobiliario-ft/3208-girasol/departamentos-jesus-maria-65e1ecafd53ce_b.jpg",
+            "imagen": "https://e.nexoinmobiliario.pe/customers/andiamo-investments/2095-alvarado/departamentos-chorrillos-6495b06be780e_b.jpg",
             "descripcion": "Moderno departamento de estreno ubicado en una zona residencial de Jesús María. Ideal para familias que buscan comodidad y seguridad.",
             "precio_dolares": 120000,
             "tipo_propiedad": "Departamento",
@@ -173,13 +166,12 @@
             "fecha_inicio_proyecto": "05/09/23",
             "antiguedad": "Nueva",
             "anunciantes_id_anunciante": 8,
-            "ubicaciones_id_ubicacion": 8,
-            "distrito": "Jesus Maria"
+            "ubicaciones_id_ubicacion": 8
         },
         {
             "id_propiedad": 9,
             "titulo": "Casa de playa en Asia",
-            "imagen": "https://e.nexoinmobiliario.pe/customers/andiamo-investments/2095-alvarado/departamentos-chorrillos-6495b06be780e_b.jpg",
+            "imagen": "https://e.nexoinmobiliario.pe/customers/abril-grupo-inmobiliario-ft/3208-girasol/departamentos-jesus-maria-65e1ecafd53ce_b.jpg",
             "descripcion": "Acogedora casa de playa ubicada en un exclusivo condominio en Asia. Ideal para escapadas familiares y disfrutar del sol y la playa.",
             "precio_dolares": 280000,
             "tipo_propiedad": "Casa de Playa",
@@ -195,13 +187,12 @@
             "fecha_inicio_proyecto": "18/11/24",
             "antiguedad": "Nueva",
             "anunciantes_id_anunciante": 9,
-            "ubicaciones_id_ubicacion": 9,
-            "distrito": "Asia"
+            "ubicaciones_id_ubicacion": 9
         },
         {
             "id_propiedad": 10,
             "titulo": "Departamento con vista al mar en Camaná",
-            "imagen": "https://e.nexoinmobiliario.pe/customers/grupo-t-c/2661-palm-living/departamentos-san-isidro-64e4e9c78c8a9_b.jpg",
+            "imagen": "https://e.nexoinmobiliario.pe/customers/grupo-t-c/2951-pardo-coast/departamentos-miraflores-65e86e8f7c9a1_b.jpg",
             "descripcion": "Departamento con excelente vista al mar ubicado en una zona tranquila de Chorrillos. Ideal para disfrutar del clima y la brisa marina.",
             "precio_dolares": 100000,
             "tipo_propiedad": "Departamento",
@@ -217,8 +208,7 @@
             "fecha_inicio_proyecto": "08/03/13",
             "antiguedad": "11 años",
             "anunciantes_id_anunciante": 10,
-            "ubicaciones_id_ubicacion": 10,
-            "distrito": "Camaná"
+            "ubicaciones_id_ubicacion": 10
         }
     ]
 }

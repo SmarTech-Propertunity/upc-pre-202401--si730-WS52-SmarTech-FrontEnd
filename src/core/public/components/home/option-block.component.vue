@@ -26,7 +26,9 @@ export default
     },
     miniTitle: {
       type: String
-
+    },
+    routerPath: {
+      type: String
     }
   }
 }
@@ -55,7 +57,9 @@ export default
           <div style="font-size: 0.65rem">{{miniTitle}}</div>
           <div style="font-size: 0.85rem; font-weight: bold;">{{description}}</div>
         </div>
+        <router-link :to="routerPath">
         <pv-button class="option-button" :label="buttonLabel" :aria-label="buttonLabel"></pv-button>
+        </router-link>
       </div>
     </div>
 

@@ -4,17 +4,11 @@ const en = {
     NotFoundButton: "Back to Home",
     searchInput:{
 
-        selectDefaultDistrict: 'District',
-        selectDefaultType: 'Property type',
-        selectType1: 'House',
-        selectType2: 'Department',
-        selectType3: 'Commercial Local',
-        selectType4: 'Penthouse',
-        selectType5: 'Office',
-        selectType6: 'Land',
-        selectType7: 'Industrial Premises',
-        selectType8: 'Beach house',
-
+        searchText: 'Search places or real states',
+        selectDefault: 'Property type',
+        select1: 'House',
+        select2: 'Department',
+        select3: 'Commercial Local',
         filterInputMin: 'From',
         filterInputMax: 'To',
     },
@@ -24,7 +18,7 @@ const en = {
     searchResult:{
         searchResultBarTitle: 'Results',
         cardContent1: 'From',
-        cardContent2: 'In the district of',
+        cardContent2: 'In',
     },
 
     searchType: {
@@ -41,12 +35,14 @@ const en = {
         {
             buttonLabel: "Search",
             description: "Can't find the right real estate agency? Search here!",
-            imageAlt: "Search real state agency"
+            imageAlt: "Search real state agency",
+            routerPath: "/search"
         },
         {
             buttonLabel: "Evaluate now",
             description: "A credit evaluation will allow you to analyze the credit risk related to the acquisition of a property.",
-            imageAlt: "Credit evaluation"
+            imageAlt: "Credit evaluation",
+            routerPath: "/calculator"
         }
     ],
     featuredPublications: {
@@ -59,10 +55,15 @@ const en = {
         location: "At "
     },
 
+    loginTitle: 'Log in',
+    registerTitle: 'Register',
+    recoveryTitle: 'Restore your Password',
+    recoveryDescription: 'Enter your email to receive a link to restore your password',
     welcome: 'Welcome to Propertunity',
     username: 'Username',
     password: 'Password',
     into: 'Log in',
+    registerBTN: 'Register',
     register: '¿Don´t have an account?',
     recovery: 'Forgot your password?',
     buttonpassword: 'Recovery password',

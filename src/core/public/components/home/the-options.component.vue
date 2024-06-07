@@ -16,6 +16,7 @@ export default
         :image-alt="$t('blocksOptions[0].imageAlt')"
         image-path="src/assets/images/home-section/inmobiliaria-banner.png"
         :description="$t('blocksOptions[0].description')"
+        :router-path="$t('blocksOptions[0].routerPath')"
         image-width=115
         image-height=85
         mini-title="Buscar inmobiliaria"
@@ -25,7 +26,7 @@ export default
     <option-block
         :button-label="$t('blocksOptions[1].buttonLabel')"
         :image-alt="$t('blocksOptions[1].imageAlt')"
-
+        :router-path="$t('blocksOptions[1].routerPath')"
         image-path="src/assets/images/home-section/evaluacion-crediticia-banner.png"
         :description="$t('blocksOptions[1].description')"
         image-width=105
