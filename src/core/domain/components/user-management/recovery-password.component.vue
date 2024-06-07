@@ -1,8 +1,7 @@
 <script setup>
 import {ref} from "vue";
-const email = ref('');
-const password = ref('');
-const value = ref(null);
+const newPassword = ref('');
+const repeatPassword = ref('');
 </script>
 
 <template>
@@ -16,11 +15,16 @@ const value = ref(null);
     </div>
     <div class="input-label">
       <pv-floatLabel class="credentials-label">
-        <pv-inputText class="credentials-input" id="email" v-model="email" />
-        <div> <label class="credentials-textLabel" for="email">{{ $t('email') }}</label></div>
+        <pv-inputText class="credentials-input" id="newPassword" v-model="newPassword" />
+        <div> <label class="credentials-textLabel" for="newPassword">{{ $t('newPassword') }}</label></div>
       </pv-floatLabel>
     </div>
-
+    <div class="input-label">
+      <pv-floatLabel class="credentials-label">
+        <pv-inputText class="credentials-input" id="repeatPassword" v-model="repeatPassword" />
+        <div> <label class="credentials-textLabel" for="repeatPassword">{{ $t('repeatPassword') }}</label></div>
+      </pv-floatLabel>
+    </div>
     <div>
       <router-link to="/"><pv-button class="login-btn" :label="$t('into')" /></router-link>
 

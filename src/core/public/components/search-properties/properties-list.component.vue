@@ -181,7 +181,7 @@ select{
 }
 .search-result-bar h3 {
   margin: 10px;
-  margin-bottom: 0px;
+  margin-bottom: 0;
   padding: 2px;
 }
 
@@ -189,8 +189,8 @@ a{
   text-decoration: none;
 }
 .search-result-content{
-  margin:0px;
-  padding:0px;
+  margin:0;
+  padding:0;
   box-sizing: border-box;
   background-color: white;
 }
@@ -218,7 +218,7 @@ a{
 .card-image img{
   max-width: 70%;
   min-width: 80px;
-  height: auto; /* Para mantener la proporción de aspecto */
+  height: auto;
   /*border-style: solid;
   border-width: 1px;
   border-color: black;*/
