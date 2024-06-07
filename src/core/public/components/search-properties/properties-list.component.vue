@@ -8,7 +8,6 @@ const propertyDistrict = ref("");
 const propertyType = ref("");
 const maxvalue = ref(null);
 const minvalue = ref(null);
-const route = "";
 
 onMounted(async () => {
   const response = await PropertyApiService.getAll();
@@ -91,8 +90,12 @@ async function filtered() {
               <div class="card-content">
                 <!--<h3>{{property.id_propiedad}}</h3>-->
                 <h3>{{ property.titulo }}</h3>
-                <img src="https://icons.veryicon.com/png/o/business/business-finance/coin-10.png" alt="icono de moneda" > {{ $t('searchResult.cardContent1') }} {{property.precio_dolares}} <br>
-                <img src="https://www.iconpacks.net/icons/1/free-pin-icon-48-thumb.png" alt="icono de ubicacion" > {{ $t('searchResult.cardContent2') }} {{property.distrito}}
+                <div class="card-content-row">
+                  <img src="https://icons.veryicon.com/png/o/business/business-finance/coin-10.png" alt="icono de moneda" > {{ $t('searchResult.cardContent1') }} {{property.precio_dolares}} <br>
+                </div>
+                <div class="card-content-row">
+                  <img src="https://www.iconpacks.net/icons/1/free-pin-icon-48-thumb.png" alt="icono de ubicacion" > {{ $t('searchResult.cardContent2') }} {{property.distrito}}
+                </div>
               </div>
             </div>
           </li>
@@ -107,18 +110,17 @@ async function filtered() {
 <style scoped>
 .search{
   margin: 3rem;
-  /*background-color: #E2F1F6;*/
-  border: 1px solid #FFA500;
   color: black;
   font-family: Lato, sans-serif;
   padding-bottom: 0.5rem;
 }
 .search-bar{
-
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  border: 1px solid black;
+  border-radius: 25px;
   width: 100%;
 
 }
@@ -127,7 +129,8 @@ async function filtered() {
 }
 
 .filter-input{
-  border: 1px solid #FFA500;
+  border: 1px solid black;
+  border-radius: 25px;
   color: black;
   background-color: white;
   margin: 10px;
@@ -140,7 +143,8 @@ async function filtered() {
   margin: 15px;
 }
 select{
-  border: 1px solid #FFA500;
+  border: 1px solid black;
+  border-radius: 25px;
   background-color: white;
   color: #858585;
   width: 250px;
@@ -166,9 +170,8 @@ select{
   margin: 20px;
   text-align: center;
   color: #FFA500;
-  /*background-color: #cbdde1;*/
-  border-top: 1px solid;
-  border-bottom: 1px solid;
+  border-top: 2px solid;
+  border-bottom: 2px solid;
 }
 .title h1{
   padding: 10px;
@@ -178,6 +181,7 @@ select{
 }
 .search-result-bar{
   background-color: #FFA500;
+  border-radius: 25px;
 }
 .search-result-bar h3 {
   margin: 10px;
@@ -203,7 +207,7 @@ a{
 .card{
   width:90%;
   background-color: white;
-  border-radius: 8px;
+  border-style: none;
   margin: 20px;
   display: grid;
   grid-template-columns: 50% 50%;
@@ -219,18 +223,21 @@ a{
   max-width: 70%;
   min-width: 80px;
   height: auto;
-  /*border-style: solid;
-  border-width: 1px;
-  border-color: black;*/
+  border-radius: 25px;
 }
-.card-content{
-  /*background-color: #FFA07A;*/
-  background-color:#ddd;
+.card-content {
   padding: 1rem;
+  background-color: #ddd;
   font-size: 25px;
   color: black;
-  border-radius: 50px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
+
 .card-content img{
   width: 30px;
 }

@@ -28,7 +28,7 @@ const es = {
     searchResult:{
         searchResultBarTitle: 'Resultados',
         cardContent1: 'Desde',
-        cardContent2: 'En',
+        cardContent2: 'En el distrito de',
     },
 
     searchType: {

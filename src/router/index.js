@@ -13,7 +13,13 @@ const routes = [
     { path: '/recovery', component: RecoveryPasswordComponent },
     { path: '/register', component: RegisterUserComponent },
     { path: '/home', component: HomeComponent },
-    {path: '/search', component: SearchComponent},
+    { path: '/search', component: SearchComponent},
+    {
+        path: '/search/:propertyDistrict/:propertyType/:maxvalue/:minvalue',
+        name: 'SearchComponent',
+        component: SearchComponent,
+        props: true // Habilita la recepción de props desde la URL
+    },
     { path: '/calculator', component: CreditCalculatorComponent },
     { path: '/property/:id', component: PostOverview, props: true},
     { path: '/:pathMatch(.*)', redirect: '/404' },
