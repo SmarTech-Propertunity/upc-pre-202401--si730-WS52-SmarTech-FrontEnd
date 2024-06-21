@@ -36,5 +36,9 @@ export class PropertyApiService {
     {
         return axios.get('http://localhost:3000/properties/')
     }
+
+    async postProperty(body) {
+        return await axios.post('http://localhost:3000/properties',body)
+    }
 }
 

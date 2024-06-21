@@ -7,6 +7,7 @@ import SearchComponent from "@/core/public/components/search-properties/properti
 import CreditCalculatorComponent from "@/core/domain/components/finance-tool/credit-calculator.component.vue";
 import PostOverview from "@/core/domain/components/property-post/post-overview.component.vue";
 import NotFoundComponent from "@/core/public/pages/not-found.component.vue";
+import CreateProperty from "@/core/domain/components/property-form/create-property.vue";
 
 const routes = [
     { path: '/', component: MainLoginComponent },
@@ -20,6 +21,7 @@ const routes = [
         component: SearchComponent,
         props: true // Habilita la recepción de props desde la URL
     },
+    {path: '/create-property', component: CreateProperty},
     { path: '/calculator', component: CreditCalculatorComponent },
     { path: '/property/:id', component: PostOverview, props: true},
     { path: '/:pathMatch(.*)', redirect: '/404' },
