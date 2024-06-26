@@ -1,5 +1,4 @@
-<script setup>
-
+<script>
 </script>
 
 <template>
@@ -13,6 +12,12 @@
 
     <template #end>
       <div class="p-toolbar-end">
+        <router-link to="/create-property">
+          <img src="../../../assets/images/material-icons/add-icon.png" height="45px" width="45px" alt="add icon">
+        </router-link>
+        <router-link to="/notification">
+          <img src="../../../assets/images/material-icons/notification-icon.png" height="45px" width="45px" alt="add icon">
+        </router-link>
         <router-link to="/home">
         <img src="../../../assets/images/home-icon.png" height="50px" width="50px" alt="home icon">
         </router-link>
@@ -53,6 +58,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+.p-speeddial{
+
+
 }
 
 </style>

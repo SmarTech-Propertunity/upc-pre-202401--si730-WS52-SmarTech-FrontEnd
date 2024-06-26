@@ -20,7 +20,12 @@
 
     <template #end>
       <div class="p-toolbar-end">
-
+        <router-link to="/create-property">
+          <img src="../../../../assets/images/material-icons/add-icon.png" height="45px" width="45px" alt="add icon">
+        </router-link>
+        <router-link to="/notification">
+          <img src="../../../../assets/images/material-icons/notification-icon.png" height="45px" width="45px" alt="add icon">
+        </router-link>
         <router-link to="/search">
           <div class="profile-shortcut-wrapper">
             <img class="account-shortcut"

@@ -220,5 +220,187 @@
             "ubicaciones_id_ubicacion": 10,
             "distrito": "Camaná"
         }
+    ],
+    "notifications": [
+        {
+            "id": 1,
+            "user_sender": "Alice",
+            "user_receiver": "Bob",
+            "date": "2024-06-26",
+            "time": "10:15 AM",
+            "message": "Estoy interesado en el inmueble publicado.",
+            "title": "Notificación de interés"
+        },
+        {
+            "id": 2,
+            "user_sender": "Bob",
+            "user_receiver": "Charlie",
+            "date": "2024-06-25",
+            "time": "09:30 PM",
+            "message": "Me gustaría más información sobre el inmueble.",
+            "title": "Consulta sobre inmueble"
+        },
+        {
+            "id": 3,
+            "user_sender": "Charlie",
+            "user_receiver": "Dave",
+            "date": "2024-06-24",
+            "time": "11:45 AM",
+            "message": "¿Podrías decirme el precio del inmueble?",
+            "title": "Consulta de precio"
+        },
+        {
+            "id": 4,
+            "user_sender": "Dave",
+            "user_receiver": "Alice",
+            "date": "2024-06-23",
+            "time": "03:20 PM",
+            "message": "Estoy considerando comprar el inmueble. ¿Hay disponibilidad?",
+            "title": "Consulta de disponibilidad"
+        },
+        {
+            "id": 5,
+            "user_sender": "Alice",
+            "user_receiver": "Charlie",
+            "date": "2024-06-22",
+            "time": "08:00 AM",
+            "message": "Quiero concertar una visita al inmueble.",
+            "title": "Solicitud de visita"
+        },
+        {
+            "id": 6,
+            "user_sender": "Bob",
+            "user_receiver": "Dave",
+            "date": "2024-06-21",
+            "time": "12:10 PM",
+            "message": "Me interesa conocer las características del inmueble.",
+            "title": "Interés en características"
+        },
+        {
+            "id": 7,
+            "user_sender": "Charlie",
+            "user_receiver": "Alice",
+            "date": "2024-06-20",
+            "time": "05:30 PM",
+            "message": "¿El inmueble está disponible para alquiler?",
+            "title": "Consulta de disponibilidad para alquiler"
+        },
+        {
+            "id": 8,
+            "user_sender": "Dave",
+            "user_receiver": "Bob",
+            "date": "2024-06-19",
+            "time": "02:45 PM",
+            "message": "Me gustaría conocer la ubicación exacta del inmueble.",
+            "title": "Consulta de ubicación"
+        },
+        {
+            "id": 9,
+            "user_sender": "Alice",
+            "user_receiver": "Dave",
+            "date": "2024-06-18",
+            "time": "11:00 AM",
+            "message": "¿El inmueble tiene facilidades de financiamiento?",
+            "title": "Consulta de financiamiento"
+        },
+        {
+            "id": 10,
+            "user_sender": "Bob",
+            "user_receiver": "Charlie",
+            "date": "2024-06-17",
+            "time": "04:50 PM",
+            "message": "Estoy interesado en concertar una cita para ver el inmueble.",
+            "title": "Solicitud de cita"
+        },
+        {
+            "id": 11,
+            "user_sender": "Eve",
+            "user_receiver": "Frank",
+            "date": "2024-06-16",
+            "time": "09:00 AM",
+            "message": "¿Podrías mostrarme fotos del inmueble?",
+            "title": "Consulta de imágenes"
+        },
+        {
+            "id": 12,
+            "user_sender": "Frank",
+            "user_receiver": "Alice",
+            "date": "2024-06-15",
+            "time": "11:30 AM",
+            "message": "¿Cuál es la antigüedad del inmueble?",
+            "title": "Consulta de antigüedad"
+        },
+        {
+            "id": 13,
+            "user_sender": "Alice",
+            "user_receiver": "Eve",
+            "date": "2024-06-14",
+            "time": "03:15 PM",
+            "message": "¿Se permiten mascotas en el inmueble?",
+            "title": "Consulta sobre mascotas"
+        },
+        {
+            "id": 14,
+            "user_sender": "Dave",
+            "user_receiver": "Alice",
+            "date": "2024-06-13",
+            "time": "05:45 PM",
+            "message": "¿El precio es negociable?",
+            "title": "Consulta sobre precio negociable"
+        },
+        {
+            "id": 15,
+            "user_sender": "Bob",
+            "user_receiver": "Charlie",
+            "date": "2024-06-12",
+            "time": "10:00 AM",
+            "message": "¿El inmueble tiene estacionamiento?",
+            "title": "Consulta sobre estacionamiento"
+        },
+        {
+            "id": 16,
+            "user_sender": "Charlie",
+            "user_receiver": "Eve",
+            "date": "2024-06-11",
+            "time": "01:20 PM",
+            "message": "¿Cuál es la política de mantenimiento del inmueble?",
+            "title": "Consulta de mantenimiento"
+        },
+        {
+            "id": 17,
+            "user_sender": "Frank",
+            "user_receiver": "Dave",
+            "date": "2024-06-10",
+            "time": "04:00 PM",
+            "message": "¿El inmueble cuenta con servicios públicos cercanos?",
+            "title": "Consulta de servicios públicos"
+        },
+        {
+            "id": 18,
+            "user_sender": "Eve",
+            "user_receiver": "Alice",
+            "date": "2024-06-09",
+            "time": "02:30 PM",
+            "message": "¿Cuánto tiempo lleva en el mercado el inmueble?",
+            "title": "Consulta de tiempo en el mercado"
+        },
+        {
+            "id": 19,
+            "user_sender": "Alice",
+            "user_receiver": "Bob",
+            "date": "2024-06-08",
+            "time": "12:00 PM",
+            "message": "¿Cuál es la política de seguridad del vecindario?",
+            "title": "Consulta de seguridad"
+        },
+        {
+            "id": 20,
+            "user_sender": "Bob",
+            "user_receiver": "Charlie",
+            "date": "2024-06-07",
+            "time": "03:45 PM",
+            "message": "¿El inmueble tiene acceso a transporte público?",
+            "title": "Consulta sobre transporte público"
+        }
     ]
 }

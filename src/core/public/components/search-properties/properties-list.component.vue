@@ -2,6 +2,7 @@
 import { PropertyApiService } from "@/core/public/services/property-api.service.js";
 import { ref, onMounted } from 'vue';
 import RetraceToolbar from "@/core/shared/components/retrace-toolbar.component.vue";
+import TheFooter from "@/core/public/components/the-footer.component.vue";
 
 const properties = ref([]);
 const propertyDistrict = ref("");
@@ -104,6 +105,8 @@ async function filtered() {
 
     </div>
   </div>
+
+  <TheFooter />
 
 </template>
 
