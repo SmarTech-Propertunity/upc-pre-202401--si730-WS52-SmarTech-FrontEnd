@@ -21,7 +21,9 @@
         <router-link to="/home">
         <img src="../../../assets/images/home-icon.png" height="50px" width="50px" alt="home icon">
         </router-link>
+        <router-link to="/profile">
         <img src="../../../assets/images/material-icons/account-icon.png" height="50px" width="50px" alt="Account Icon">
+        </router-link>
       </div>
     </template>
 </pv-toolbar>

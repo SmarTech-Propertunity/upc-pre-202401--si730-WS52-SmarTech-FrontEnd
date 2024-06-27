@@ -26,7 +26,7 @@
         <router-link to="/notification">
           <img src="../../../../assets/images/material-icons/notification-icon.png" height="45px" width="45px" alt="add icon">
         </router-link>
-        <router-link to="/search">
+        <router-link to="/profile">
           <div class="profile-shortcut-wrapper">
             <img class="account-shortcut"
                  src="../../../../assets/images/material-icons/account-icon.png"

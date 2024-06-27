@@ -23,27 +23,35 @@ export default
     </div>
 
     <div class="cards">
-      <publication-card
-          location= "La Marina"
-          price="69.00"
-          card-size="400"
-          publication-image-path="src/assets/images/home-section/publication-1.png"
-          offered-by="Inmobilística"
-      ></publication-card>
-      <publication-card
-          location= "La Marina"
-          price="uwu"
-          card-size="400"
-          publication-image-path="src/assets/images/home-section/publication-2.png"
-          offered-by="Inmobilística"
-      ></publication-card>
-      <publication-card
-          location= "La Marina"
-          price="lmao"
-          card-size="400"
-          publication-image-path="src/assets/images/home-section/publication-3.png"
-          offered-by="Inmobilística"
-      ></publication-card>
+      <router-link to="/property/0">
+        <publication-card
+            location= "La Marina"
+            price="692.00"
+            card-size="400"
+            publication-image-path="src/assets/images/home-section/publication-1.png"
+            offered-by="Inmobilística"
+        ></publication-card>
+      </router-link>
+      <router-link to="/property/1">
+        <publication-card
+            location= "La Marina"
+            price="1392.00"
+            card-size="400"
+            publication-image-path="src/assets/images/home-section/publication-2.png"
+            offered-by="Inmobilística"
+        ></publication-card>
+      </router-link>
+      <router-link to="/property/2">
+        <publication-card
+            location= "La Marina"
+            price="2323.00"
+            card-size="400"
+            publication-image-path="src/assets/images/home-section/publication-3.png"
+            offered-by="Inmobilística"
+        ></publication-card>
+      </router-link>
+
+
     </div>
   </div>
 
@@ -83,4 +91,5 @@ export default
   border-radius: 1rem;
   margin-left: 4vh;
 }
+
 </style>

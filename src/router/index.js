@@ -9,6 +9,7 @@ import PostOverview from "@/core/domain/components/property-post/post-overview.c
 import NotFoundComponent from "@/core/public/pages/not-found.component.vue";
 import CreateProperty from "@/core/domain/components/property-form/create-property.vue";
 import NotificationList from "@/core/public/components/notification/notification-list.component.vue";
+import Profile from "@/core/public/components/profile/profile.component.vue";
 
 const routes = [
     { path: '/', component: MainLoginComponent },
@@ -24,6 +25,7 @@ const routes = [
     },
     { path: '/create-property', component: CreateProperty },
     { path: '/notification', component: NotificationList },
+    { path: '/profile', component: Profile},
     { path: '/calculator', component: CreditCalculatorComponent },
     { path: '/property/:id', component: PostOverview, props: true},
     { path: '/:pathMatch(.*)', redirect: '/404' },

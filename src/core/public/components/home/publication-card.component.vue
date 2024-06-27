@@ -68,6 +68,7 @@ export default
 
   border-radius: 1.5rem;
   background-color: #ffffff;
+  text-decoration: none;
 }
 .publication-image {
   border-top-left-radius: 1.5rem;
