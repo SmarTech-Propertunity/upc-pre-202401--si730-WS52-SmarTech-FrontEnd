@@ -93,7 +93,18 @@ const es = {
     initialFee: 'Cuota Inicial',
     additionalCosts: 'Costos Adicionales',
     amountToBeFinanced: 'Monto a Financiar',
-    monthlyPayment: 'Cuota Mensual'
+    monthlyPayment: 'Cuota Mensual',
+
+    usernameRequired: "El nombre de usuario es requerido",
+    usernameTooShort: "El nombre de usuario debe tener al menos 3 caracteres",
+    passwordRequired: "La contraseña es requerida",
+    passwordTooShort: "La contraseña debe tener al menos 6 caracteres",
+    emailRequired: "El correo electrónico es requerido",
+    emailInvalid: "El correo electrónico no es válido",
+    phoneRequired: "El número de teléfono es requerido",
+    phoneInvalid: "El número de teléfono no es válido",
+    invalidCredentials: "Credenciales no válidas",
+    noUserFound: "No se encontró un usuario registrado"
 
 }
 export default es

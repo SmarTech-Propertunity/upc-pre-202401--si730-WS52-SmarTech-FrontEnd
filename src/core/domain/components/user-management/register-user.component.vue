@@ -1,10 +1,77 @@
-<script setup>
-import {ref} from "vue";
-const username = ref('');
-const password = ref('');
-const email = ref('');
-const phonenumber = ref('');
-const value = ref(null);
+<script>
+//import {ref} from "vue";
+//const username = ref('');
+//const password = ref('');
+//const email = ref('');
+//const phonenumber = ref('');
+//const value = ref(null);
+
+export default {
+  data() {
+    return {
+      username: '',
+      password: '',
+      email: '',
+      phonenumber: '',
+      usernameError: null,
+      passwordError: null,
+      emailError: null,
+      phoneError: null
+    };
+  },
+  methods: {
+    validateUsername() {
+      this.usernameError = null;
+      if (!this.username) {
+        this.usernameError = this.$t('usernameRequired');
+      } else if (this.username.length < 3) {
+        this.usernameError = this.$t('usernameTooShort');
+      }
+    },
+    validatePassword() {
+      this.passwordError = null;
+      if (!this.password) {
+        this.passwordError = this.$t('passwordRequired');
+      } else if (this.password.length < 6) {
+        this.passwordError = this.$t('passwordTooShort');
+      }
+    },
+    validateEmail() {
+      const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      this.emailError = null;
+      if (!this.email) {
+        this.emailError = this.$t('emailRequired');
+      } else if (!emailPattern.test(this.email)) {
+        this.emailError = this.$t('emailInvalid');
+      }
+    },
+    validatePhoneNumber() {
+      const phonePattern = /^[0-9]{9}$/;
+      this.phoneError = null;
+      if (!this.phonenumber) {
+        this.phoneError = this.$t('phoneRequired');
+      } else if (!phonePattern.test(this.phonenumber)) {
+        this.phoneError = this.$t('phoneInvalid');
+      }
+    },
+    register() {
+      this.validateUsername();
+      this.validatePassword();
+      this.validateEmail();
+      this.validatePhoneNumber();
+      if (!this.usernameError && !this.passwordError && !this.emailError && !this.phoneError) {
+        const user = {
+          username: this.username,
+          password: this.password,
+          email: this.email,
+          phonenumber: this.phonenumber
+        };
+        localStorage.setItem('user', JSON.stringify(user));
+        this.$router.push('/');
+      }
+    }
+  }
+};
 </script>
 
 <template>
@@ -18,31 +85,62 @@ const value = ref(null);
     </div>
     <div class="input-label">
       <pv-floatLabel class="credentials-label">
-        <pv-inputText class="credentials-input" id="username" v-model="username" />
-        <div> <label class="credentials-textLabel" for="username">{{ $t('username') }}</label></div>
+        <pv-inputText
+            class="credentials-input"
+            id="username"
+            v-model="username"
+            @blur="validateUsername"
+        />
+        <div>
+          <label class="credentials-textLabel" for="username">{{ $t('username') }}</label>
+        </div>
+        <span v-if="usernameError" class="error-message">{{ usernameError }}</span>
       </pv-floatLabel>
     </div>
     <div class="input-label">
       <pv-floatLabel class="credentials-label">
-        <pv-inputText class="credentials-input" id="password" v-model="password" />
-        <div><label class="credentials-textLabel" for="password">{{ $t('password') }}</label></div>
+        <pv-inputText
+            class="credentials-input"
+            id="password"
+            v-model="password"
+            @blur="validatePassword"
+        />
+        <div>
+          <label class="credentials-textLabel" for="password">{{ $t('password') }}</label>
+        </div>
+        <span v-if="passwordError" class="error-message">{{ passwordError }}</span>
       </pv-floatLabel>
     </div>
     <div class="input-label">
       <pv-floatLabel class="credentials-label">
-        <pv-inputText class="credentials-input" id="password" v-model="email" />
-        <div><label class="credentials-textLabel" for="email">{{ $t('email') }}</label></div>
+        <pv-inputText
+            class="credentials-input"
+            id="email"
+            v-model="email"
+            @blur="validateEmail"
+        />
+        <div>
+          <label class="credentials-textLabel" for="email">{{ $t('email') }}</label>
+        </div>
+        <span v-if="emailError" class="error-message">{{ emailError }}</span>
       </pv-floatLabel>
     </div>
     <div class="input-label">
       <pv-floatLabel class="credentials-label">
-        <pv-inputText class="credentials-input" id="password" v-model="phonenumber" />
-        <div><label class="credentials-textLabel" for="phonenumber">{{ $t('phone') }}</label></div>
+        <pv-inputText
+            class="credentials-input"
+            id="phonenumber"
+            v-model="phonenumber"
+            @blur="validatePhoneNumber"
+        />
+        <div>
+          <label class="credentials-textLabel" for="phonenumber">{{ $t('phone') }}</label>
+        </div>
+        <span v-if="phoneError" class="error-message">{{ phoneError }}</span>
       </pv-floatLabel>
     </div>
     <div>
-      <router-link to="/"><pv-button class="register-btn" :label="$t('registerBTN')" /></router-link>
-
+      <pv-button class="register-btn" :label="$t('registerBTN')" @click.prevent="register" />
     </div>
 
   </div>
@@ -142,4 +240,9 @@ body{
     display: none;
   }
 }
+
+ .error-message {
+   color: red;
+   font-size: 0.8em;
+ }
 </style>

@@ -59,8 +59,10 @@ export default {
 
       const response = await this.propertyApiService.postProperty(body)
 
-      if(response.status === 201)
+      if(response.status === 201){
         alert('Property created');
+        this.$router.push('/home');
+      }
       else
         alert('Error creating Property')
     }
@@ -120,8 +122,8 @@ export default {
       <div class="form-group">
         <label for="operacion" aria-label="Operación">Operación:</label>
         <select id="operacion" v-model="this.operacion" required aria-labelledby="operacion">
-          <option value="Venta">Santiago de Surco</option>
-          <option value="Alquiler">Miraflores</option>
+          <option value="Venta">Venta</option>
+          <option value="Alquiler">Alquiler</option>
         </select>
       </div>
 

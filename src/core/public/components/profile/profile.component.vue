@@ -1,23 +1,50 @@
-<script setup>
-import {onMounted, ref} from "vue";
+<script >
+//import {onMounted, ref} from "vue";
+//import { UserApiService } from "@/core/public/services/user-api.service.js";
 import RetraceToolbar from "@/core/shared/components/retrace-toolbar.component.vue";
 import TheFooter from "@/core/public/components/the-footer.component.vue";
-import { UserApiService } from "@/core/public/services/user-api.service.js";
 
-const user = ref([]);
 
-onMounted(async () => {
+//const user = ref([]);
+
+/*onMounted(async () => {
   const response = await UserApiService.getUserById(user);
   user.value = response.data;
   console.log(user.value);
-})
-
+})*/
+export default {
+  components: {
+    RetraceToolbar,
+    TheFooter
+  },
+  data() {
+    return {
+      user: {}
+    };
+  },
+  created() {
+    const storedUser = JSON.parse(localStorage.getItem('user'));
+    if (storedUser) {
+      this.user = storedUser;
+    } else {
+      // Si no hay usuario en el almacenamiento local, redirigir a la página de inicio de sesión
+      this.$router.push('/');
+    }
+  },
+  methods: {
+    logout() {
+      localStorage.removeItem('user');
+      this.$router.push('/');
+    }
+  }
+};
 </script>
 
 
 <template>
 
   <RetraceToolbar/>
+
   <div class="background">
     <div class="container">
       <div class="perfil">
@@ -26,10 +53,13 @@ onMounted(async () => {
             <img class="user-image" src="https://www.pikpng.com/pngl/b/80-805068_my-profile-icon-blank-profile-picture-circle-clipart.png" alt="imagen del usuario">
           </div>
           <div class="info">
-            <h2>Perfil</h2>
+            <h2> - Perfil - </h2>
+            <h2>{{ user.username }}</h2>
+            <h2>{{ user.email }}</h2>
+            <h2>{{ user.phonenumber }}</h2>
             <!--<h2>{{ user[0].firstName }}  {{ user[0].LastName }}</h2>-->
             <router-link :to="`/`">
-              <button on-click="ro">Cerrar Sesión</button>
+              <button @click="logout">Cerrar Sesión</button>
             </router-link>
           </div>
         </div>

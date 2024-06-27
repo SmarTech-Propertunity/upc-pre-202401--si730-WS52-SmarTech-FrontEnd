@@ -1,8 +1,32 @@
-<script setup>
-import {ref} from "vue";
-const username = ref('');
-const password = ref('');
-const value = ref(null);
+<script>
+//import {ref} from "vue";
+//const username = ref('');
+//const password = ref('');
+//const value = ref(null);
+
+export default {
+  data() {
+    return {
+      username: '',
+      password: '',
+      loginError: null
+    };
+  },
+  methods: {
+    login() {
+      const storedUser = JSON.parse(localStorage.getItem('user'));
+      if (storedUser) {
+        if (storedUser.username === this.username && storedUser.password === this.password) {
+          this.$router.push('/home');
+        } else {
+          this.loginError = this.$t('invalidCredentials');
+        }
+      } else {
+        this.loginError = this.$t('noUserFound');
+      }
+    }
+  }
+};
 </script>
 
 <template>
@@ -10,26 +34,37 @@ const value = ref(null);
 
   <div class="section-login" :aria-label="$t('loginTitle')">
     <div class="container">
-
-      <h1 class="login-title">{{ $t('loginTitle')}}</h1>
+      <h1 class="login-title">{{ $t('loginTitle') }}</h1>
       <span class="login-description">{{ $t('welcome')}}</span>
     </div>
     <div class="input-label">
       <pv-floatLabel class="credentials-label">
-        <pv-inputText class="credentials-input" id="username" v-model="username" />
-        <div> <label class="credentials-textLabel" for="username">{{ $t('username') }}</label></div>
+        <pv-inputText
+            class="credentials-input"
+            id="username"
+            v-model="username"
+        />
+        <div>
+          <label class="credentials-textLabel" for="username">{{ $t('username') }}</label>
+        </div>
       </pv-floatLabel>
     </div>
     <div class="input-label">
       <pv-floatLabel class="credentials-label">
-        <pv-inputText class="credentials-input" id="password" v-model="password" />
-        <div><label class="credentials-textLabel" for="password">{{ $t('password') }}</label></div>
+        <pv-inputText
+            class="credentials-input"
+            id="password"
+            v-model="password"
+        />
+        <div>
+          <label class="credentials-textLabel" for="password">{{ $t('password') }}</label>
+        </div>
       </pv-floatLabel>
     </div>
     <div>
-      <router-link to="/home"><pv-button class="login-btn" :label="$t('into')" /></router-link>
-
+      <pv-button class="login-btn" :label="$t('into')" @click.prevent="login" />
     </div>
+    <span v-if="loginError" class="error-message">{{ loginError }}</span>
 
     <div class = "user-routes">
       <router-link to="/register">
@@ -40,6 +75,7 @@ const value = ref(null);
       </router-link>
     </div>
   </div>
+
    <img class="login-image" src="../../../../assets/images/login-image.jpg" alt="Imagen de inicio de sesión" />
   </body>
 
@@ -139,5 +175,10 @@ body{
   .login-image{
     display: none;
   }
+}
+
+.error-message {
+  color: red;
+  font-size: 0.8em;
 }
 </style>
