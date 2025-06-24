@@ -53,7 +53,7 @@ jobs:
           ls -l staging
           echo "Despliegue simulado en develop para la versión: $(date +%Y%m%d%H%M%S)"
 
-    deploy-to-main:
+  deploy-to-main:
       # Este job solo se ejecuta si el job 'build-and-test' tuvo éxito
       needs: build-and-test
       runs-on: ubuntu-latest
