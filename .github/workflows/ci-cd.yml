@@ -3,7 +3,9 @@ name: CI/CD Pipeline
 
 on:
   push:
-    branches: ["main"]
+    branches:
+      - "main"
+      - "develop"
 
 jobs:
   build-and-test:
@@ -12,6 +14,8 @@ jobs:
       - name: Checkout del repositorio
         uses: actions/checkout@v3
 
+      - name: Configurar Node.js
+        uses: actions/setup-node@v3
 
       - name: Instalar dependencias
         run: npm install
@@ -19,15 +23,21 @@ jobs:
       - name: Ejecutar build de producción
         run: npm run build
 
+      - name: Ejecutar pruebas unitarias
+        run: npm run test:unit
+
       - name: Subir carpeta dist como artefacto
         uses: actions/upload-artifact@v4
         with:
           name: dist
           path: dist/
 
-  deploy:
+  deploy-to-develop:
+    # Este job solo se ejecuta si el job 'build-and-test' tuvo éxito
     needs: build-and-test
     runs-on: ubuntu-latest
+    # Este job solo se ejecuta si la rama es 'develop'
+    if: github.ref == 'refs/heads/develop'
     steps:
       - name: Descargar artefacto dist
         uses: actions/download-artifact@v4
@@ -35,10 +45,33 @@ jobs:
           name: dist
           path: dist/
 
-      - name: Simular despliegue con marca de versión
+      - name: Simular despliegue a entorno de desarrollo/staging
         run: |
-          mkdir -p production
-          cp -r dist/* production/
-          echo "✅ App Vue desplegada en entorno de producción:"
-          ls -l production
+          mkdir -p staging
+          cp -r dist/* staging/
+          echo "✅ App Vue desplegada en entorno de desarrollo/staging:"
+          ls -l staging
+          echo "Despliegue simulado en develop para la versión: $(date +%Y%m%d%H%M%S)"
+
+    deploy-to-main:
+      # Este job solo se ejecuta si el job 'build-and-test' tuvo éxito
+      needs: build-and-test
+      runs-on: ubuntu-latest
+      # Este job solo se ejecuta si la rama es 'main'
+      if: github.ref == 'refs/heads/main'
+      steps:
+        - name: Descargar artefacto dist
+          uses: actions/download-artifact@v4
+          with:
+            name: dist
+            path: dist/
+
+        - name: Simular despliegue a entorno de producción
+          run: |
+            mkdir -p production
+            cp -r dist/* production/
+            echo "🚀 App Vue desplegada en entorno de producción:"
+            ls -l production
+            echo "Despliegue simulado en main para la versión: $(date +%Y%m%d%H%M%S)"
+  
 
