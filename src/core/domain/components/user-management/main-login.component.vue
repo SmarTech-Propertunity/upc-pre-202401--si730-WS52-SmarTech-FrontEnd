@@ -1,28 +1,32 @@
 <script>
-//import {ref} from "vue";
-//const username = ref('');
-//const password = ref('');
-//const value = ref(null);
+import { loginUser } from './services/user.api.service.js';
 
 export default {
   data() {
     return {
       username: '',
       password: '',
-      loginError: null
+      loginError: null,
+      loading: false
     };
   },
   methods: {
-    login() {
-      const storedUser = JSON.parse(localStorage.getItem('user'));
-      if (storedUser) {
-        if (storedUser.username === this.username && storedUser.password === this.password) {
+    async login() {
+      this.loginError = null;
+      this.loading = true;
+      try {
+        // Login seguro contra backend
+        const user = await loginUser({ email: this.username, password: this.password });
+        if (user) {
+          localStorage.setItem('user', JSON.stringify(user));
           this.$router.push('/home');
         } else {
           this.loginError = this.$t('invalidCredentials');
         }
-      } else {
-        this.loginError = this.$t('noUserFound');
+      } catch (err) {
+        this.loginError = this.$t('invalidCredentials');
+      } finally {
+        this.loading = false;
       }
     }
   }
