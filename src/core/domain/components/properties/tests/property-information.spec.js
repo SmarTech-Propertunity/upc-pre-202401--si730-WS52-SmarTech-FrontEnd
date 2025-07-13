@@ -1,9 +1,10 @@
 import { shallowMount } from '@vue/test-utils';
 import PropertyInformation from '@/core/domain/components/properties/components/property-information.component.vue';
+import { describe, it, expect, vi, beforeEach } from 'vitest';
 
 // Mock getPropertyById para evitar error de import.meta.env
-jest.mock('@/core/domain/components/properties/services/property.api.service.js', () => ({
-  getPropertyById: jest.fn(() => Promise.resolve({}))
+vi.mock('@/core/domain/components/properties/services/property.api.service.js', () => ({
+  getPropertyById: vi.fn(() => Promise.resolve({}))
 }));
 
 describe('PropertyInformation Component', () => {

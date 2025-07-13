@@ -1,9 +1,10 @@
 import { shallowMount } from '@vue/test-utils';
 import ListProperty from '@/core/domain/components/properties/components/list-property.component.vue';
+import { describe, it, expect, vi, beforeEach } from 'vitest';
 
 // Mock getAllProperties para evitar error de import.meta.env
-jest.mock('@/core/domain/components/properties/services/property.api.service.js', () => ({
-  getAllProperties: jest.fn(() => Promise.resolve([]))
+vi.mock('@/core/domain/components/properties/services/property.api.service.js', () => ({
+  getAllProperties: vi.fn(() => Promise.resolve([]))
 }));
 
 describe('ListProperty Component', () => {

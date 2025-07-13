@@ -1,9 +1,10 @@
 import { shallowMount } from '@vue/test-utils';
 import MainLoginComponent from '@/core/domain/components/user-management/main-login.component.vue';
+import { describe, it, expect, vi, beforeEach } from 'vitest';
 
 // Mock loginUser para evitar error de import.meta.env
-jest.mock('@/core/domain/components/user-management/services/user.api.service.js', () => ({
-  loginUser: jest.fn(() => Promise.resolve({}))
+vi.mock('@/core/domain/components/user-management/services/user.api.service.js', () => ({
+  loginUser: vi.fn(() => Promise.resolve({}))
 }));
 
 describe('MainLoginComponent', () => {

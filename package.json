@@ -10,7 +10,9 @@
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore",
     "test:unit": "jest",
     "cypress:open": "cypress open",
-    "cypress:run": "cypress run"
+    "cypress:run": "cypress run",
+    "test": "vitest --environment jsdom",
+    "test:ui": "vitest --ui --environment jsdom"
   },
   "dependencies": {
     "axios": "1.8.2",
@@ -22,15 +24,20 @@
   "devDependencies": {
     "@babel/core": "^7.27.4",
     "@babel/preset-env": "^7.27.2",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/vue": "^8.1.0",
     "@vitejs/plugin-vue": "^5.0.4",
+    "@vitest/ui": "^3.2.4",
     "@vue/test-utils": "^2.4.6",
     "babel-jest": "^26.6.3",
     "eslint": "^8.57.0",
     "eslint-plugin-vue": "^9.23.0",
     "jest": "^26.6.3",
+    "jsdom": "^26.1.0",
     "sass": "^1.76.0",
     "semver": "^7.7.2",
     "vite": "5.4.9",
+    "vitest": "^3.2.4",
     "vue-jest": "^5.0.0-alpha.10"
   }
 }
